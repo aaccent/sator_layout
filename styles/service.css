@@ -3,6 +3,12 @@
   margin-top: 160px;
 }
 
+@media screen and (max-width: 768px) {
+  .service {
+    margin-top: 80px;
+  }
+}
+
 .serviceSlider {
   margin-top: 30px;
 }

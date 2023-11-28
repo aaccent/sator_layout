@@ -1,6 +1,7 @@
 @import "./header.css";
 @import "./banner.css";
 @import "./service.css";
+@import "./catalog.css";
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 
@@ -29,14 +30,11 @@ a {
   color: rgba(255, 255, 255, 1);
   border: none;
   cursor: pointer;
-  padding-top: 17px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 18px;
   border-radius: 10px;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 15px;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -63,4 +61,11 @@ a {
   line-height: 55px;
   color: rgba(43, 41, 39, 1);
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 38px;
+    line-height: 40px;
+  }
 }

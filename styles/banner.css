@@ -249,6 +249,15 @@
 .banner-button {
   width: 235px;
   height: 60px;
+  padding: 17px 20px 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-button > a {
+  padding: 0;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 425px) {
