@@ -1,11 +1,13 @@
 .catalog {
   width: 100%;
   margin-top: 160px;
+  margin-bottom: 160px;
 }
 
 @media screen and (max-width: 768px) {
   .catalog {
-    margin-top: 80px;
+    margin-top: 70px;
+    margin-bottom: 80px;
   }
 }
 
@@ -26,6 +28,7 @@
   .catalog__container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -39,6 +42,12 @@
 @media screen and (max-width: 900px) {
   .catalog__card {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalog__card {
+    height: 235px;
   }
 }
 
@@ -70,6 +79,13 @@
   .catalog__card > h5 {
     font-size: 18px;
     line-height: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalog__card > h5 {
+    margin-top: 0px;
   }
 }
 
@@ -96,27 +112,30 @@
   height: 30px;
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 768px) {
   .card__quantity {
     width: 84px;
     height: 25px;
     font-size: 10px;
+    top: 7px;
+    right: 7px;
   }
 }
 
 .catalog-button {
   width: 100%;
   height: 60px;
-  margin-top: 20px !important;
+  margin-top: 30px !important;
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 768px) {
   .catalog-button {
     height: 55px;
+    margin-top: 20px !important;
   }
 }
 
 .catalog-button > a {
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 0;
 }

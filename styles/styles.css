@@ -2,6 +2,7 @@
 @import "./banner.css";
 @import "./service.css";
 @import "./catalog.css";
+@import "./solutions.css";
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 
@@ -19,10 +20,15 @@ body {
 
 a {
   list-style-type: none;
+  cursor: pointer;
 }
 
 .hr-vertical {
   border-left: 1px solid rgba(238, 238, 238, 1);
+}
+
+.hr-vertical-white {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .button-standart {
@@ -67,5 +73,15 @@ a {
   .headline {
     font-size: 38px;
     line-height: 40px;
+  }
+}
+
+.wrapper-padding {
+  padding: 160px 0px 210px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-padding {
+    padding: 80px 0px 60px 0px;
   }
 }
