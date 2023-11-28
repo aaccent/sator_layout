@@ -1,0 +1,272 @@
+.header {
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+.header__container {
+  max-width: 1860px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 0 10px 0 10px;
+  align-items: center;
+}
+
+.header-style li:first-child {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(43, 41, 39, 0.45);
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.header-first {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .header-first {
+    display: none;
+  }
+}
+
+.nav-wrapper {
+  margin-top: 15px;
+}
+
+.header-style li:first-child::before {
+  content: url(./../images/pin.svg);
+  width: 16px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.header-style li:first-child > span {
+  color: rgba(43, 41, 39, 1);
+}
+
+.header-style li:nth-child(2) {
+  color: #eeeeee;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.header > hr {
+  color: rgba(238, 238, 238, 1);
+  height: 1px;
+  margin: 15px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header > hr {
+    display: none;
+  }
+}
+
+.header__left {
+  display: flex;
+}
+
+.header__left > img {
+  width: 157px;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__left > img {
+    width: 118px;
+    height: 30px;
+  }
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 870px) {
+  .header__right {
+    display: none;
+  }
+}
+
+.hr-style {
+  margin: 0 40px 0 40px;
+  height: 30px;
+  margin: 0 10px 0 10px;
+}
+
+.hr-style2 {
+  margin: 0 40px 0 40px;
+  height: 30px;
+  margin: 0 10px 0 10px;
+}
+
+.phone {
+  display: flex;
+}
+
+.phone > svg {
+  margin-right: 10px;
+}
+
+.phone__block {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.phone__block > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #2b2927;
+  padding: 0;
+}
+
+.phone__block > p {
+  color: rgba(43, 41, 39, 0.45);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.phone__block > p:hover {
+  color: rgba(239, 72, 36, 1);
+}
+
+.phone__button {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  line-height: 15px;
+  color: rgba(239, 72, 36, 1);
+  background-color: rgba(254, 243, 241, 1);
+  width: 251px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 17px, 25px, 18px, 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.phone__button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(239, 72, 36, 1);
+}
+
+.phone__button:hover > svg > path {
+  stroke: rgba(254, 243, 241, 1);
+}
+
+.topmenu {
+  display: flex;
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1600px) {
+  .topmenu {
+    display: none;
+  }
+}
+
+.topmenu li:not(:last-child) {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-header {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(43, 41, 39, 1);
+  text-decoration: none;
+  padding: 0;
+  position: relative;
+}
+
+.topmenu li:nth-child(-n + 3):after {
+  content: url(../images/arrow.svg);
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  list-style-type: none;
+  color: white;
+  padding: 15px 30px;
+  display: inline-block;
+}
+
+.submenu > a {
+  padding: 0px;
+}
+.menu-header {
+  position: relative;
+}
+
+.submenu {
+  min-width: 475px;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 5;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+  visibility: visible;
+  opacity: 1;
+  list-style-type: none;
+}
+
+.submenu > li {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.submenu .submenu {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  transition: transform 0.3s linear;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 1);
+  min-width: 475px;
+}
+
+.topmenu li:hover > .submenu {
+  visibility: visible;
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+.submenu a {
+  display: block;
+  color: black;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-first {
+  background-color: rgba(244, 243, 245, 1);
+}

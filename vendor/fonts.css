@@ -1,13 +1,27 @@
 @font-face {
-  font-family: "PT Sans Caption";
+  font-family: "BebasNeue";
   font-style: bold;
   font-weight: 700;
-  src: url("./fonts/PTSansCaption-Bold.ttf") format("truetype");
+  src: url("./fonts/BebasNeueBold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "PT Sans Caption";
-  font-style: normal;
+  font-family: "Manrope";
+  font-style: medium;
   font-weight: 500;
-  src: url("./fonts/PTSansCaption-Regular.ttf") format("truetype");
+  src: url("./fonts/Manrope-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: bold;
+  font-weight: 600;
+  src: url("./fonts/Manrope-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: bold;
+  font-weight: 700;
+  src: url("./fonts/Manrope-Bold.woff2") format("woff2");
 }

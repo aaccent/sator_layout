@@ -1,15 +1,50 @@
 @import "./header.css";
+@import "./banner.css";
+@import "./service.css";
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   max-width: 1920px;
-  background: white;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  list-style-type: none;
+}
+
+.hr-vertical {
+  border-left: 1px solid rgba(238, 238, 238, 1);
+}
+
+.button-standart {
+  background-color: rgba(239, 72, 36, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  padding-top: 17px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 18px;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .button-standart {
+    font-size: 14px;
+  }
+}
+
+.button-standart:hover {
+  background-color: rgba(226, 62, 26, 1);
 }
