@@ -48,3 +48,19 @@ a {
 .button-standart:hover {
   background-color: rgba(226, 62, 26, 1);
 }
+
+.wrapper-margin {
+  max-width: 1540px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+}
+
+.headline {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 55px;
+  color: rgba(43, 41, 39, 1);
+  text-transform: uppercase;
+}

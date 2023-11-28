@@ -1,0 +1,131 @@
+.service {
+  width: 100%;
+  margin-top: 160px;
+}
+
+.serviceSlider {
+  margin-top: 30px;
+}
+
+.serviceSlider-buttons {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.servise-slide {
+  height: 300px;
+  padding: 30px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .servise-slide {
+    padding: 20px;
+    height: 195px;
+  }
+}
+
+.hr-top {
+  border-top: 1px solid rgba(238, 238, 238, 1);
+  width: 496px;
+  position: absolute;
+  top: 0;
+  left: 7px;
+}
+
+.hr-left {
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  height: 280px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+.hr-right {
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  top: 7px;
+  right: 0;
+  height: 280px;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .hr-left {
+    top: 3px;
+    height: 190px;
+  }
+  .hr-right {
+    top: 3px;
+    height: 190px;
+  }
+}
+.hr-bottom {
+  border-top: 1px solid rgba(238, 238, 238, 1);
+  width: 496px;
+  position: absolute;
+  bottom: 0;
+  left: 7px;
+}
+
+.servise-slide > h4 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(43, 41, 39, 0.9);
+  text-transform: uppercase;
+  width: 255px;
+}
+
+@media screen and (max-width: 768px) {
+  .servise-slide > h4 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.servise-slide > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(43, 41, 39, 1);
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+.servise-slide > a {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0;
+}
+
+.slider-wrap {
+  position: relative;
+}
+
+.service-button {
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: -85px;
+  right: 0;
+}
+
+.service-button > button {
+  border: 0;
+  background-color: rgba(254, 243, 241, 1);
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .service-button {
+    display: none;
+  }
+}
