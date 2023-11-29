@@ -1,0 +1,116 @@
+.director {
+  display: flex;
+  width: 100%;
+  margin-top: 160px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .director {
+    flex-direction: column;
+  }
+}
+
+.director__left {
+  width: 73.3%;
+  background-color: rgba(244, 243, 245, 1);
+  padding: 50px 0 50px 60px;
+  border-radius: 20px 0 0 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .director__left {
+    width: 100%;
+    min-height: 620px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .director__left {
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .director__left {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+.director__left > p {
+  margin: 30px 0 100px 0;
+  max-width: 805px;
+}
+
+@media screen and (max-width: 1024px) {
+  .director__left > p {
+    margin: 30px 0 30px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .director__left > p {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.director__left > span {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  color: rgba(43, 41, 39, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .director__left > span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.director__right {
+  width: 26.7%;
+  background-color: rgba(239, 72, 36, 1);
+  border-radius: 0 20px 20px 0;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .director__right {
+    width: 100%;
+    height: 155px;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.director__right > img {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+}
+
+@media screen and (max-width: 1400px) {
+  .director__right > img {
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .director__right > img {
+    right: 0px;
+    width: 400px;
+    bottom: 0;
+    top: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .director__right > img {
+    width: 306px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 0;
+  }
+}
