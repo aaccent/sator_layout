@@ -1,11 +1,12 @@
+@import "./normalize.css";
 @import "./header.css";
 @import "./banner.css";
 @import "./service.css";
 @import "./catalog.css";
 @import "./solutions.css";
 @import "./calculation.css";
+@import "./director.css";
 @import "./property.css";
-@import "./normalize.css";
 @import "../vendor/fonts.css";
 
 body {
