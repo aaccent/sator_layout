@@ -3,6 +3,8 @@
 @import "./service.css";
 @import "./catalog.css";
 @import "./solutions.css";
+@import "./calculation.css";
+@import "./property.css";
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 
@@ -82,6 +84,12 @@ a {
 
 @media screen and (max-width: 768px) {
   .wrapper-padding {
-    padding: 80px 0px 60px 0px;
+    padding: 80px 0px 280px 0px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper-padding {
+    padding: 80px 0px 450px 0px;
   }
 }

@@ -1,5 +1,5 @@
 .solutions {
-  background-color: rgba(26, 26, 26, 1);
+  background-color: #1a1a1a;
 }
 
 .solutions__blocks {
@@ -33,6 +33,7 @@
 .wrapper-solution {
   max-width: 1540px;
   padding: 0 10px 0 10px;
+  margin: 0 auto;
 }
 
 .solutions__card {
