@@ -8,6 +8,8 @@
 @import "./director.css";
 @import "./property.css";
 @import "./choice.css";
+@import "./projects.css";
+@import "./seo.css";
 @import "../vendor/fonts.css";
 
 body {
@@ -25,6 +27,7 @@ body {
 a {
   list-style-type: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .hr-vertical {
@@ -55,6 +58,11 @@ a {
 
 .button-standart:hover {
   background-color: rgba(226, 62, 26, 1);
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 .wrapper-margin {
@@ -114,5 +122,35 @@ a {
 @media screen and (max-width: 375px) {
   .desc {
     line-height: 16px;
+  }
+}
+
+.button-slider {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.bc255 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bc254 {
+  background-color: rgba(254, 243, 241, 1);
+}
+.bc255025 {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.slider-buttons-block {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-buttons-block {
+    display: none;
   }
 }

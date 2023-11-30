@@ -12,11 +12,13 @@
 
 .choice {
   margin-top: 45px;
+  margin-bottom: 160px;
 }
 
 @media screen and (max-width: 767px) {
   .choice {
     margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 
