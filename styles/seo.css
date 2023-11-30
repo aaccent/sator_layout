@@ -1,2 +1,59 @@
 .seo {
+  margin: 150px 0 100px 0;
+}
+
+.seo > p {
+  margin-top: 30px;
+  height: 170px;
+  overflow: hidden;
+}
+
+.seo__button {
+  margin-top: 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(239, 72, 36, 1);
+  background-color: transparent;
+  height: 21px;
+  display: flex;
+}
+
+.seo__button > svg {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.seo__form {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(239, 72, 36, 1);
+  border-radius: 20px;
+  max-width: 1520px;
+  margin-top: 165px;
+  padding: 10px 10px 10px 60px;
+  align-items: center;
+}
+
+.seo__left {
+  max-width: 690px;
+}
+
+.seo__left > h2 {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.seo__left > form {
+  margin-top: 40px;
+}
+
+.seo__right {
+  width: 620px;
+}
+
+.seo__right > img {
+  width: 620px;
+  height: 385px;
+  border-radius: 10px;
 }
