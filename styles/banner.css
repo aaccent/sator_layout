@@ -1,5 +1,6 @@
 .banner {
-  margin-top: 10px;
+  max-width: 1920px;
+  margin: 10px auto 0 auto;
 }
 
 .bannerSwiper {
