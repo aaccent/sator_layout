@@ -9,8 +9,19 @@
   justify-content: space-between;
   list-style-type: none;
   margin: 0px auto;
-  padding: 0 10px 0 10px;
+  padding: 10px 10px 10px 10px;
   align-items: center;
+}
+
+.header__container > svg {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .header__container > svg {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 .header-style li:first-child {
@@ -23,21 +34,33 @@
   color: rgba(43, 41, 39, 0.45);
   align-items: center;
   display: flex;
-  margin-top: 15px;
 }
 
 .header-first {
   justify-content: space-between;
+  padding: 15px 10px 15px 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 870px) {
   .header-first {
     display: none;
   }
 }
 
 .nav-wrapper {
-  margin-top: 15px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1450px) {
+  .nav-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav-wrapper {
+    flex-direction: row;
+  }
 }
 
 .header-style li:first-child::before {
@@ -59,20 +82,27 @@
   letter-spacing: 0em;
 }
 
-.header > hr {
-  color: rgba(238, 238, 238, 1);
+.hr-header {
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
   height: 1px;
-  margin: 15px 0 0 0;
 }
 
-@media screen and (max-width: 768px) {
-  .header > hr {
+@media screen and (max-width: 870px) {
+  .hr-header {
     display: none;
   }
 }
 
 .header__left {
   display: flex;
+}
+
+@media screen and (max-width: 1450px) {
+  .header__left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__left > img {
@@ -92,22 +122,32 @@
   align-items: center;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 850px) {
   .header__right {
     display: none;
   }
 }
 
 .hr-style {
-  margin: 0 40px 0 40px;
   height: 30px;
   margin: 0 10px 0 10px;
 }
 
+@media screen and (max-width: 1450px) {
+  .hr-style {
+    display: none;
+  }
+}
+
 .hr-style2 {
-  margin: 0 40px 0 40px;
   height: 30px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 70px;
+}
+
+@media screen and (max-width: 1600px) {
+  .hr-style2 {
+    margin: 0 10px 0 10px;
+  }
 }
 
 .phone {
@@ -133,6 +173,12 @@
   padding: 0;
 }
 
+@media screen and (max-width: 1600px) {
+  .phone__block > a {
+    font-size: 16px;
+  }
+}
+
 .phone__block > p {
   color: rgba(43, 41, 39, 0.45);
   font-size: 14px;
@@ -146,7 +192,8 @@
 .phone__button {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  line-height: 15px;
+  font-size: 15px;
+  line-height: 25px;
   color: rgba(239, 72, 36, 1);
   background-color: rgba(254, 243, 241, 1);
   width: 251px;
@@ -166,24 +213,68 @@
   stroke: rgba(254, 243, 241, 1);
 }
 
+@media screen and (max-width: 850px) {
+  .phone__button {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+}
+
 .topmenu {
   display: flex;
   list-style-type: none;
   margin-top: 5px;
+  margin-left: 60px;
 }
 
 @media screen and (max-width: 1600px) {
   .topmenu {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .topmenu {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu-nav {
+    flex-direction: column;
+  }
+  .display-max {
     display: none;
   }
 }
 
-.topmenu li:not(:last-child) {
+.menu-nav > li:not(:last-child) {
   margin-right: 30px;
   display: flex;
   align-items: center;
 }
 
+@media screen and (max-width: 1600px) {
+  .menu-nav > li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu-nav > li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+}
+/*
+@media screen and (max-width: 1600px) {
+  .menu-nav {
+    margin-right: 10px;
+  }
+}
+*/
 .menu-header {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -197,20 +288,38 @@
   position: relative;
 }
 
-.topmenu li:nth-child(-n + 3):after {
+.icon {
+  position: relative;
+}
+
+.icon > a:after {
   content: url(../images/arrow.svg);
   width: 16px;
   height: 16px;
   margin-left: 5px;
   display: flex;
   align-items: center;
+  margin-top: 5px;
+}
+
+.icon-right > li {
+  position: relative;
+}
+
+.icon-right > li > a:after {
+  content: url(../images/arrwow-right.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 a {
   list-style-type: none;
-  color: white;
+  /*color: white;
   padding: 15px 30px;
-  display: inline-block;
+  display: inline-block;*/
 }
 
 .submenu > a {
@@ -218,6 +327,8 @@ a {
 }
 .menu-header {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .submenu {
@@ -234,7 +345,7 @@ a {
   visibility: visible;
   opacity: 1;
   list-style-type: none;
-  top: 125px;
+  top: 50px;
 }
 
 .submenu > li {
@@ -270,4 +381,103 @@ a {
 
 .menu-first {
   background-color: rgba(244, 243, 245, 1);
+}
+
+.header__modal {
+  position: absolute;
+  max-width: 380px;
+  padding: 10px;
+  top: 75px;
+  right: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*vodal */
+.header__modal {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .header__modal {
+    display: block;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__modal {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .modal-contacts {
+    display: flex;
+    margin-top: 65px;
+    flex-direction: column;
+  }
+}
+
+.contacts__block {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .contacts__block {
+    display: flex;
+    align-items: center;
+  }
+  .contacts__block > svg {
+    margin-right: 10px;
+  }
+
+  .modal-contacts > div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__block > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgba(239, 72, 36, 1);
+}
+
+.contacts__block > a {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+}
+
+.contacts__block > div > a {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+}
+
+.contacts__block > div > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: rgba(43, 41, 39, 0.5);
+}
+
+.modal__social {
+  display: flex;
+  margin-top: 10px;
+}
+
+.modal__social > svg:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-min {
+  margin-top: 20px;
 }
