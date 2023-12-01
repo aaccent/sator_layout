@@ -221,7 +221,7 @@ a {
 }
 
 .submenu {
-  min-width: 475px;
+  width: 482px;
   padding: 30px;
   border-radius: 10px;
   position: absolute;
@@ -234,6 +234,7 @@ a {
   visibility: visible;
   opacity: 1;
   list-style-type: none;
+  top: 125px;
 }
 
 .submenu > li {
@@ -251,7 +252,7 @@ a {
   transition: transform 0.3s linear;
   list-style-type: none;
   background-color: rgba(255, 255, 255, 1);
-  min-width: 475px;
+  width: 471px;
 }
 
 .topmenu li:hover > .submenu {
