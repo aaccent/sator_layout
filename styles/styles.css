@@ -11,6 +11,7 @@
 @import "./projects.css";
 @import "./seo.css";
 @import "./footer.css";
+@import "./modals.css";
 @import "../vendor/fonts.css";
 
 body {

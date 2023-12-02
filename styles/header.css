@@ -1,3 +1,7 @@
+.modal {
+  display: none;
+}
+
 .header {
   width: 100%;
   font-family: "Manrope", sans-serif;
@@ -19,15 +23,19 @@
   }
 }
 
-.header__container > svg {
+.header__open-menu {
   display: none;
 }
 
 @media screen and (max-width: 850px) {
-  .header__container > svg {
+  .header__open-menu {
     display: block;
     cursor: pointer;
   }
+}
+
+.header__close-menu {
+  display: none;
 }
 
 .header-style li:first-child {
@@ -408,13 +416,9 @@ a {
 }
 
 /*vodal */
-.header__modal {
-  display: none;
-}
 
 @media screen and (max-width: 850px) {
   .header__modal {
-    display: block;
     width: 380px;
   }
 }
@@ -518,6 +522,24 @@ a {
   margin-bottom: 5px;
 }
 
+.accordion-item .accordion-item__trigger:after {
+  content: url(./../images/arrow.svg);
+  transform: rotate(-90deg);
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.accordion-item--active .accordion-item__trigger:after {
+  content: url(./../images/arrow.svg);
+  transform: rotate(0deg);
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.accordion2 {
+  margin-top: 20px;
+}
+
 .accordion-item--active2 .accordion-item__content2 {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
@@ -525,6 +547,21 @@ a {
   line-height: 20px;
   color: rgba(43, 41, 39, 0.5);
   display: block;
+}
+
+.accordion-item__trigger2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item--active .accordion-item__trigger2 > svg {
+  transform: rotate(90deg);
+}
+
+.accordion-item--active2 .accordion-item__trigger2 > svg {
+  transform: rotate(270deg);
+  stroke: red;
 }
 
 .accordion-item__trigger2 {
