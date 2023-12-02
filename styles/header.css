@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 850px) {
+  .header__container {
+    padding: 13px 10px 14px 10px;
+  }
+}
+
 .header__container > svg {
   display: none;
 }
@@ -60,6 +66,7 @@
 @media screen and (max-width: 850px) {
   .nav-wrapper {
     flex-direction: row;
+    margin-top: 0px;
   }
 }
 
@@ -105,13 +112,13 @@
   }
 }
 
-.header__left > img {
+.header__left > a > img {
   width: 157px;
   height: 40px;
 }
 
-@media screen and (max-width: 768px) {
-  .header__left > img {
+@media screen and (max-width: 850px) {
+  .header__left > a > img {
     width: 118px;
     height: 30px;
   }
@@ -302,12 +309,19 @@
   margin-top: 5px;
 }
 
+@media screen and (max-width: 850px) {
+  .icon > h3:after {
+    transform: rotate(-90deg);
+    margin: 0 0 5px 10px;
+  }
+}
+
 .icon-right > li {
   position: relative;
 }
 
 .icon-right > li > a:after {
-  content: url(../images/arrwow-right.svg);
+  content: url(../images/arwow-right.svg);
   width: 16px;
   height: 16px;
   position: absolute;
@@ -386,8 +400,8 @@ a {
 .header__modal {
   position: absolute;
   max-width: 380px;
-  padding: 10px;
-  top: 75px;
+  padding: 15px;
+  top: 61px;
   right: 0;
   z-index: 5;
   background-color: rgba(255, 255, 255, 1);
@@ -480,4 +494,51 @@ a {
 
 .nav-min {
   margin-top: 20px;
+}
+
+/*аккордион */
+.accordion-item {
+  margin-bottom: 30px;
+}
+
+.accordion-item--active .accordion-item__content {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(43, 41, 39, 1);
+  display: block;
+}
+
+.accordion-item__content {
+  display: none;
+}
+
+.accordion-item2 {
+  margin-bottom: 5px;
+}
+
+.accordion-item--active2 .accordion-item__content2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(43, 41, 39, 0.5);
+  display: block;
+}
+
+.accordion-item__trigger2 {
+  padding: 5px;
+}
+
+.accordion-item__content2 {
+  padding: 5px;
+  display: none;
+}
+
+.trigger-style {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(43, 41, 39, 1);
 }
