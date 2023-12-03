@@ -76,7 +76,7 @@
   border-radius: 10px;
 }
 
-.consultation-left > h2 {
+.modal__headline {
   font-family: "BebasNeue", sans-serif;
   font-weight: 700;
   font-size: 38px;
@@ -112,4 +112,86 @@
   z-index: 2;
   top: 0;
   left: 0;
+}
+
+/**************выбор города***************/
+
+.modal-city {
+  display: none;
+}
+
+.city__modal {
+  max-width: 350px;
+  margin: 30px auto 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+.city__modal > svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.input-block {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.input-block > input {
+  width: 300px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(244, 244, 244, 1);
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-left: 20px;
+  color: rgba(33, 37, 41, 1);
+}
+
+.search {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+.city__list {
+  margin-top: 10px;
+}
+
+.city__list > li {
+  display: flex;
+  align-items: center;
+}
+
+.city-pin {
+  margin-right: 10px;
+}
+
+.city-pin__active > path {
+  fill: #ef4824;
+}
+
+.city__active {
+  color: rgba(33, 37, 41, 1) !important;
+}
+
+.city__list > li > a {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: rgba(205, 205, 205, 1);
+}
+
+.city__list li:not(:last-child) {
+  margin-bottom: 10px;
 }

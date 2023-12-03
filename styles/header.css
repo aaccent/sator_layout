@@ -48,6 +48,7 @@
   color: rgba(43, 41, 39, 0.45);
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 
 .header-first {

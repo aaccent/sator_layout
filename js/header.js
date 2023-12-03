@@ -5,6 +5,10 @@ const openConsultation = document.querySelector(".consultation__open");
 const closeConsultation = document.querySelector(".close-menu");
 const modalConsultation = document.querySelector(".modal-consultation");
 
+const chooseCity = document.querySelector(".header-first");
+const closeCity = document.querySelector(".close-city");
+const modalOpen = document.querySelector(".modal-city");
+
 document.querySelectorAll(".accordion-item__trigger").forEach((item) => {
   item.addEventListener("click", () => {
     const parent = item.parentNode;
@@ -59,7 +63,20 @@ function closeConsultationModal() {
   document.body.style.overflow = "auto";
 }
 
+function openCityModal() {
+  modalOpen.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeCityModal() {
+  modalOpen.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
 openMenu.addEventListener("click", openModal);
 closeMenu.addEventListener("click", closeModal);
 openConsultation.addEventListener("click", openConsultationModal);
 closeConsultation.addEventListener("click", closeConsultationModal);
+
+chooseCity.addEventListener("click", openCityModal);
+closeCity.addEventListener("click", closeCityModal);
