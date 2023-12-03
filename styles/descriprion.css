@@ -1,18 +1,23 @@
 .description {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    margin-top: 50px;
+  }
 }
 
 .description__text > div {
   border-left: 2px solid rgba(239, 72, 36, 1);
 }
 
-.text__paragraph {
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-  color: rgba(43, 41, 39, 0.9);
-  margin: 20px 0 0 10px;
+.text__block {
+  margin-top: 25px;
+}
+
+.text__block2 {
+  margin-top: 40px;
 }
 
 .description__text > h3 {
@@ -24,9 +29,39 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .description__text > h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
+.text__paragraph {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+  margin: 20px 0 0 10px;
+  max-width: 1135px;
+}
+
+@media screen and (max-width: 768px) {
+  .text__paragraph {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    margin-top: 50px;
+  }
+}
+
 .text__paragraph > li > span {
   font-family: "Manrope", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 25px;
   color: rgba(43, 41, 39, 0.9);
@@ -38,4 +73,48 @@
   display: inline-block;
   margin-right: 5px;
   width: 5px;
+}
+
+.description__text > h4 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: rgba(43, 41, 39, 1);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .description__text > h4 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.text__paragraph2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+  margin-top: 15px;
+  max-width: 1135px;
+}
+
+@media screen and (max-width: 768px) {
+  .text__paragraph2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.text__paragraph2 > li:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.text__paragraph2 > li:before {
+  content: "\2022 ";
+  color: rgba(239, 72, 36, 1);
+  padding-right: 3px;
+  font-size: 20px;
 }

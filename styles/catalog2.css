@@ -8,6 +8,7 @@
   .cap {
     background-image: url(../images/catalog-min.webp);
     background-repeat: no-repeat;
+    min-height: 230px;
   }
 }
 
