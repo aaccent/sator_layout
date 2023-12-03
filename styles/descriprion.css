@@ -118,3 +118,22 @@
   padding-right: 3px;
   font-size: 20px;
 }
+
+.catalog__hr {
+  margin: 50px 0 50px 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+.sd {
+  margin: 0 auto;
+}
+
+.seo__catalog {
+  margin: 150px 0 170px 0;
+}
+
+.seo__catalog > .desc {
+  margin-top: 30px;
+  height: 170px;
+  overflow: hidden;
+}

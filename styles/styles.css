@@ -169,3 +169,13 @@ button {
     display: none;
   }
 }
+
+.seo__wrap {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .seo__wrap {
+    margin-bottom: 50px;
+  }
+}
