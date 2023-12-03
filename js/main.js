@@ -1,44 +1,84 @@
-var swiper = new Swiper(".bannerSwiper", {
-  navigation: {
-    prevEl: ".button-next",
-    nextEl: ".button-prev",
-  },
+const openMenu = document.querySelector(".header__open-menu");
+const closeMenu = document.querySelector(".header__close-menu");
+const modal = document.querySelector(".modal");
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true,
-  },
+const openConsultation = document.querySelector(".consultation__open");
+const closeConsultation = document.querySelector(".close-menu");
+const modalConsultation = document.querySelector(".modal-consultation");
+
+const chooseCity = document.querySelector(".header-first");
+const closeCity = document.querySelector(".close-city");
+const modalOpen = document.querySelector(".modal-city");
+
+document.querySelectorAll(".accordion-item__trigger").forEach((item) => {
+  item.addEventListener("click", () => {
+    const parent = item.parentNode;
+
+    if (parent.classList.contains("accordion-item--active")) {
+      parent.classList.remove("accordion-item--active");
+    } else {
+      document
+        .querySelectorAll(".accordion-item")
+        .forEach((child) => child.classList.remove("accordion-item--active"));
+      parent.classList.add("accordion-item--active");
+    }
+  });
 });
 
-var swiper1 = new Swiper(".serviceSlider", {
-  slidesPerView: 3,
-  spaceBetween: 0,
-  navigation: {
-    prevEl: ".service-next",
-    nextEl: ".service-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1.1,
-    },
-    425: {
-      slidesPerView: 1.5,
-    },
-    850: {
-      slidesPerView: 2.5,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
+document.querySelectorAll(".accordion-item__trigger2").forEach((item) => {
+  item.addEventListener("click", () => {
+    const parent = item.parentNode;
+
+    if (parent.classList.contains("accordion-item--active2")) {
+      parent.classList.remove("accordion-item--active2");
+    } else {
+      document
+        .querySelectorAll(".accordion-item2")
+        .forEach((child) => child.classList.remove("accordion-item--active2"));
+      parent.classList.add("accordion-item--active2");
+    }
+  });
 });
 
-var swiper = new Swiper(".projectsSlider", {
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".projects-next",
-    prevEl: ".projects-prev",
-  },
-});
+function openModal() {
+  openMenu.style.display = "none";
+  closeMenu.style.display = "block";
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  openMenu.style.display = "block";
+  closeMenu.style.display = "none";
+  modal.style.display = "none";
+}
+
+function openConsultationModal() {
+  closeConsultation.style.display = "block";
+  modalConsultation.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeConsultationModal() {
+  closeConsultation.style.display = "none";
+  modalConsultation.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+function openCityModal() {
+  modalOpen.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeCityModal() {
+  modalOpen.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+openMenu.addEventListener("click", openModal);
+closeMenu.addEventListener("click", closeModal);
+
+openConsultation.addEventListener("click", openConsultationModal);
+closeConsultation.addEventListener("click", closeConsultationModal);
+
+chooseCity.addEventListener("click", openCityModal);
+closeCity.addEventListener("click", closeCityModal);

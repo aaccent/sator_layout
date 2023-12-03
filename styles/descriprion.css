@@ -1,0 +1,41 @@
+.description {
+  margin-top: 50px;
+}
+
+.description__text > div {
+  border-left: 2px solid rgba(239, 72, 36, 1);
+}
+
+.text__paragraph {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+  margin: 20px 0 0 10px;
+}
+
+.description__text > h3 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 40px;
+  color: rgba(43, 41, 39, 1);
+  text-transform: uppercase;
+}
+
+.text__paragraph > li > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+}
+
+.text__paragraph li::before {
+  content: "\2022";
+  color: rgba(239, 72, 36, 1);
+  display: inline-block;
+  margin-right: 5px;
+  width: 5px;
+}

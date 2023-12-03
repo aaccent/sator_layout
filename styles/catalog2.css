@@ -1,0 +1,56 @@
+.cap {
+  background-image: url(../images/catalog.webp);
+  width: 100%;
+  min-height: 380px;
+}
+
+@media screen and (max-width: 380px) {
+  .cap {
+    background-image: url(../images/catalog-min.webp);
+    background-repeat: no-repeat;
+  }
+}
+
+.position {
+  position: relative;
+  min-height: 380px;
+}
+
+@media screen and (max-width: 380px) {
+  .position {
+    min-height: 230px;
+  }
+}
+
+.breadcrumb {
+  list-style: none;
+  padding-top: 35px;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: rgba(255, 255, 255, 1);
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+ul.breadcrumb li a:hover {
+}
+
+.head {
+  position: absolute;
+  bottom: 45px;
+  left: 10px;
+}
