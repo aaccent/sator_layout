@@ -14,6 +14,7 @@
 @import "./modals.css";
 @import "./catalog2.css";
 @import "./descriprion.css";
+@import "./goods.css";
 @import "../vendor/fonts.css";
 
 body {
@@ -54,6 +55,10 @@ li {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+button > svg {
+  margin-left: 10px;
+}
+
 .button-standart {
   background-color: rgba(239, 72, 36, 1);
   color: rgba(255, 255, 255, 1);
@@ -66,10 +71,19 @@ li {
   margin: 0;
 }
 
+.button-standart > svg {
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 768px) {
   .button-standart {
     font-size: 14px;
   }
+}
+
+.button-standart > a {
+  padding: 0;
+  margin-left: 5px;
 }
 
 .button-standart:hover {
@@ -178,4 +192,29 @@ button {
   .seo__wrap {
     margin: 0 auto 50px auto;
   }
+}
+
+.breadcrumb {
+  list-style: none;
+  padding-top: 35px;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+ul.breadcrumb li a:hover {
 }

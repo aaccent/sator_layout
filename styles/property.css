@@ -86,10 +86,6 @@
   text-align: center;
 }
 
-.property-button > svg {
-  margin-left: 5px;
-}
-
 @media screen and (max-width: 425px) {
   .property-button {
     height: 55px;

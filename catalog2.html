@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог</title>
+    <title>Каталог2</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -613,128 +613,318 @@
         </svg>
       </div>
     </header>
-    <section class="cap">
-      <div class="wrapper-solution position">
-        <ul class="breadcrumb">
-          <li class="color-white">
-            <a class="color-white" href="#">Главная</a>
-          </li>
-          <li class="color-white">
-            <a class="color-white" href="#">Каталог</a>
-          </li>
-        </ul>
-        <h2 class="headline color-white head">каталог</h2>
-      </div>
-    </section>
 
     <div class="wrapper-margin">
-      <section class="description">
-        <div class="description__text">
-          <h3>звукоизоляция в казани</h3>
-          <div class="text__block">
-            <p class="text__paragraph">
-              Значимость этих проблем настолько очевидна, что постоянное
-              информационно-пропагандистское обеспечение нашей деятельности
-              позволяет оценить значение направлений прогрессивного развития.
-              Таким образом постоянный количественный рост и сфера нашей
-              активности позволяет оценить значение новых предложений. Таким
-              образом начало повседневной работы по формированию позиции
-              представляет собой интересный эксперимент проверки соответствующий
-              условий активизации. Таким образом начало повседневной работы по
-              формированию позиции.
-            </p>
+      <ul class="breadcrumb">
+        <li class="color-black">
+          <a class="color-black" href="#">Главная</a>
+        </li>
+        <li class="color-black">
+          <a class="color-black" href="#">Каталог</a>
+        </li>
+        <li class="color-black">
+          <a class="color-black" href="#"
+            >Декоративные акустические панели и материалы</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrapper-margin">
+      <section class="goods">
+        <div class="goods__filter">
+          <div class="filter__list">
+            <p>Фильтрация по разделам</p>
+            <div class="filter__hr"></div>
+            <ul class="filter__category">
+              <p>Категория товара</p>
+
+              <li class="fiter__active">Декоративные акустические панели</li>
+              <li>Звукоизоляционные панели</li>
+              <li>Звукопоглощающие плиты</li>
+              <li>Декоративные акустические панели</li>
+            </ul>
+            <a class="swow-all" href="#"
+              >показать ещё
+              <svg
+                width="8"
+                height="6"
+                viewBox="0 0 8 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L4 4L7 1"
+                  stroke="#EF4824"
+                  stroke-width="1.5"
+                /></svg
+            ></a>
+          </div>
+          <div class="filter__hr"></div>
+          <div class="filter__category">
+            <p>Стоимость, ₽</p>
+
+            <div class="input-box">
+              <div class="min-box">
+                <div class="input-wrap">
+                  <input
+                    type="number"
+                    name="min-input"
+                    class="input-field min-input"
+                    onchange="setMinInput()"
+                  />
+                </div>
+              </div>
+
+              <div class="max-box">
+                <div class="input-wrap2">
+                  <input
+                    type="number"
+                    name="max-input"
+                    class="input-field max-input"
+                    onchange="setMaxInput()"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="range-slider">
+              <span class="slider-track"></span>
+              <input
+                type="range"
+                name="min-val"
+                class="min-val"
+                min="0"
+                max="1500"
+                value="100"
+                oninput="rangeMin()"
+              />
+              <input
+                type="range"
+                name="max-val"
+                class="max-val"
+                min="0"
+                max="1500"
+                value="900"
+                oninput="rangeMax()"
+              />
+              <div class="tooltip min-tooltip" style="display: none"></div>
+              <div class="tooltip max-tooltip" style="display: none"></div>
+            </div>
+          </div>
+
+          <div class="filter__hr"></div>
+          <div class="filter__category">
+            <p>Материал</p>
+            <div class="checkbox__block">
+              <label class="checkbox filter__category">
+                <input type="checkbox" checked />
+                <span>Базальтовое волокно</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Вспененный полиэтилен</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Стекловолокно</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter__hr"></div>
+          <div class="filter__category">
+            <p>Бренд</p>
+
+            <div class="checkbox__block">
+              <label class="checkbox filter__category">
+                <input type="checkbox" />
+                <span>Isover</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Rockwool</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Порилекс</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Пенофом</span>
+              </label>
+            </div>
+
+            <a class="swow-all" href="#"
+              >показать ещё
+              <svg
+                width="8"
+                height="6"
+                viewBox="0 0 8 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L4 4L7 1"
+                  stroke="#EF4824"
+                  stroke-width="1.5"
+                /></svg
+            ></a>
+          </div>
+
+          <div class="filter__hr"></div>
+          <div class="filter__category"><p>Применение</p></div>
+
+          <div class="checkbox__block">
+            <label class="checkbox filter__category">
+              <input type="checkbox" />
+              <span>Стена</span>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Потолок</span>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Пол</span>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Перегородки</span>
+            </label>
+          </div>
+          <a class="swow-all" href="#"
+            >показать ещё
+            <svg
+              width="8"
+              height="6"
+              viewBox="0 0 8 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L4 4L7 1" stroke="#EF4824" stroke-width="1.5" /></svg
+          ></a>
+          <div class="goods__buttons">
+            <button class="button-standart">
+              Показать 32 товара
+              <svg
+                width="11"
+                height="12"
+                viewBox="0 0 11 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 11L10 2M10 2H1M10 2V11"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </button>
+            <button class="button-standart colorGray">Очистить фильтр</button>
           </div>
         </div>
 
-        <div class="description__text text__block2">
-          <h4>Премущества звукоизоляции:</h4>
-
-          <ul class="text__paragraph2">
-            <li>
-              <span>Комфорт внутри помещений:</span>
-              Звукоизоляция помогает создать уютную обстановку защищая от шумов
-              с улицы или соседей;
-            </li>
-
-            <li>
-              <span> Приватность:</span>
-              Звукоизоляция обеспечивает частную обстановку, предотвращая
-              проникновение звуков изнутри и наружи;
-            </li>
-            <li>
-              <span> Здоровье и комфорт:</span>
-              Меньшее воздействие шума благотворно влияет на здоровье, снижая
-              стресс и усталость;
-            </li>
-
-            <li>
-              <span>Аккустическое качество:</span>
-              Для студий звукозаписи или кинотеатров звукоизоляция является
-              важным фактором;
-            </li>
-            <li>
-              <span>Сохранение конфиденциальности: </span>
-              В бизнес-среде звукоизоляция помогает сохранить конфиденциальность
-              разговоров и информации;
-            </li>
-            <li>
-              <span>Соблюдение норм и правил:</span>
-              В некоторых областях, таких как медицина или образование,
-              существуют строгие требования к уровню шума.
-            </li>
-          </ul>
-        </div>
-
-        <div class="catalog__hr"></div>
-
-        <div class="catalog__container">
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
+        <div class="goods__right">
+          <h2 class="headline color-black">
+            Декоративные акустические панели и материалы
+          </h2>
+          <div class="goods-hr"></div>
+          <p class="desc">
+            Значимость этих проблем настолько очевидна, что постоянное
+            информационно-пропагандистское обеспечение нашей деятельности
+            позволяет оценить значение направлений прогрессивного развития.
+            Таким образом постоянный количественный рост и сфера нашей
+            активности позволяет оценить значение новых предложений. Таким
+            образом начало повседневной работы по формированию позиции
+            представляет собой интересный.
+          </p>
+          <button class="filter__button">
+            <div>
+              Фильтры
+              <svg
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.71875 5.39062H22.2812V7.54688H0.71875V5.39062ZM4.3125 10.4219H18.6875V12.5781H4.3125V10.4219ZM8.625 15.4531H14.375V17.6094H8.625V15.4531Z"
+                  fill="#EF4824"
+                />
+              </svg>
+            </div>
+          </button>
+          <div class="goods__block">
+            <div class="goods__card">
+              <img src="./images/good-img.webp" alt="good" />
+              <div class="card__block">
+                <h5>FIBROPLAN 600х600х15мм</h5>
+                <p>Декоративная акустическая панель размером 600х600х15мм</p>
+                <span>От 550 ₽</span>
+              </div>
+            </div>
+            <div class="goods__card">
+              <img src="./images/good-img.webp" alt="good" />
+              <div class="card__block">
+                <h5>FIBROPLAN 600х600х15мм</h5>
+                <p>Декоративная акустическая панель размером 600х600х15мм</p>
+                <span>От 550 ₽</span>
+              </div>
+            </div>
+            <div class="goods__card">
+              <img src="./images/good-img.webp" alt="good" />
+              <div class="card__block">
+                <h5>FIBROPLAN 600х600х15мм</h5>
+                <p>Декоративная акустическая панель размером 600х600х15мм</p>
+                <span>От 550 ₽</span>
+              </div>
+            </div>
+            <div class="goods__card">
+              <img src="./images/good-img.webp" alt="good" />
+              <div class="card__block">
+                <h5>FIBROPLAN 600х600х15мм</h5>
+                <p>Декоративная акустическая панель размером 600х600х15мм</p>
+                <span>От 550 ₽</span>
+              </div>
+            </div>
+            <div class="goods__card">
+              <img src="./images/good-img.webp" alt="good" />
+              <div class="card__block">
+                <h5>FIBROPLAN 600х600х15мм</h5>
+                <p>Декоративная акустическая панель размером 600х600х15мм</p>
+                <span>От 550 ₽</span>
+              </div>
+            </div>
+            <div class="goods__card"></div>
           </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
-
-            <div class="card__quantity">120 позиций</div>
+          <div class="goods__button-wrap">
+            <button class="button-standart goods-button">
+              Показать ещё
+              <a href="#">
+                <svg
+                  width="11"
+                  height="12"
+                  viewBox="0 0 11 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L10 10M10 10H1M10 10V1"
+                    stroke="white"
+                    stroke-width="1.5"
+                  /></svg
+              ></a>
+            </button>
           </div>
         </div>
       </section>
@@ -1055,8 +1245,245 @@
         </div>
       </div>
     </footer>
+    <div class="filter-modal">
+      <div class="darkening">
+        <div class="goods__filterModal city__modal">
+          <svg
+            class="close-city"
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="26"
+              height="26"
+              rx="3.25"
+              transform="matrix(-1 0 0 1 26 0)"
+              fill="#F4F4F4"
+            />
+            <path
+              d="M9.10059 16.9001L16.9006 9.1001"
+              stroke="#8A8F94"
+              stroke-width="1.3"
+            />
+            <path
+              d="M9.10059 9.0999L16.9006 16.8999"
+              stroke="#8A8F94"
+              stroke-width="1.3"
+            />
+          </svg>
+          <div class="d">
+            <div class="filter__list">
+              <p>Фильтрация по разделам</p>
+              <div class="filter__hr"></div>
+              <ul class="filter__category">
+                <p>Категория товара</p>
+
+                <li class="fiter__active">Декоративные акустические панели</li>
+                <li>Звукоизоляционные панели</li>
+                <li>Звукопоглощающие плиты</li>
+                <li>Декоративные акустические панели</li>
+              </ul>
+              <a class="swow-all" href="#"
+                >показать ещё
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L4 4L7 1"
+                    stroke="#EF4824"
+                    stroke-width="1.5"
+                  /></svg
+              ></a>
+            </div>
+            <div class="filter__hr"></div>
+
+            <div class="filter__category">
+              <p>Стоимость, ₽</p>
+
+              <div class="input-box">
+                <div class="min-box">
+                  <div class="input-wrap">
+                    <input
+                      type="number"
+                      name="min-input"
+                      class="input-field min-input"
+                      onchange="setMinInput()"
+                    />
+                  </div>
+                </div>
+
+                <div class="max-box">
+                  <div class="input-wrap2">
+                    <input
+                      type="number"
+                      name="max-input"
+                      class="input-field max-input"
+                      onchange="setMaxInput()"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="range-slider">
+                <span class="slider-track"></span>
+                <input
+                  type="range"
+                  name="min-val"
+                  class="min-val"
+                  min="0"
+                  max="1500"
+                  value="100"
+                  oninput="rangeMin()"
+                />
+                <input
+                  type="range"
+                  name="max-val"
+                  class="max-val"
+                  min="0"
+                  max="1500"
+                  value="900"
+                  oninput="rangeMax()"
+                />
+                <div class="tooltip min-tooltip" style="display: none"></div>
+                <div class="tooltip max-tooltip" style="display: none"></div>
+              </div>
+            </div>
+
+            <div class="filter__hr"></div>
+            <div class="filter__category">
+              <p>Материал</p>
+              <div class="checkbox__block">
+                <label class="checkbox filter__category">
+                  <input type="checkbox" checked />
+                  <span>Базальтовое волокно</span>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span>Вспененный полиэтилен</span>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span>Стекловолокно</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter__hr"></div>
+            <div class="filter__category">
+              <p>Бренд</p>
+
+              <div class="checkbox__block">
+                <label class="checkbox filter__category">
+                  <input type="checkbox" />
+                  <span>Isover</span>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span>Rockwool</span>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span>Порилекс</span>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span>Пенофом</span>
+                </label>
+              </div>
+
+              <a class="swow-all" href="#"
+                >показать ещё
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L4 4L7 1"
+                    stroke="#EF4824"
+                    stroke-width="1.5"
+                  /></svg
+              ></a>
+            </div>
+
+            <div class="filter__hr"></div>
+            <div class="filter__category"><p>Применение</p></div>
+
+            <div class="checkbox__block">
+              <label class="checkbox filter__category">
+                <input type="checkbox" />
+                <span>Стена</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Потолок</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Пол</span>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Перегородки</span>
+              </label>
+            </div>
+            <a class="swow-all" href="#"
+              >показать ещё
+              <svg
+                width="8"
+                height="6"
+                viewBox="0 0 8 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L4 4L7 1"
+                  stroke="#EF4824"
+                  stroke-width="1.5"
+                /></svg
+            ></a>
+            <div class="goods__buttons">
+              <button class="button-standart">
+                Показать 32 товара
+                <svg
+                  width="11"
+                  height="12"
+                  viewBox="0 0 11 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11L10 2M10 2H1M10 2V11"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </button>
+              <button class="button-standart colorGray">Очистить фильтр</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script src="./js/main.js"></script>
-  <script src="./js/slider.js"></script>
+  <script src="./js/range.js"></script>
 </html>

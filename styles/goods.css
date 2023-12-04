@@ -1,0 +1,448 @@
+.goods {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .goods {
+    flex-direction: column;
+  }
+}
+
+.goods > svg {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .goods > svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.goods__filter {
+  max-width: 325px;
+  padding-right: 13px;
+}
+
+.goods__right {
+  max-width: 1135px;
+}
+
+@media screen and (max-width: 767px) {
+  .goods__right {
+    width: 100%;
+  }
+  .goods__filter {
+    display: none;
+  }
+}
+
+.goods-hr {
+  margin: 18px 0 15px 0;
+  width: 100px;
+  border-bottom: 1px solid rgba(239, 72, 36, 1);
+}
+
+.goods__block {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  .goods__block {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-gap: 10px;
+  }
+}
+
+.goods__card {
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  padding-bottom: 25px;
+}
+
+.goods__card > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card__block {
+  margin-top: 15px;
+}
+
+.card__block > h5 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+  text-transform: uppercase;
+}
+
+.card__block > p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2b292773;
+  margin: 5px 0 15px 0;
+}
+
+.card__block > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgba(239, 72, 36, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .card__block {
+    margin-top: 10px;
+  }
+
+  .card__block > h5 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .card__block > p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 5px 0 10px 0;
+  }
+
+  .card__block > span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .goods__card {
+    padding-bottom: 15px;
+  }
+}
+
+.goods-button {
+  width: 200px;
+  height: 60px;
+}
+
+@media screen and (max-width: 425px) {
+  .goods-button {
+    width: 100%;
+    height: 55px;
+  }
+}
+
+.goods__button-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.filter__list > p {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 1);
+}
+
+.swow-all {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(239, 72, 36, 1);
+}
+
+.filter__hr {
+  width: 100%;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  margin: 20px 0 20px 0;
+}
+
+.filter__category {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 1);
+}
+
+.filter__category > p {
+  margin-bottom: 10px;
+}
+
+.filter__category > li {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(43, 41, 39, 1);
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.fiter__active {
+  background-color: rgba(244, 243, 245, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*range*/
+
+h3.range-title {
+  margin-bottom: 4rem;
+}
+
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 25px 0 10px 0;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.slider-track {
+  height: 100%;
+  position: absolute;
+  background-color: rgba(239, 72, 36, 1);
+}
+
+.range-slider input {
+  position: absolute;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(239, 72, 36, 1);
+  background: rgba(239, 72, 36, 1);
+  pointer-events: auto;
+  appearance: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 3px solid rgba(239, 72, 36, 1);
+  background: rgba(239, 72, 36, 1);
+  pointer-events: auto;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.min-box {
+  position: relative;
+}
+
+.max-box {
+  position: relative;
+}
+
+.input-wrap:before {
+  position: absolute;
+  content: "От";
+  z-index: 2;
+  top: 8px;
+  left: 10px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  color: rgba(43, 41, 39, 0.9);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.input-wrap2:before {
+  position: absolute;
+  content: "До";
+  z-index: 2;
+  top: 8px;
+  left: 10px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  color: rgba(43, 41, 39, 0.9);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.tooltip {
+  padding: 0;
+  border: 0;
+  background: rgba(239, 72, 36, 1);
+  width: 54px;
+  height: 23px;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.input-field {
+  position: relative;
+  width: 155px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(43, 41, 39, 1);
+  padding: 5px 5px 5px 35px;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*checkbox*/
+.checkbox {
+  display: block;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.checkbox span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 25px;
+  line-height: 20px;
+}
+.checkbox span:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/checkbox.svg) 0 0 no-repeat;
+}
+
+.checkbox input[type="checkbox"]:checked + span:before {
+  background-image: url(../images/checkbox-checked.svg);
+}
+
+.checkbox > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(43, 41, 39, 1);
+}
+
+.checkbox__block {
+  margin-bottom: 10px;
+}
+
+.goods__buttons {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .goods__buttons {
+    margin-bottom: 40px;
+  }
+}
+
+.goods__buttons > button {
+  width: 100%;
+  height: 50px;
+}
+
+.goods__buttons > button:first-child {
+  margin-bottom: 10px;
+}
+
+.colorGray {
+  background-color: rgba(244, 243, 245, 1) !important;
+  color: rgba(43, 41, 39, 1) !important;
+}
+
+.filter__button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__button {
+    display: flex;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    background-color: rgba(254, 243, 241, 1);
+    color: rgba(239, 72, 36, 1);
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-items: center;
+    padding: 0px 20px 0 20px;
+  }
+}
+
+.filter__button > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filter-modal {
+  display: none;
+}
+
+.d {
+  height: 100vh;
+  overflow-y: scroll;
+}

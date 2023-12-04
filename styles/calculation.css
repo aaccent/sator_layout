@@ -171,7 +171,3 @@
   line-height: 20px;
   color: rgba(255, 255, 255, 0.45);
 }
-
-.calculation__form > button > svg {
-  margin-left: 5px;
-}
