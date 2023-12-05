@@ -19,22 +19,22 @@
 .project__card {
   position: relative;
   width: auto !important;
-  height: 460px;
+  height: 460px !important;
 }
 
 .project__card > img {
   border-radius: 20px;
   width: auto !important;
-  height: 460px;
+  height: 460px !important;
 }
 
 @media screen and (max-width: 768px) {
   .project__card {
-    height: 230px;
+    height: 230px !important;
   }
 
   .project__card > img {
-    height: 230px;
+    height: 230px !important;
   }
 }
 

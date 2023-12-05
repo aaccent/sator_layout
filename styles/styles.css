@@ -1,4 +1,5 @@
 @import "./normalize.css";
+@import "./swiper.css";
 @import "./header.css";
 @import "./banner.css";
 @import "./service.css";
@@ -54,10 +55,6 @@ li {
 
 .hr-vertical-white {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-button > svg {
-  margin-left: 10px;
 }
 
 .button-standart {

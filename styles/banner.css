@@ -42,6 +42,16 @@
   position: relative;
 }
 
+.banner-card > img {
+  height: 800px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .banner-card > img {
+    height: 600px !important;
+  }
+}
+
 .slide__wrapper {
   position: absolute;
   top: 180px;
@@ -50,73 +60,53 @@
   max-width: 690px;
 }
 
+@media screen and (max-width: 1600px) {
+  .slide__wrapper {
+    left: 10px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .slide__wrapper {
-    left: 150px;
+    max-width: 600px;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 600px) {
   .slide__wrapper {
-    left: 100px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .slide__wrapper {
-    max-width: 550px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .slide__wrapper {
-    left: 50px;
     max-width: 350px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .slide__wrapper {
-    top: 180px;
-    left: 20px;
-    max-width: 90%;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .slide__wrapper {
-    top: 84px;
+    top: 100px;
   }
 }
 
 .img-min {
-  display: none;
+  display: none !important;
 }
 .img-mid {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 1440px) {
   .img-max {
-    display: none;
+    display: none !important;
   }
   .img-min {
-    display: none;
+    display: none !important;
   }
   .img-mid {
-    display: block;
+    display: block !important;
   }
 }
 
 @media screen and (max-width: 380px) {
   .img-min {
-    display: block;
+    display: block !important;
   }
   .img-max {
-    display: none;
+    display: none !important;
   }
   .img-mid {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -130,6 +120,12 @@
   .slide__block {
     flex-direction: column;
     align-items: start;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slide__block {
+    margin-top: 30px;
   }
 }
 
@@ -155,17 +151,24 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .slide__wrapper > h1 {
-    font-size: 68px;
+    font-size: 70px;
     line-height: 70px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .slide__wrapper > h1 {
     font-size: 48px;
     line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slide__wrapper > h1 {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
