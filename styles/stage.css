@@ -1,0 +1,83 @@
+.stage {
+  margin-top: 50px;
+}
+
+.stage > p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: rgba(43, 41, 39, 1);
+}
+
+.stage__block {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+  .stage__block {
+    width: 300px;
+  }
+}
+
+.stage__block > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.stage__card {
+  width: 365px;
+  height: 360px;
+  background-color: rgba(244, 243, 245, 1);
+  border-radius: 20px;
+  flex-shrink: 0;
+  padding: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+  .stage__card {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+.stage__card > span {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 92px;
+  line-height: 90px;
+  color: rgba(239, 72, 36, 1);
+  text-transform: uppercase;
+  text-align: start;
+}
+
+@media screen and (max-width: 1600px) {
+  .stage__card > span {
+    font-size: 58px;
+    line-height: 50px;
+  }
+}
+
+.stage__card > h5 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 1);
+  text-transform: uppercase;
+  text-align: start;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1600px) {
+  .stage__card > h5 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+}
+
+.stage__card > p {
+  margin-top: 15px;
+}
