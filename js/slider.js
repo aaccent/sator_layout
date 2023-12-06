@@ -6,7 +6,7 @@ var swiper = new Swiper(".bannerSwiper", {
 
   scrollbar: {
     el: ".swiper-scrollbar",
-    hide: true,
+    hide: false,
   },
 });
 

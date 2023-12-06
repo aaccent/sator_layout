@@ -1,0 +1,128 @@
+.measuring__wrap {
+  margin: 60px auto 0 auto;
+}
+
+.measuring__block {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(244, 243, 245, 1);
+  border-radius: 20px;
+  width: 1520px;
+  padding: 10px 10px 10px 60px;
+}
+
+@media screen and (max-width: 1520px) {
+  .measuring__block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .measuring__block {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+.block__left {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 1420px) {
+  .block__left {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block__left {
+    margin-top: 20px;
+  }
+}
+
+.block__left > p {
+  margin-top: 20px;
+}
+
+.left__buttonblock {
+  display: flex;
+  margin-top: 180px;
+}
+
+.left__buttonblock > button {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1420px) {
+  .left__buttonblock {
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .left__buttonblock > button {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left__buttonblock {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .left__buttonblock {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left__buttonblock > button {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .left__buttonblock > button {
+    width: 100%;
+  }
+}
+
+.price {
+  width: 239px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid rgba(227, 227, 227, 1);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 530px) {
+  .price {
+    width: 100%;
+  }
+}
+
+.price > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 1);
+  margin: 0 auto;
+}
+
+.block__right {
+  max-width: 720px;
+}
+
+@media screen and (max-width: 1420px) {
+  .block__right {
+    max-width: 100%;
+  }
+}
+
+.block__right > img {
+  max-width: 100%;
+  border-radius: 10px;
+}

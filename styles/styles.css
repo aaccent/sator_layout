@@ -1,5 +1,4 @@
 @import "./normalize.css";
-@import "./swiper.css";
 @import "./header.css";
 @import "./banner.css";
 @import "./service.css";
@@ -17,6 +16,8 @@
 @import "./descriprion.css";
 @import "./goods.css";
 @import "./card.css";
+@import "./service.css";
+@import "./measuring.css";
 @import "../vendor/fonts.css";
 
 body {
@@ -91,6 +92,18 @@ li {
 button {
   border: none;
   cursor: pointer;
+}
+
+.button239 {
+  width: 239px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .button239 {
+    height: 55px;
+  }
 }
 
 .wrapper-margin {
