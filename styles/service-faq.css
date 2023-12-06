@@ -6,14 +6,44 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 5px;
 }
 
 .faq__right {
   max-width: 513px;
+  position: relative;
 }
 
 .faq__left {
   max-width: 750px;
+}
+
+@media screen and (max-width: 1300px) {
+  .faq__block {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .faq__right {
+    max-width: 100%;
+    position: relative;
+  }
+
+  .faq__left {
+    max-width: 100%;
+  }
+  .faq__right > a > img {
+    display: none;
+  }
+}
+
+.faq__right > p {
+  margin-top: 20px;
+}
+
+.faq__right > a > img {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
 }
 
 /*аккодион*/
@@ -23,22 +53,60 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1300px) {
+  .accordion-faq {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+}
+
 .accordion-faq--active .accordion-faq__content {
   font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
-  color: rgba(43, 41, 39, 1);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
   display: block;
   background-color: rgba(249, 249, 250, 1);
+  padding: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-faq--active .accordion-faq__content {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 15px;
+  }
 }
 
 .accordion-faq__content {
   display: none;
 }
 .accordion-faq__trigger {
+  padding: 15px;
   width: 750px;
   height: 75px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .accordion-faq__trigger {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-faq__trigger {
+    height: 70px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .accordion-faq__trigger {
+    padding: 10px;
+  }
 }
 
 .accordion-faq__content {
@@ -46,15 +114,89 @@
 }
 
 .accordion-faq .accordion-faq__trigger:after {
-  content: url(./../images/arrow.svg);
-  transform: rotate(-90deg);
+  content: url(./../images/minus.svg);
   display: inline-block;
-  margin-left: 10px;
+  padding: 4px 0 0 12px;
+  width: 41px;
+  height: 41px;
+  background-color: rgba(254, 243, 241, 1);
+  box-sizing: border-box;
 }
 
 .accordion-faq--active .accordion-faq__trigger:after {
-  content: url(./../images/arrow.svg);
-  transform: rotate(0deg);
+  content: url(./../images/plus.svg);
   display: inline-block;
-  margin-left: 10px;
+  padding: 10px 0 0 12px;
+  width: 41px;
+  height: 41px;
+  background-color: rgba(254, 243, 241, 1);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-faq__trigger > p {
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-faq .accordion-faq__trigger:after {
+    padding: 4px 0 0 10px;
+    width: 34px;
+    height: 34px;
+  }
+  .accordion-faq--active .accordion-faq__trigger:after {
+    padding: 10px 0 0 10px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .accordion-faq .accordion-faq__trigger:after {
+    padding: 4px 0 0 6px;
+  }
+  .accordion-faq--active .accordion-faq__trigger:after {
+    padding: 10px 0 0 6px;
+  }
+}
+
+.faq-style {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .faq-style {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.accordion-faq__trigger > p {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-faq__trigger > p {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .accordion-faq__trigger > p {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .wrapper-padding2 {
+    padding: 80px 0px 80px 0 !important;
+  }
 }

@@ -1,6 +1,6 @@
 .service {
   width: 100%;
-  margin-top: 160px;
+  margin-top: 150px;
 }
 
 @media screen and (max-width: 768px) {
@@ -111,10 +111,11 @@
 
 .slider-wrap {
   position: relative;
+  margin-top: 10px;
 }
 
 .service-button {
   position: absolute;
-  top: -85px;
+  top: -60px;
   right: 0;
 }

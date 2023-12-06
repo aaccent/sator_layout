@@ -1,5 +1,5 @@
 .description {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 @media screen and (max-width: 768px) {
@@ -14,6 +14,7 @@
 
 .text__block {
   margin-top: 25px;
+  max-width: 1210px;
 }
 
 .text__block2 {
@@ -43,7 +44,7 @@
   line-height: 25px;
   color: rgba(43, 41, 39, 0.9);
   margin: 20px 0 0 10px;
-  max-width: 1135px;
+  max-width: 1210px;
 }
 
 @media screen and (max-width: 768px) {
