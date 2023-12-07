@@ -14,20 +14,10 @@
 
 .footer__block {
   display: grid;
-  /*
-  grid-template-columns: 50.56% 31.58% 17.77% 50.56%;
-  grid-column-gap: 0px;*/
-
   grid-template-columns: 1.1fr 0.4fr 0.5fr;
   grid-column-gap: 20px;
 }
-/*
-@media screen and (max-width: 1550px) {
-  .footer__block {
-    grid-template-columns: 50.56% 31.58% 17.77% 50.56%;
-  }
-}
-*/
+
 @media screen and (max-width: 1000px) {
   .footer__block {
     grid-template-columns: 0.9fr 0.7fr 0.4fr;
@@ -148,7 +138,7 @@
   }
 }
 
-.about__developer > img {
+.about__developer > a > img {
   margin-left: 20px;
 }
 

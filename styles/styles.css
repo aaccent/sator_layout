@@ -22,6 +22,7 @@
 @import "./service-stage.css";
 @import "./service-faq.css";
 @import "./portfolio.css";
+@import "./portfolio-objects.css";
 @import "../vendor/fonts.css";
 
 html {
@@ -148,7 +149,7 @@ button {
 
 @media screen and (max-width: 380px) {
   .wrapper-padding {
-    padding: 80px 0px 450px 0px;
+    padding: 80px 0px 50px 0px;
   }
 }
 
