@@ -21,6 +21,7 @@
 @import "./stage.css";
 @import "./service-stage.css";
 @import "./service-faq.css";
+@import "./portfolio.css";
 @import "../vendor/fonts.css";
 
 html {
