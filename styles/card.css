@@ -264,16 +264,18 @@
 
 .card__tabs {
   max-width: 947px;
-  overflow-x: scroll;
 }
 
 .nav-tabs {
   margin-top: 50px;
   display: flex;
-  width: 947px;
+  max-width: 947px;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .nav-tab {
+  white-space: nowrap;
   padding: 10px 30px 10px 27px;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
