@@ -13,34 +13,30 @@
 
 .stage__block {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   margin-top: 50px;
+  gap: 20px;
 }
 
-@media screen and (max-width: 1400px) {
-  .stage__block {
-    width: 300px;
+@media only screen and (max-width: 1200px) {
+  .stage > p {
+    text-align: center;
   }
-}
 
-.stage__block > div:not(:last-child) {
-  margin-right: 20px;
+  .stage__block {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px;
+  }
 }
 
 .stage__card {
-  width: 365px;
-  height: 360px;
+  max-width: 365px;
+  max-height: 360px;
+  width: 100%;
   background-color: rgba(244, 243, 245, 1);
   border-radius: 20px;
-  flex-shrink: 0;
   padding: 30px;
-}
-
-@media screen and (max-width: 1600px) {
-  .stage__card {
-    width: 330px;
-    height: 330px;
-  }
 }
 
 .stage__card > span {
