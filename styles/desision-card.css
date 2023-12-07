@@ -1,0 +1,32 @@
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mt-desision {
+  margin-top: 20px;
+}
+
+.claim-position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .claim-position {
+    position: static;
+    max-width: 493px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .claim-position {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.headlineMt {
+  margin-bottom: 17px;
+}
