@@ -73,6 +73,12 @@
   border-radius: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .goods__card > img {
+    border-radius: 10px;
+  }
+}
+
 .card__block {
   margin-top: 15px;
 }

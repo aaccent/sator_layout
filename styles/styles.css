@@ -23,6 +23,7 @@
 @import "./service-faq.css";
 @import "./portfolio.css";
 @import "./portfolio-objects.css";
+@import "./desision-card2.css";
 @import "../vendor/fonts.css";
 
 html {
@@ -237,4 +238,15 @@ ul.breadcrumb li a {
 }
 
 ul.breadcrumb li a:hover {
+}
+
+.button100 {
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .button100 {
+    height: 55px;
+  }
 }

@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Порфолио - список объектов</title>
+    <title>готовое решение - карточка</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -614,180 +618,410 @@
       </div>
     </header>
 
-    <section class="cap">
-      <div class="wrapper-solution position">
-        <ul class="breadcrumb">
-          <li class="color-white">
-            <a class="color-white" href="#">Главная</a>
-          </li>
-          <li class="color-white">
-            <a class="color-white" href="#">Портфолио</a>
-          </li>
-          <li class="color-white">
-            <a class="color-white" href="#">Квартиры и коттеджи</a>
-          </li>
-        </ul>
-        <h2 class="headline color-white head">квартиры и коттеджи</h2>
+    <div class="wrapper-margin">
+      <ul class="breadcrumb">
+        <li class="color-black">
+          <a class="color-black" href="#">Главная</a>
+        </li>
+        <li class="color-black">
+          <a class="color-black" href="#">Портфолио</a>
+        </li>
+        <li class="color-black">
+          <a class="color-black" href="#">Квартиры и коттеджи</a>
+        </li>
+        <li class="color-black">
+          <a class="color-black" href="#">
+            Улучшение акустики в двухкомнатной квартире</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrapper-margin">
+      <section class="apartment">
+        <div class="apartment__left">
+          <h2 class="headline">Улучшение акустики в двухкомнатной квартире</h2>
+          <ul class="apartment__list">
+            <li>
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="44"
+                  height="44"
+                  rx="22"
+                  stroke="#EEEEEE"
+                />
+                <path
+                  d="M22.4975 14.5835C19.0054 14.5835 16.1641 17.4248 16.1641 20.9129C16.1412 26.0152 22.2568 30.2458 22.4975 30.4168C22.4975 30.4168 28.8538 26.0152 28.8308 20.9168C28.8308 17.4248 25.9895 14.5835 22.4975 14.5835ZM22.4975 24.0835C20.7479 24.0835 19.3308 22.6664 19.3308 20.9168C19.3308 19.1672 20.7479 17.7502 22.4975 17.7502C24.247 17.7502 25.6641 19.1672 25.6641 20.9168C25.6641 22.6664 24.247 24.0835 22.4975 24.0835Z"
+                  fill="#EF4824"
+                /></svg
+              ><a href="#">Казань, Театральная площадь, д. 1</a>
+            </li>
+            <li>
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="44"
+                  height="44"
+                  rx="22"
+                  stroke="#EEEEEE"
+                />
+                <path
+                  d="M31.0326 27.4378L29.8867 28.5837L29.1576 27.7503L30.3034 26.7087L28.2201 24.6253L27.1784 25.7712L26.4492 25.042L27.5951 23.8962L25.6159 21.917L24.4701 23.0628L23.7409 22.3337L24.8867 21.1878L22.8034 19.2087L21.6576 20.3545L20.9284 19.6253L21.9701 18.3753L19.9909 16.3962L18.8451 17.4378L18.1159 16.7087L19.2617 15.5628L16.7617 13.167V29.8337H33.4284L31.0326 27.4378ZM19.8867 26.7087V20.667L25.9284 26.7087H19.8867Z"
+                  fill="#EF4824"
+                /></svg
+              ><a href="#">Площадь объекта: 800 м2</a>
+            </li>
+            <li>
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="44"
+                  height="44"
+                  rx="22"
+                  stroke="#EEEEEE"
+                />
+                <g clip-path="url(#clip0_217_5153)">
+                  <path
+                    d="M30.375 22.5V28.625C30.375 29.0891 30.1906 29.5342 29.8624 29.8624C29.5342 30.1906 29.0891 30.375 28.625 30.375H16.375C15.9109 30.375 15.4658 30.1906 15.1376 29.8624C14.8094 29.5342 14.625 29.0891 14.625 28.625V22.5H30.375ZM26 14.625C26.2321 14.625 26.4546 14.7172 26.6187 14.8813C26.7828 15.0454 26.875 15.2679 26.875 15.5V16.375H28.625C29.0891 16.375 29.5342 16.5594 29.8624 16.8876C30.1906 17.2158 30.375 17.6609 30.375 18.125V20.75H14.625V18.125C14.625 17.6609 14.8094 17.2158 15.1376 16.8876C15.4658 16.5594 15.9109 16.375 16.375 16.375H18.125V15.5C18.125 15.2679 18.2172 15.0454 18.3813 14.8813C18.5454 14.7172 18.7679 14.625 19 14.625C19.2321 14.625 19.4546 14.7172 19.6187 14.8813C19.7828 15.0454 19.875 15.2679 19.875 15.5V16.375H25.125V15.5C25.125 15.2679 25.2172 15.0454 25.3813 14.8813C25.5454 14.7172 25.7679 14.625 26 14.625Z"
+                    fill="#EF4824"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_217_5153">
+                    <rect
+                      width="21"
+                      height="21"
+                      fill="white"
+                      transform="translate(12 12)"
+                    />
+                  </clipPath>
+                </defs></svg
+              ><a href="#">Дата реализации: 20 апреля, 2023</a>
+            </li>
+          </ul>
+        </div>
+        <div class="apartment__right">
+          <p class="desc">
+            В двухкомнатной квартире применение панелей позволило сохранить в
+            концепцию свободного пространства, а также совместить решение
+            акустических и декоративных задач.Материалы линейки Акустилайн
+            обладают высоким коэффициентом звукопоглощения, поэтому размещение
+            панелей по всей площади помещений дало возможность.
+          </p>
+          <div class="apartment-hr"></div>
+
+          <h4>нужно подобное решение? оставьте заявку!</h4>
+
+          <button class="button-standart button100">
+            Оставить заявку
+            <svg
+              width="11"
+              height="12"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 11L10 2M10 2H1M10 2V11"
+                stroke="white"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="galery">
+          <div class="div1 img-bg">
+            <img src="./images/projectSlider.webp" alt="galery" />
+          </div>
+          <div class="div2 img-bg">
+            <img src="./images/projectSlider.webp" alt="galery" />
+          </div>
+          <div class="div3 img-sm">
+            <img src="./images/projectSlider.webp" alt="galery" />
+          </div>
+          <div class="div4 img-sm">
+            <img src="./images/projectSlider.webp" alt="galery" />
+          </div>
+          <div class="div5 img-sm">
+            <img src="./images/projectSlider.webp" alt="galery" />
+          </div>
+          <div class="div6 img-bg">
+            <img src="./images/projectSlider.webp" alt="galery" />
+          </div>
+          <div class="div7 img-bg">
+            <img src="./images/projectSlider.webp" alt="galery" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="wrapper-margin">
+      <div style="width: 100%" class="card">
+        <h2 class="headline color-black">используемые материалы</h2>
+
+        <div class="goods__block">
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+
+          <div class="goods__card">
+            <img src="./images/good-img.webp" alt="good" />
+            <div class="card__block">
+              <h5>FIBROPLAN 600х600х15мм</h5>
+              <p>Декоративная акустическая панель размером 600х600х15мм</p>
+              <span>От 550 ₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="goods__button-wrap"></div>
       </div>
-    </section>
-
-    <section class="solutions">
-      <div class="wrapper-padding">
-        <div class="wrapper-solution">
-          <div class="object__cards">
-            <div class="object__card">
-              <img src="./images/projectSlider.webp" alt="card" />
-              <a href="#">
+    </div>
+    <section class="projects">
+      <div class="wrapper-padding2">
+        <div class="wrapper-solution" style="position: relative">
+          <h2 class="headline color-white">другие объекты</h2>
+          <div class="slider-buttons-block projects-btn">
+            <div class="projects-next">
+              <button class="bc255 button-slider">
                 <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="40"
-                    height="40"
-                    rx="20"
-                    fill="white"
-                    fill-opacity="0.15"
-                  />
-                  <path
-                    d="M15 25L25 15M25 15H15M25 15V25"
-                    stroke="white"
-                    stroke-width="2"
-                  /></svg
-              ></a>
-
-              <div class="object__block">
-                <h4>Улучшение акустики в двухкомнатной квартире</h4>
-                <p class="desc">
-                  Мы обладаем богатым опытом в сфере звукоизоляции. Наши
-                  специалисты прошли обучение и имеют глубокие знания в этой
-                  области. Это позволяет нам предлагать наилучшие решения.
-                </p>
-              </div>
-            </div>
-            <div class="object__card">
-              <img src="./images/projectSlider.webp" alt="card" />
-              <a href="#">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="40"
-                    height="40"
-                    rx="20"
-                    fill="white"
-                    fill-opacity="0.15"
-                  />
-                  <path
-                    d="M15 25L25 15M25 15H15M25 15V25"
-                    stroke="white"
-                    stroke-width="2"
-                  /></svg
-              ></a>
-
-              <div class="object__block">
-                <h4>Улучшение акустики в двухкомнатной квартире</h4>
-                <p class="desc">
-                  Мы обладаем богатым опытом в сфере звукоизоляции. Наши
-                  специалисты прошли обучение и имеют глубокие знания в этой
-                  области. Это позволяет нам предлагать наилучшие решения.
-                </p>
-              </div>
-            </div>
-            <div class="object__card">
-              <img src="./images/projectSlider.webp" alt="card" />
-              <a href="#">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="40"
-                    height="40"
-                    rx="20"
-                    fill="white"
-                    fill-opacity="0.15"
-                  />
-                  <path
-                    d="M15 25L25 15M25 15H15M25 15V25"
-                    stroke="white"
-                    stroke-width="2"
-                  /></svg
-              ></a>
-
-              <div class="object__block">
-                <h4>Улучшение акустики в двухкомнатной квартире</h4>
-                <p class="desc">
-                  Мы обладаем богатым опытом в сфере звукоизоляции. Наши
-                  специалисты прошли обучение и имеют глубокие знания в этой
-                  области. Это позволяет нам предлагать наилучшие решения.
-                </p>
-              </div>
-            </div>
-            <div class="object__card">
-              <img src="./images/projectSlider.webp" alt="card" />
-              <a href="#">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="40"
-                    height="40"
-                    rx="20"
-                    fill="white"
-                    fill-opacity="0.15"
-                  />
-                  <path
-                    d="M15 25L25 15M25 15H15M25 15V25"
-                    stroke="white"
-                    stroke-width="2"
-                  /></svg
-              ></a>
-
-              <div class="object__block">
-                <h4>Улучшение акустики в двухкомнатной квартире</h4>
-                <p class="desc">
-                  Мы обладаем богатым опытом в сфере звукоизоляции. Наши
-                  специалисты прошли обучение и имеют глубокие знания в этой
-                  области. Это позволяет нам предлагать наилучшие решения.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="objects__button-wrap">
-            <button class="button-standart goods-button">
-              Показать ещё
-              <a href="#">
-                <svg
-                  width="11"
+                  width="8"
                   height="12"
-                  viewBox="0 0 11 12"
+                  viewBox="0 0 8 12"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M1 1L10 10M10 10H1M10 10V1"
-                    stroke="white"
-                    stroke-width="1.5"
-                  /></svg
-              ></a>
-            </button>
+                  <path d="M7 1L2 6L7 11" stroke="white" stroke-width="2" />
+                </svg>
+              </button>
+            </div>
+            <div class="projects-prev">
+              <button class="bc255 button-slider">
+                <svg
+                  width="8"
+                  height="12"
+                  viewBox="0 0 8 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M1 1L6 6L1 11" stroke="white" stroke-width="2" />
+                </svg>
+              </button>
+            </div>
           </div>
+
+          <div class="projects__slider">
+            <div class="swiper projectsSlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide project__card">
+                  <img src="./images/projectSlider.webp" alt="projects" />
+                  <div class="project__block">
+                    <a href="#">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="40"
+                          height="40"
+                          rx="20"
+                          fill="white"
+                          fill-opacity="0.15"
+                        />
+                        <path
+                          d="M15 25L25 15M25 15H15M25 15V25"
+                          stroke="white"
+                          stroke-width="2"
+                        /></svg
+                    ></a>
+
+                    <div></div>
+                    <div>
+                      <h5>Улучшение акустики актового зала в Институте</h5>
+                      <p>
+                        Мы обладаем богатым опытом в сфере звукоизоляции. Наши
+                        специалисты прошли обучение и имеют глубокие знания в
+                        этой области. Это позволяет нам предлагать наилучшие
+                        решения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide project__card">
+                  <img src="./images/projectSlider2.webp" alt="projects" />
+                  <div class="project__block">
+                    <a href="#">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="40"
+                          height="40"
+                          rx="20"
+                          fill="white"
+                          fill-opacity="0.15"
+                        />
+                        <path
+                          d="M15 25L25 15M25 15H15M25 15V25"
+                          stroke="white"
+                          stroke-width="2"
+                        /></svg
+                    ></a>
+
+                    <div></div>
+                    <div>
+                      <h5>Караоке-бар SHOW в казани</h5>
+                      <p>
+                        Технологическое лидерство обеспечивается непрерывными
+                        инновационными разработками инженерно-конструкторского
+                        отдела в партнерстве с немецкими экспертами.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide project__card">
+                  <img src="./images/projectSlider2.webp" alt="projects" />
+                  <div class="project__block">
+                    <a href="#">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="40"
+                          height="40"
+                          rx="20"
+                          fill="white"
+                          fill-opacity="0.15"
+                        />
+                        <path
+                          d="M15 25L25 15M25 15H15M25 15V25"
+                          stroke="white"
+                          stroke-width="2"
+                        /></svg
+                    ></a>
+
+                    <div></div>
+                    <div>
+                      <h5>Караоке-бар SHOW в казани</h5>
+                      <p>
+                        Технологическое лидерство обеспечивается непрерывными
+                        инновационными разработками инженерно-конструкторского
+                        отдела в партнерстве с немецкими экспертами.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="button-standart projects-button">
+            Смотреть все проекты
+            <a href="#"
+              ><svg
+                width="12"
+                height="11"
+                viewBox="0 0 12 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 10L10.5 1M10.5 1H1.5M10.5 1V10"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </a>
+          </button>
         </div>
       </div>
     </section>
@@ -2275,6 +2509,8 @@
     </div>
   </body>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/header.js"></script>
+  <script src="./js/projectSlider.js"></script>
   <script src="./js/main.js"></script>
 </html>
