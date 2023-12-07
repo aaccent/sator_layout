@@ -23,10 +23,15 @@
 @import "./service-faq.css";
 @import "../vendor/fonts.css";
 
+html {
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  overflow-x: clip;
 }
 
 * {
@@ -111,7 +116,6 @@ button {
 
 .wrapper-margin {
   max-width: 1540px;
-  display: flex;
   margin: 0 auto;
   padding: 0 10px 0 10px;
 }
