@@ -79,8 +79,8 @@
 .description__text > h4 {
   font-family: "BebasNeue", sans-serif;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 25px;
   color: rgba(43, 41, 39, 1);
   text-transform: uppercase;
 }
@@ -110,7 +110,7 @@
 }
 
 .text__paragraph2 > li:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 
 .text__paragraph2 > li:before {
@@ -118,6 +118,10 @@
   color: rgba(239, 72, 36, 1);
   padding-right: 3px;
   font-size: 20px;
+}
+
+.text__paragraph2 > li > span {
+  font-weight: 700;
 }
 
 .catalog__hr {
