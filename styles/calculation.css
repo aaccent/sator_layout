@@ -124,25 +124,6 @@
   }
 }
 
-.calculation__form > input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-.calculation__form > input::-moz-placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-.calculation__form > input::-moz-placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-.calculation__form > input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-.calculation__form > input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-.calculation__form > input::placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-
 .calculation__form > button {
   width: 335px;
   height: 60px;

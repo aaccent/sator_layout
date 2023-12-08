@@ -1,0 +1,123 @@
+.contact {
+  margin-top: 50px;
+}
+
+.contact-line {
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  margin: 40px 0 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-line {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.contacts__address {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 420px) {
+  .contacts__address {
+    flex-direction: column;
+    justify-content: right;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__list > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contacts__list > li > svg {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__list > li > svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.contacts__list li:not(:last-child) {
+  margin-right: 110px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contacts__list li:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.contacts__list > li > a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__list > li > a {
+    font-size: 16px;
+  }
+}
+
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-block > a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-block > a {
+    font-size: 16px;
+  }
+}
+
+.contacts-block > span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(43, 41, 39, 1);
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-block > span {
+    font-size: 14px;
+  }
+}
+
+.contacts__social {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__social > Li > a > svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.contacts__social li:not(:last-child) {
+  margin-right: 10px;
+}

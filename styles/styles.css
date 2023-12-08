@@ -27,6 +27,9 @@
 @import "./about.css";
 @import "./command.css";
 @import "./partners.css";
+@import "./contacts.css";
+@import "./map-form.css";
+@import "./text.css";
 @import "../vendor/fonts.css";
 
 html {
@@ -252,4 +255,40 @@ ul.breadcrumb li a:hover {
   .button100 {
     height: 55px;
   }
+}
+
+.input-form {
+  width: 335px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(241, 90, 58, 1);
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 1);
 }
