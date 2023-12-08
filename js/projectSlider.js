@@ -6,4 +6,8 @@ var swiper = new Swiper(".projectsSlider", {
     nextEl: ".projects-next",
     prevEl: ".projects-prev",
   },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
 });

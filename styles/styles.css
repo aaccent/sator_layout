@@ -25,6 +25,8 @@
 @import "./portfolio-objects.css";
 @import "./desision-card2.css";
 @import "./about.css";
+@import "./command.css";
+@import "./partners.css";
 @import "../vendor/fonts.css";
 
 html {
