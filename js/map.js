@@ -1,23 +1,3 @@
-/*
-
-ymaps.ready(init);
-var myMap, myPlacemark;
-
-function init() {
-  myMap = new ymaps.Map("map", {
-    center: [55.78, 49.128],
-    zoom: 15,
-  });
-
-  myPlacemark = new ymaps.Placemark([55.78, 49.128], {
-    hintContent: "!",
-    balloonContent: "1",
-  });
-
-  myMap.geoObjects.add(myPlacemark);
-}
-*/
-
 let center = [55.795464, 49.108049];
 
 function init() {

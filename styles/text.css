@@ -33,24 +33,35 @@
   margin-top: 50px;
 }
 
-.borderRight {
-  border-left: 2px solid rgba(239, 72, 36, 1);
-  margin-right: 20px;
-  margin-left: 50px;
+.citation {
+  display: flex;
+  margin-top: 20px;
 }
 
-.borderRight::after {
+.citation-right {
+  border-right: 2px solid rgba(239, 72, 36, 1);
+  width: 42px;
+  position: relative;
+}
+
+.citation-right::before {
   content: url("../images/“.svg");
-  display: inline-block;
   width: 22px;
   height: 19px;
-  margin-left: 50px;
+  position: absolute;
+  top: 40%;
+  right: 20px;
+}
+
+.citation-left {
+  padding-left: 20px;
+  width: calc(100% - 50px);
 }
 
 .text > img {
   width: 100%;
   border-radius: 20px;
-  margin: 50px 0 15px 0;
+  margin: 80px 0 15px 0;
 }
 
 .text > span {
@@ -59,30 +70,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-}
-
-.headline-h3 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 25px;
-  color: rgba(43, 41, 39, 1);
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 768px) {
-  .headline-h3 {
-    font-size: 22px;
-  }
-}
-
-.headline-h4 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  color: rgba(43, 41, 39, 1);
-  text-transform: none;
 }
 
 .measure-list {
@@ -154,4 +141,8 @@
   text-align: center;
   border-radius: 50%;
   border: 1px solid rgba(239, 72, 36, 1);
+}
+
+.text-mt {
+  margin-top: 5px !important;
 }
