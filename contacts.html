@@ -819,7 +819,7 @@
       <div class="contacts__wrap">
         <section class="contacts__section">
           <div class="contacts__left">
-            <h2 class="headline color-white">
+            <h2 class="headline headline-form color-white">
               бесплатная консультация от профессионала
             </h2>
 
@@ -828,10 +828,10 @@
                 type="text"
                 name="name"
                 placeholder="Ваше имя"
-                class="input-form input1"
+                class="input-small-form input1"
               />
               <input
-                class="input-form input2"
+                class="input-small-form input2"
                 type="tel"
                 name="phone"
                 placeholder="+7 (999) 999-99-99"
@@ -891,7 +891,7 @@
           </div>
 
           <div class="contacts__right">
-            <img src="./images/map.webp" alt="map" />
+            <div id="map-test" class="map"></div>
           </div>
         </section>
       </div>
@@ -2165,6 +2165,13 @@
   </body>
 
   <script src="./js/header.js"></script>
+  <!--
+  <script
+    src="https://api-maps.yandex.ru/2.0-stable/?apikey=9ff17a4d-1bdf-4281-b949-648d1f8ec826&load=package.standard&lang=ru-RU"
+    type="text/javascript"
+  ></script>-->
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9ff17a4d-1bdf-4281-b949-648d1f8ec826&lang=ru_RU"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/map.js"></script>
 </html>
