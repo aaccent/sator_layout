@@ -1,5 +1,12 @@
-.modal-consultation {
+.popup {
   display: none;
+}
+
+.popup2 {
+  display: none;
+}
+
+.modal-consultation {
   position: fixed;
   background-color: rgba(255, 255, 255, 1);
   margin-left: auto;
@@ -46,6 +53,28 @@
   color: rgba(190, 190, 190, 1);
 }
 
+.consultation__forma > input::-webkit-input-placeholder {
+  color: rgba(190, 190, 190, 1);
+}
+.consultation__forma > input:-moz-placeholder {
+  color: rgba(190, 190, 190, 1);
+  opacity: 1;
+}
+.consultation__forma > input::-moz-placeholder {
+  color: rgba(190, 190, 190, 1);
+  opacity: 1;
+}
+.consultation__forma > input:-ms-input-placeholder {
+  color: rgba(190, 190, 190, 1);
+}
+.consultation__forma > input::-ms-input-placeholder {
+  color: rgba(190, 190, 190, 1);
+}
+
+.consultation__forma > input::placeholder {
+  color: rgba(190, 190, 190, 1);
+}
+
 .consultation > button {
   width: 335px;
   height: 60px;
@@ -84,7 +113,7 @@
   color: rgba(43, 41, 39, 1);
   text-transform: uppercase;
   text-align: left;
-  margin: 10px 0 10px 0;
+  margin: 10px 30px 10px 30px;
 }
 
 .consultation-left > p {
@@ -97,11 +126,11 @@
   margin: 0px 0 10px 0;
 }
 
-.consultation__right > svg {
+.consultation__right > button {
   position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  background: transparent;
 }
 
 .darkening {
@@ -114,11 +143,18 @@
   left: 0;
 }
 
-/**************выбор города***************/
-
-.modal-city {
-  display: none;
+.darkening-header {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: fixed;
+  margin-top: 60px;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
+
+/**************выбор города***************/
 
 .city__modal {
   max-width: 350px;
@@ -129,7 +165,7 @@
   position: relative;
 }
 
-.city__modal > svg {
+.city__modal > button {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -154,6 +190,27 @@
   font-weight: 500;
   line-height: 25px;
   padding-left: 20px;
+  color: rgba(33, 37, 41, 1);
+}
+.input-block > input::-webkit-input-placeholder {
+  color: rgba(33, 37, 41, 1);
+}
+.input-block > input:-moz-placeholder {
+  color: rgba(33, 37, 41, 1);
+  opacity: 1;
+}
+.input-block > input::-moz-placeholder {
+  color: rgba(33, 37, 41, 1);
+  opacity: 1;
+}
+.input-block > input:-ms-input-placeholder {
+  color: rgba(33, 37, 41, 1);
+}
+.input-block > input::-ms-input-placeholder {
+  color: rgba(33, 37, 41, 1);
+}
+
+.input-block > input::placeholder {
   color: rgba(33, 37, 41, 1);
 }
 
