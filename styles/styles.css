@@ -142,6 +142,7 @@ button {
   line-height: 55px;
   text-transform: uppercase;
   color: rgba(43, 41, 39, 1);
+  text-align: start;
 }
 
 @media screen and (max-width: 768px) {
