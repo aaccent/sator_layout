@@ -23,6 +23,10 @@
   }
 }
 
+.header__container > button {
+  background-color: transparent;
+}
+
 .header__open-menu {
   display: none;
 }
