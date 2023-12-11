@@ -23,11 +23,39 @@
   height: 300px;
   padding: 30px;
   position: relative;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
   .servise-slide {
     padding: 20px;
+    height: 195px;
+  }
+}
+
+.servise-slide:hover .servise-slider-headline {
+  color: rgba(255, 255, 255, 1);
+}
+
+.servise-slide:hover a > span {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+
+.servise-slide:hover svg > path {
+  stroke: rgba(255, 255, 255, 1);
+}
+
+.servise-slide:hover {
+  background-image: url(../images/service-slider.webp);
+  width: auto;
+  height: 300px;
+  border-radius: 15px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .servise-slide:hover {
     height: 195px;
   }
 }
@@ -74,24 +102,24 @@
   left: 7px;
 }
 
-.servise-slide > h4 {
+.servise-slider-headline {
   font-family: "BebasNeue", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: rgba(43, 41, 39, 0.9);
   text-transform: uppercase;
-  width: 255px;
+  max-width: 220px;
 }
 
 @media screen and (max-width: 768px) {
-  .servise-slide > h4 {
+  .servise-slider-headline {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-.servise-slide > span {
+.servise-slide > a > span {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -100,13 +128,21 @@
   position: absolute;
   bottom: 20px;
   left: 30px;
+  opacity: 0.45;
 }
 
-.servise-slide > a {
+.servise-slide > a > svg {
   position: absolute;
   top: 30px;
   right: 30px;
   padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .servise-slide > a > svg {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .slider-wrap {

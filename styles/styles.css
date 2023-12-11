@@ -135,39 +135,6 @@ button {
   padding: 0 10px 0 10px;
 }
 
-.headline {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 55px;
-  text-transform: uppercase;
-  color: rgba(43, 41, 39, 1);
-  text-align: start;
-}
-
-@media screen and (max-width: 768px) {
-  .headline {
-    font-size: 38px;
-    line-height: 40px;
-  }
-}
-
-.headline-h2 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 40px;
-  color: rgba(43, 41, 39, 1);
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 768px) {
-  .headline-h2 {
-    font-size: 28px;
-    line-height: 30px;
-  }
-}
-
 .wrapper-padding {
   padding: 160px 0px 200px 0px;
 }
@@ -220,6 +187,14 @@ button {
 }
 .bc255025 {
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+.slider-hover-white:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider-hover-white:hover > svg > path {
+  stroke: #ef4824;
 }
 
 .slider-buttons-block {
@@ -336,6 +311,39 @@ ul.breadcrumb li a:hover {
   }
 }
 
+.headline {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: rgba(43, 41, 39, 1);
+  text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
+
+.headline-h2 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 40px;
+  color: rgba(43, 41, 39, 1);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .headline-h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
 .headline-h3 {
   font-family: "BebasNeue", sans-serif;
   font-weight: 700;
@@ -363,5 +371,21 @@ ul.breadcrumb li a:hover {
   .headline-h4 {
     font-size: 16px;
     line-height: 25px;
+  }
+}
+
+.headline-h5 {
+  font-family: "BebasNeue", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: rgba(43, 41, 39, 0.9);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .headline-h5 {
+    font-size: 22px;
+    line-height: 24px;
   }
 }

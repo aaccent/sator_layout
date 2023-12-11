@@ -75,7 +75,7 @@
   margin-right: 5px;
   width: 5px;
 }
-
+/*!!!!*/
 .description__text > h4 {
   font-family: "BebasNeue", sans-serif;
   font-weight: 700;
@@ -91,6 +91,7 @@
     line-height: 22px;
   }
 }
+/*!!!!*/
 
 .text__paragraph2 {
   font-family: "Manrope", sans-serif;

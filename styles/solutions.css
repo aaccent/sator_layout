@@ -8,25 +8,20 @@
   margin: 0 auto;
 }
 
-.wrapper-solution > h3 {
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 25px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+.wrapper-solution > h2 {
+  text-transform: uppercase !important;
   max-width: 1540px;
-  padding: 0 10px 0 10px;
-  margin: 0 auto;
 }
 
 .solutions__blocks {
-  margin-top: 35px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
   .solutions__blocks {
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 22px;
   }
 }
 
@@ -43,7 +38,7 @@
   border-radius: 20px;
   display: flex;
   align-items: center;
-  padding: 0 70px 0 50px;
+  padding: 0 60px 0 40px;
   cursor: pointer;
   position: relative;
 }
@@ -69,10 +64,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .card__left > svg {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .solutions__card {
     flex-direction: column;
     height: auto;
-    padding: 20px 40px 20px 40px;
+    padding: 10px 20px 10px 30px;
+    border-radius: 10px;
   }
   .card__left {
     width: 100%;
@@ -85,7 +87,7 @@
 }
 
 .separator {
-  margin: 0 30px 0 30px;
+  margin: 0 40px 0 40px;
   height: 100px;
 }
 
@@ -111,6 +113,7 @@
 @media screen and (max-width: 600px) {
   .card__right {
     width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
   .separator {
     display: none;
@@ -135,7 +138,7 @@
 
 @media screen and (max-width: 600px) {
   .card__right > p {
-    margin-top: 25px;
+    margin-top: 15px;
     max-width: 100%;
   }
 }
@@ -148,8 +151,8 @@
 @media screen and (max-width: 600px) {
   .card__right > a {
     position: absolute;
-    top: 5px;
-    right: 30px;
+    top: 10px;
+    right: 20px;
   }
   .card__right > a > svg {
     width: 10px;
@@ -157,12 +160,18 @@
   }
 }
 
-.solutions__blocks div:not(:last-child) {
-  margin-bottom: 15px;
+.solutions__blocks div:first-child {
+  margin-top: 15px;
 }
 
-.solutions__blocks {
+.solutions__blocks div:not(:last-child) {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .solutions__blocks div:not(:last-child) {
+    margin-bottom: 22px;
+  }
 }
 
 .solution-button {
@@ -170,7 +179,6 @@
   height: 60px;
   margin-top: 10px;
   background-color: rgba(32, 32, 32, 1) !important;
-  color: rgba(255, 255, 255, 1) !important;
   align-items: center;
 }
 

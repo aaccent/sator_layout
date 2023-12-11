@@ -12,7 +12,7 @@ var swiper1 = new Swiper(".serviceSlider", {
     425: {
       slidesPerView: 1.5,
     },
-    850: {
+    768: {
       slidesPerView: 2.5,
     },
     1024: {

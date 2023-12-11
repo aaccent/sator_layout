@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сатор</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/for-index.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -621,7 +622,9 @@
             <img class="img-mid" src="./images/slider-mid.webp" alt="banner" />
             <img class="img-min" src="./images/slider-min.webp" alt="banner" />
             <div class="slide__wrapper">
-              <h1>Комфортная тишина для вас и соседей</h1>
+              <div class="banner-headline">
+                Комфортная тишина для вас и соседей
+              </div>
               <p>Скидка 10% на всю звукоизоляцию до конца ноября</p>
               <div class="slide__block">
                 <button class="button-standart banner-button">
@@ -939,7 +942,9 @@
           <div class="swiper-scrollbar"></div>
 
           <div class="banner-buttons slider-buttons-block banner-btn">
-            <button class="button-next button-slider bc255025">
+            <button
+              class="button-next button-slider slider-hover-white bc255025"
+            >
               <svg
                 width="8"
                 height="12"
@@ -950,7 +955,9 @@
                 <path d="M7 1L2 6L7 11" stroke="white" stroke-width="2" />
               </svg>
             </button>
-            <button class="button-prev button-slider bc255025">
+            <button
+              class="button-prev button-slider slider-hover-white bc255025"
+            >
               <svg
                 width="8"
                 height="12"
@@ -999,11 +1006,13 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="servise-slide">
-                  <div class="hr-top"></div>
-                  <div class="hr-right"></div>
-                  <div class="hr-bottom"></div>
-                  <h4>измерение шума, вибрации, звукоизоляции</h4>
                   <a href="#">
+                    <div class="hr-top"></div>
+                    <div class="hr-right"></div>
+                    <div class="hr-bottom"></div>
+                    <div class="servise-slider-headline">
+                      измерение шума, вибрации, звукоизоляции
+                    </div>
                     <svg
                       width="12"
                       height="12"
@@ -1015,90 +1024,23 @@
                         d="M1 11L11 1M11 1H1M11 1V11"
                         stroke="#EF4824"
                         stroke-width="2"
-                      /></svg
-                  ></a>
+                      />
+                    </svg>
 
-                  <span>01</span>
+                    <span>01</span></a
+                  >
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="servise-slide">
-                  <div class="hr-top"></div>
-                  <div class="hr-right"></div>
-                  <div class="hr-bottom"></div>
-                  <h4>Акустическое проектирование и моделирование</h4>
                   <a href="#">
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 11L11 1M11 1H1M11 1V11"
-                        stroke="#EF4824"
-                        stroke-width="2"
-                      /></svg
-                  ></a>
-                  <span>02</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="servise-slide">
-                  <div class="hr-top"></div>
-                  <div class="hr-right"></div>
-                  <div class="hr-bottom"></div>
-                  <h4>Проектирование решений по защите от шума</h4>
-                  <a href="#">
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 11L11 1M11 1H1M11 1V11"
-                        stroke="#EF4824"
-                        stroke-width="2"
-                      /></svg
-                  ></a>
-                  <span>03</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="servise-slide">
-                  <div class="hr-top"></div>
-                  <div class="hr-right"></div>
-                  <div class="hr-bottom"></div>
-                  <h4>Проектирование решений по защите от шума</h4>
-                  <a href="#">
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 11L11 1M11 1H1M11 1V11"
-                        stroke="#EF4824"
-                        stroke-width="2"
-                      /></svg
-                  ></a>
+                    <div class="hr-top"></div>
+                    <div class="hr-right"></div>
+                    <div class="hr-bottom"></div>
+                    <div class="servise-slider-headline">
+                      Акустическое проектирование и моделирование
+                    </div>
 
-                  <span>04</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="servise-slide">
-                  <div class="hr-top"></div>
-                  <div class="hr-left"></div>
-                  <div class="hr-right"></div>
-                  <div class="hr-bottom"></div>
-                  <h4>Проектирование решений по защите от шума</h4>
-                  <a href="#">
                     <svg
                       width="12"
                       height="12"
@@ -1110,9 +1052,93 @@
                         d="M1 11L11 1M11 1H1M11 1V11"
                         stroke="#EF4824"
                         stroke-width="2"
-                      /></svg
-                  ></a>
-                  <span>05</span>
+                      />
+                    </svg>
+                    <span>02</span></a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="servise-slide">
+                  <a href="#">
+                    <div class="hr-top"></div>
+                    <div class="hr-right"></div>
+                    <div class="hr-bottom"></div>
+                    <div class="servise-slider-headline">
+                      Проектирование решений по защите от шума
+                    </div>
+
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H1M11 1V11"
+                        stroke="#EF4824"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <span>03</span></a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="servise-slide">
+                  <a href="#">
+                    <div class="hr-top"></div>
+                    <div class="hr-right"></div>
+                    <div class="hr-bottom"></div>
+                    <div class="servise-slider-headline">
+                      Проектирование решений по защите от шума
+                    </div>
+
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H1M11 1V11"
+                        stroke="#EF4824"
+                        stroke-width="2"
+                      />
+                    </svg>
+
+                    <span>04</span></a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="servise-slide">
+                  <a href="#">
+                    <div class="hr-top"></div>
+                    <div class="hr-left"></div>
+                    <div class="hr-right"></div>
+                    <div class="hr-bottom"></div>
+                    <div class="servise-slider-headline">
+                      Проектирование решений по защите от шума
+                    </div>
+
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H1M11 1V11"
+                        stroke="#EF4824"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <span>05</span></a
+                  >
                 </div>
               </div>
             </div>
@@ -1125,54 +1151,91 @@
         <h2 class="headline color-black">Каталог</h2>
 
         <div class="catalog__container">
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
-          <div class="catalog__card">
-            <img src="./images/catalog-img.webp" alt="catalog-img" />
-            <h5>Декоративные акустические панели и материалы</h5>
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
 
-            <div class="card__quantity">120 позиций</div>
-          </div>
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
+
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
+
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
+
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
+
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
+          <a href="">
+            <div class="catalog__card">
+              <img src="./images/catalog-img.webp" alt="catalog-img" />
+              <div class="headline-h5">
+                Декоративные акустические панели и материалы
+              </div>
+
+              <div class="card__quantity">120 позиций</div>
+            </div></a
+          >
         </div>
 
         <button class="button-standart catalog-button">
@@ -1199,7 +1262,7 @@
     <section class="solutions">
       <div class="wrapper-padding">
         <div class="wrapper-solution">
-          <h3>Готовые решения</h3>
+          <h2 class="desc color-white">Готовые решения</h2>
 
           <div class="solutions__blocks">
             <div class="solutions__card">
@@ -1221,7 +1284,7 @@
                   <path d="M57 62H7" stroke="#EEEEEE" stroke-width="3" />
                 </svg>
                 <div class="hr-vertical-white separator"></div>
-                <h3 class="headline color-black">cтены</h3>
+                <div class="headline color-white">cтены</div>
               </div>
 
               <div class="card__right">
@@ -1265,52 +1328,7 @@
                   <path d="M57 62H7" stroke="#EEEEEE" stroke-width="3" />
                 </svg>
                 <div class="hr-vertical-white separator"></div>
-                <h3 class="headline color-black">потолки</h3>
-              </div>
-
-              <div class="card__right">
-                <p>
-                  Измерение шума, вибрации, звукоизоляции, помощь в сертификации
-                  и получении заключений
-                </p>
-                <a href="#"
-                  ><svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 22L22 2M22 2H2M22 2V22"
-                      stroke="white"
-                      stroke-width="3"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="solutions__card">
-              <div class="card__left">
-                <svg
-                  width="64"
-                  height="64"
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M62 7L62 57" stroke="#EEEEEE" stroke-width="3" />
-                  <path d="M2 7L2 57" stroke="#EF4824" stroke-width="3" />
-                  <path d="M32 11L32 27" stroke="#EEEEEE" stroke-width="3" />
-                  <path d="M53 32H37" stroke="#EEEEEE" stroke-width="3" />
-                  <path d="M32 37L32 53" stroke="#EEEEEE" stroke-width="3" />
-                  <path d="M27 32L11 32" stroke="#EEEEEE" stroke-width="3" />
-                  <path d="M57 2L7 2" stroke="#EEEEEE" stroke-width="3" />
-                  <path d="M57 62H7" stroke="#EEEEEE" stroke-width="3" />
-                </svg>
-                <div class="hr-vertical-white separator"></div>
-                <h3 class="headline color-black">полы</h3>
+                <div class="headline color-white k">потолки</div>
               </div>
 
               <div class="card__right">
@@ -1355,7 +1373,52 @@
                   <path d="M57 62H7" stroke="#EEEEEE" stroke-width="3" />
                 </svg>
                 <div class="hr-vertical-white separator"></div>
-                <h3 class="headline color-black">перегородки</h3>
+                <div class="headline color-white">полы</div>
+              </div>
+
+              <div class="card__right">
+                <p>
+                  Измерение шума, вибрации, звукоизоляции, помощь в сертификации
+                  и получении заключений
+                </p>
+                <a href="#"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 22L22 2M22 2H2M22 2V22"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="solutions__card">
+              <div class="card__left">
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M62 7L62 57" stroke="#EEEEEE" stroke-width="3" />
+                  <path d="M2 7L2 57" stroke="#EF4824" stroke-width="3" />
+                  <path d="M32 11L32 27" stroke="#EEEEEE" stroke-width="3" />
+                  <path d="M53 32H37" stroke="#EEEEEE" stroke-width="3" />
+                  <path d="M32 37L32 53" stroke="#EEEEEE" stroke-width="3" />
+                  <path d="M27 32L11 32" stroke="#EEEEEE" stroke-width="3" />
+                  <path d="M57 2L7 2" stroke="#EEEEEE" stroke-width="3" />
+                  <path d="M57 62H7" stroke="#EEEEEE" stroke-width="3" />
+                </svg>
+                <div class="hr-vertical-white separator"></div>
+                <div class="headline color-white">перегородки</div>
               </div>
 
               <div class="card__right">
@@ -1381,24 +1444,25 @@
               </div>
             </div>
           </div>
-          <button class="button-standart solution-button">
-            Смотреть все решения
-            <a href="#"
-              ><svg
-                width="12"
-                height="11"
-                viewBox="0 0 12 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.5 10L10.5 1M10.5 1H1.5M10.5 1V10"
-                  stroke="white"
-                  stroke-width="1.5"
-                />
-              </svg>
-            </a>
-          </button>
+          <a href="#" style="color: rgba(255, 255, 255, 1)">
+            <button class="button-standart solution-button">
+              Смотреть все решения
+              <a href="#"
+                ><svg
+                  width="12"
+                  height="11"
+                  viewBox="0 0 12 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.5 10L10.5 1M10.5 1H1.5M10.5 1V10"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </a></button
+          ></a>
 
           <div style="position: relative">
             <div class="calculation__block">
