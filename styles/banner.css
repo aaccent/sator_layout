@@ -18,26 +18,6 @@
 .banner-buttons > button:first-child {
   margin-right: 10px;
 }
-
-.swiper-scrollbar {
-  max-width: 1000px !important;
-  bottom: 50px !important;
-  height: 2px !important;
-}
-
-@media screen and (max-width: 768px) {
-  .swiper-scrollbar {
-    bottom: 20px !important;
-  }
-}
-
-.swiper-scrollbar.swiper-scrollbar-horizontal {
-  background: rgba(255, 255, 255, 0.35) !important;
-}
-.swiper-scrollbar-drag {
-  background: rgba(255, 255, 255, 1) !important;
-}
-
 .banner-card {
   position: relative;
 }
@@ -74,6 +54,49 @@
   .slide__wrapper {
     top: 100px;
   }
+}
+
+.banner__navigation {
+  position: absolute;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 1540px;
+  padding: 0 10px 0 10px;
+}
+
+.swiper-scrollbar {
+  max-width: 1400px !important;
+  bottom: 37px !important;
+  height: 2px !important;
+}
+
+@media screen and (max-width: 1560px) {
+  .swiper-scrollbar {
+    max-width: 85% !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .swiper-scrollbar {
+    max-width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-scrollbar {
+    max-width: 100% !important;
+    bottom: 20px !important;
+  }
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+.swiper-scrollbar-drag {
+  background: rgba(255, 255, 255, 1) !important;
 }
 
 .img-min {
