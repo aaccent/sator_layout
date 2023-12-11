@@ -1,5 +1,17 @@
 .wrapper-padding2 {
-  padding: 163px 0px 160px 0;
+  padding: 185px 0px 210px 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .wrapper-padding2 {
+    padding: 80px 0px 80px 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-padding2 {
+    padding: 80px 0px 80px 0 !important;
+  }
 }
 
 .projects {
@@ -13,7 +25,13 @@
 }
 
 .projects__slider {
-  margin: 40px 0 30px 0;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .projects__slider {
+    margin-top: 30px;
+  }
 }
 
 .project__card {

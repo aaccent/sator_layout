@@ -2,6 +2,12 @@
   margin: 130px 0 150px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .partners {
+    margin: 50px 0 50px 0;
+  }
+}
+
 .partners__block {
   margin-top: 30px;
   display: flex;

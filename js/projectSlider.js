@@ -9,5 +9,6 @@ var swiper = new Swiper(".projectsSlider", {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
+    draggable: true,
   },
 });
