@@ -43,6 +43,10 @@
   position: relative;
 }
 
+.solutions__card:hover > .card__right > a svg > path {
+  stroke: #ef4824;
+}
+
 .card__left {
   display: flex;
   align-items: center;

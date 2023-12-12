@@ -1,5 +1,7 @@
 .footer {
   background-color: rgba(26, 26, 26, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .wrapper-paddingFooter {
@@ -39,7 +41,17 @@
   max-width: 350px;
 }
 
-.block__logo > span {
+.block__logo > a > img {
+  width: 157px;
+}
+
+@media screen and (max-width: 768px) {
+  .block__logo > a > img {
+    width: 118px;
+  }
+}
+
+.logo__politics {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -49,9 +61,10 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .block__logo > span {
+  .logo__politics {
     font-size: 14px;
     line-height: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -83,6 +96,13 @@
 .block__about > span:first-child {
   margin-bottom: 25px;
 }
+
+@media screen and (max-width: 768px) {
+  .block__about > span:first-child {
+    margin-bottom: 10px;
+  }
+}
+
 .block__nav {
   grid-area: 1 / 2 / 3 / 3;
   font-family: "Manrope", sans-serif;
@@ -112,18 +132,26 @@
   margin-bottom: 35px;
 }
 
-.block__nav > ul {
-  margin-bottom: 35px;
-}
-
 @media screen and (max-width: 768px) {
   .block__nav > ul {
     margin-bottom: 25px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .block__nav > ul {
+    margin-bottom: 40px;
+  }
+}
+
 .block__nav > ul li:not(:last-child) {
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .block__nav > ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .about__developer {
@@ -151,7 +179,7 @@
   font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -184,6 +212,12 @@
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .block__contacts li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .block__contacts > span {
   margin: 15px 0 65px 0;
   font-size: 16px;
@@ -206,12 +240,26 @@
 }
 
 .contacts__city {
-  text-decoration: rgba(255, 255, 255, 1) underline !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 1) !important;
+  padding-bottom: 0px;
+  width: 65px;
+  stroke-width: 1.5px;
+}
+
+.contacts__city > a {
+  font-size: 16px !important;
 }
 
 .block__contacts > button {
   width: 264px;
   height: 50px;
+}
+
+@media screen and (max-width: 380px) {
+  .block__contacts > button {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -226,5 +274,34 @@
   }
   .block__contacts {
     grid-area: 3 / 1 / 4 / 2;
+  }
+}
+
+.decorative-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.decorative-background2 {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .decorative-background {
+    top: 0;
+    left: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .decorative-background {
+    display: none;
+  }
+  .decorative-background2 {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 0;
   }
 }

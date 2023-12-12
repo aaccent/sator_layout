@@ -52,10 +52,6 @@
     padding: 20px;
   }
 }
-@media screen and (max-width: 375px) {
-  .catalog__card {
-  }
-}
 
 .catalog__card > img {
   width: 200px;

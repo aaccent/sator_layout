@@ -12,8 +12,38 @@
   border-radius: 20px;
   max-width: 1520px;
   margin: 0 auto;
-  padding: 55px 50px 55px 60px;
+  padding: 60px 60px 50px 60px;
   align-items: center;
+  height: 275px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1151px) {
+  .calculation__block {
+    height: auto;
+  }
+}
+
+.consultation-bg {
+  position: absolute;
+  top: 0;
+  left: 295px;
+}
+
+.consultation-bg2 {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .consultation-bg {
+    display: none;
+  }
+  .consultation-bg2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
 }
 
 @media screen and (max-width: 1540px) {
@@ -46,33 +76,23 @@
   }
 }
 
-.block__left {
+.calculation__left {
   max-width: 562px;
 }
 
-.block__left > h3 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 55px;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  text-align: start;
-}
-
-@media screen and (max-width: 1360px) {
-  .block__left > h3 {
-    font-size: 38px;
-    line-height: 40px;
+@media screen and (max-width: 1411px) {
+  .calculation__left > h3 {
+    font-size: 38px !important;
+    line-height: 40px !important;
   }
 }
 
-.block__right {
+.calculation__right {
   max-width: 690px;
 }
 
 @media screen and (max-width: 1360px) {
-  .block__right {
+  .calculation__right {
     max-width: 610px;
   }
 }
@@ -81,7 +101,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -90,10 +110,11 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .calculation__form {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
 }
 
@@ -118,9 +139,10 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .calculation__form > input {
     width: 100%;
+    font-size: 14px;
   }
 }
 
@@ -145,10 +167,11 @@
   }
 }
 
-.calculation__form > div > span {
+.consultation__agreement {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.45);
+  text-align: start;
 }
