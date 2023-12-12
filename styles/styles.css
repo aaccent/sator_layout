@@ -224,6 +224,8 @@ button {
   list-style: none;
   padding-top: 35px;
   opacity: 0.55;
+  overflow: hidden;
+  width: 1000px;
 }
 
 ul.breadcrumb li {

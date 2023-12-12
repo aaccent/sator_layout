@@ -9,6 +9,7 @@
 @media screen and (max-width: 767px) {
   .goods {
     flex-direction: column;
+    margin-top: 40px;
   }
 }
 
@@ -50,10 +51,16 @@
 }
 
 .goods__block {
-  margin-top: 15px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
   grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .goods__block {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -81,15 +88,6 @@
 
 .card__block {
   margin-top: 15px;
-}
-
-.card__block > h5 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 25px;
-  color: rgba(43, 41, 39, 0.9);
-  text-transform: uppercase;
 }
 
 .card__block > p {
@@ -196,6 +194,7 @@
   height: 40px;
   padding-top: 10px;
   position: relative;
+  border-radius: 5px;
 }
 
 .fiter__active {
