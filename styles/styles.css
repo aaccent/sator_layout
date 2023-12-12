@@ -223,6 +223,7 @@ button {
 .breadcrumb {
   list-style: none;
   padding-top: 35px;
+  opacity: 0.55;
 }
 
 ul.breadcrumb li {
