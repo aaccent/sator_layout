@@ -113,6 +113,18 @@
   }
 }
 
+.hr-header2 {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .hr-header2 {
+    display: block;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    height: 1px;
+  }
+}
+
 .header__left {
   display: flex;
 }

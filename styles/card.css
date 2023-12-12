@@ -1,23 +1,24 @@
 .card {
-  margin-top: 100px;
+  margin-top: 60px;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .card {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 
 .card__description {
   width: 493px;
-  padding-right: 10px;
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
   .card__description {
     width: 100%;
     margin-top: 30px;
+    padding-right: 10px;
   }
 }
 
@@ -29,12 +30,21 @@
   color: rgba(43, 41, 39, 0.45);
 }
 
-.card__description > h2 {
-  margin: 10px 0 20px 0;
+.card__description > h1 {
+  margin: 10px 0 10px 0;
+}
+
+.card__description > p {
+  color: rgba(43, 41, 39, 0.9);
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .description__table {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .description__table > li {
@@ -60,7 +70,16 @@
 .card__claim {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .card__claim {
+    margin-top: 20px;
+    position: static;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -76,20 +95,21 @@
   }
 }
 
-.card__claim > button {
+.card__claim > a > button {
   width: 239px;
   height: 60px;
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 768px) {
-  .card__claim > button {
+  .card__claim > a > button {
     width: 239px;
     height: 55px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .card__claim > button {
+  .card__claim > a > button {
     width: 100%;
   }
 }
@@ -122,8 +142,6 @@
   }
 }
 
-/**/
-
 .goodsSliderMin {
   width: 90px;
   box-sizing: border-box;
@@ -150,7 +168,7 @@
 .goodsSliderMin .swiper-slide {
   width: 90px;
   height: 60px;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .goodsSliderMin .swiper-slide-thumb-active {
@@ -272,6 +290,12 @@
   max-width: 947px;
   width: 100%;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  height: 0;
 }
 
 .nav-tab {
@@ -285,6 +309,7 @@
   border-bottom: 0;
   text-decoration: none;
   border-bottom: 2px solid rgba(238, 238, 238, 1);
+  background-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -297,6 +322,7 @@
   cursor: pointer;
   color: rgba(239, 72, 36, 1);
   border-bottom: 2px solid rgba(239, 72, 36, 1);
+  background-color: transparent;
 }
 
 .tab-pane {
@@ -313,6 +339,12 @@
 @media screen and (max-width: 1000px) {
   .tab-pane {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tab-pane {
+    margin-top: 20px;
   }
 }
 
@@ -379,25 +411,46 @@
   position: relative;
   display: flex;
   padding: 4px;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
+    .documents-card {
+      padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .documents-card {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .documents-card {
+      align-items: start;
+      flex-direction: column;
+      height: 135px;
+      padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .documents-card {
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .documents-card > a > button > svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
   .tab-documents {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .documents-card {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .documents-card {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
   }
 }
 
@@ -412,7 +465,16 @@
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
+  margin-top: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .documents__logo-pdf {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .documents__logo-pdf > svg {
   align-self: center;
 }
@@ -425,6 +487,8 @@
 
 @media screen and (max-width: 500px) {
   .documents__text {
+    position: absolute;
+    bottom: 0;
     margin-left: 0px;
   }
 }
@@ -450,7 +514,11 @@
   color: rgba(43, 41, 39, 0.55);
 }
 
-.documents-card > button {
+.documents-card {
+  position: relative;
+}
+
+.documents-card > a > button {
   position: absolute;
   top: 32%;
   right: 20px;
@@ -458,11 +526,15 @@
 }
 
 @media screen and (max-width: 500px) {
-  .documents-card > button {
+  .documents-card > a > button {
     top: 20px;
   }
 }
 
 .tab-characteristics {
   max-width: 947px;
+}
+
+.goodsSliderMin > div > div {
+  cursor: pointer;
 }
