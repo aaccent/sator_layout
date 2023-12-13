@@ -1,11 +1,11 @@
 .card {
-  margin-top: 60px;
+  margin-top: 160px;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .card {
-    margin-top: 20px;
+    margin-top: 80px;
   }
 }
 
