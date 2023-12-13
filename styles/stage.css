@@ -56,22 +56,8 @@
   }
 }
 
-.stage__card > h5 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 25px;
-  color: rgba(43, 41, 39, 1);
-  text-transform: uppercase;
-  text-align: start;
-  margin-top: 100px;
-}
-
-@media screen and (max-width: 1600px) {
-  .stage__card > h5 {
-    font-size: 22px;
-    line-height: 20px;
-  }
+.stage__card > .headline-h3 {
+  margin-top: 105px;
 }
 
 .stage__card > p {

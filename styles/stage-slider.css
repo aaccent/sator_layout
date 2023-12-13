@@ -1,0 +1,33 @@
+.stage__slider {
+  padding: 20px;
+}
+
+.stage__slider > p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(43, 41, 39, 0.55);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .stage__slider > p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.stage__slider > span {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgba(239, 72, 36, 1);
+}
+@media screen and (max-width: 768px) {
+  .stage__slider > span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
