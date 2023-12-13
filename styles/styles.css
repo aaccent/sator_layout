@@ -230,6 +230,12 @@ button {
   width: 1000px;
 }
 
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    padding-top: 15px;
+  }
+}
+
 ul.breadcrumb li {
   display: inline;
   font-size: 18px;

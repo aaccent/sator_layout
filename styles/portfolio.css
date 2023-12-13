@@ -1,16 +1,16 @@
 .portfolio {
-  margin-top: 100px;
+  margin-top: 55px;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .portfolio {
-    margin-top: 30px;
+    margin-top: 37px;
   }
 }
 
 .portfolio__cards {
-  margin-top: 15px;
+  margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(493px, 1fr));
   grid-gap: 20px;
@@ -20,6 +20,12 @@
   .portfolio__cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio__cards {
+    margin-top: 51px;
   }
 }
 
@@ -39,31 +45,24 @@
   }
 }
 
-.porftolio__card > h4 {
+.porftolio__card > div {
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  top: 40%;
+  top: 45%;
   text-align: center;
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 40px;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 @media screen and (max-width: 1540px) {
-  .porftolio__card > h4 {
+  .porftolio__card > div {
     top: 43%;
-    font-size: 26px;
-    line-height: 25px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .porftolio__card > h4 {
+  .porftolio__card > div {
     top: 50%;
   }
 }
