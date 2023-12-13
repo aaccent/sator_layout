@@ -3,7 +3,7 @@
 }
 
 .popup2 {
-  display: none;
+  display: block;
 }
 
 .modal-consultation {
@@ -16,7 +16,6 @@
   right: 0;
   text-align: center;
   max-width: 350px;
-  border-radius: 20px;
   z-index: 2;
 }
 
@@ -27,13 +26,21 @@
   max-width: 1170px;
   margin: 30px auto 0 auto;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 1100px) {
   .consultation__modal {
     flex-direction: column-reverse;
     max-width: 350px;
+    border-radius: 15px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .consultation__modal {
+    max-width: calc(100% - 10px);
   }
 }
 
@@ -105,6 +112,11 @@
   text-align: left;
 }
 
+.consultation__forma > span > a {
+  text-decoration: underline;
+  color: rgba(43, 41, 39, 0.45);
+}
+
 .consultation-left {
   width: 495px;
   padding: 0 10px 10px 50px;
@@ -138,13 +150,13 @@
 .consultation__right > img {
   width: 585px;
   height: 585px;
-  border-radius: 10px;
 }
 
 @media screen and (max-width: 1100px) {
   .consultation__right > img {
     width: 100%;
-    height: auto;
+    height: 220px;
+    border-radius: 10px;
   }
 }
 
@@ -153,16 +165,29 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(43, 41, 39, 0.9);
+  color: rgba(43, 41, 39, 1);
   text-align: left;
-  margin: 15px 0 10px 0;
+  margin: 5px 0 40px 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .consultation-left > p {
+    margin: 5px 0 25px 0;
+  }
 }
 
 .consultation__right > button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   background: transparent;
+}
+
+@media screen and (max-width: 1100px) {
+  .consultation__right > button {
+    top: 5px;
+    right: 5px;
+  }
 }
 
 .darkening {
@@ -192,26 +217,38 @@
   max-width: 500px;
   margin: 30px auto 0 auto;
   border-radius: 20px;
-  padding: 10px 30px 30px 30px;
+  padding: 60px;
   background-color: rgba(255, 255, 255, 1);
   position: relative;
 }
 
 @media screen and (max-width: 600px) {
   .city__modal {
-    padding: 15px;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .city__modal {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .city__modal {
+    max-width: calc(100% - 10px);
   }
 }
 
 .city__modal > h2 {
   text-align: left;
-  margin: 10px 0 10px 0;
+  margin: 0 0 15px 0;
 }
 
 .city__modal > button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
 }
 
@@ -219,6 +256,10 @@
   .city__modal > button > img {
     width: 30px;
     height: 30px;
+  }
+  .city__modal > button {
+    top: 15px;
+    right: 15px;
   }
 }
 
@@ -238,9 +279,17 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
-  padding-left: 20px;
+  padding-left: 25px;
   color: rgba(33, 37, 41, 1);
+  opacity: 0.45;
 }
+
+@media screen and (max-width: 425px) {
+  .input-block > input {
+    font-size: 14px;
+  }
+}
+
 .input-block > input::-webkit-input-placeholder {
   color: rgba(33, 37, 41, 1);
 }
@@ -270,7 +319,7 @@
 }
 
 .city__list {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .city__list > li {
@@ -300,4 +349,11 @@
 
 .city__list li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .close-modal {
+    width: 30px;
+    height: 30px;
+  }
 }
