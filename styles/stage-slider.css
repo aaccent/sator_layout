@@ -1,8 +1,14 @@
-.stage__slider {
-  padding: 20px;
+.stageSlider {
+  margin-top: 30px;
 }
 
-.stage__slider > p {
+.stage__slider {
+  background-color: rgba(244, 243, 245, 1);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.stage__block-slider > p {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -12,13 +18,13 @@
   margin-bottom: 15px;
 }
 @media screen and (max-width: 768px) {
-  .stage__slider > p {
+  .stage__block-slider > p {
     font-size: 13px;
     line-height: 20px;
   }
 }
 
-.stage__slider > span {
+.stage__block-slider > span {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -26,8 +32,34 @@
   color: rgba(239, 72, 36, 1);
 }
 @media screen and (max-width: 768px) {
-  .stage__slider > span {
+  .stage__block-slider > span {
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+.stage__block-slider {
+  padding: 15px 50px 15px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .stage__block-slider {
+    padding: 10px;
+  }
+}
+
+.stage__block-slider > h4 {
+  max-width: 340px;
+}
+
+@media screen and (max-width: 425px) {
+  .stage__block-slider > h4 {
+    max-width: 100%;
+    font-size: 20px !important;
+  }
+}
+
+.stage__slider > img {
+  width: calc(100% - 0px);
+  border-radius: 20px;
 }

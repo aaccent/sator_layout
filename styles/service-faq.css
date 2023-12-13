@@ -52,6 +52,8 @@
   background-color: rgba(255, 255, 255, 1);
   width: 100%;
   position: relative;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1300px) {
@@ -68,21 +70,35 @@
   line-height: 25px;
   color: rgba(43, 41, 39, 0.9);
   display: block;
-  background-color: rgba(249, 249, 250, 1);
-  padding: 25px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 768px) {
   .accordion-faq--active .accordion-faq__content {
     font-size: 13px;
     line-height: 20px;
-    padding: 15px;
   }
 }
 
 .accordion-faq__content {
   display: none;
 }
+
+.accordion-faq__content {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.accordion-faq__content > div {
+  background-color: rgba(249, 249, 250, 1);
+  padding: 20px 25px 20px 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-faq__content > div {
+    padding: 15px;
+  }
+}
+
 .accordion-faq__trigger {
   padding: 15px;
   width: 750px;
@@ -110,46 +126,39 @@
   }
 }
 
-.accordion-faq__content {
-  background-color: rgba(249, 249, 250, 1);
-}
-
 .accordion-faq .accordion-faq__trigger:after {
-  content: url(./../images/minus.svg);
-  display: inline-block;
-  padding: 4px 0 0 12px;
+  content: "";
   width: 41px;
   height: 41px;
-  background-color: rgba(254, 243, 241, 1);
-  box-sizing: border-box;
+  border-radius: 5px;
+  background: linear-gradient(#ef4824, #ef4824), rgba(254, 243, 241, 1);
+  background-position: center;
+  background-size: 50% 2px, 2px 0%;
+  background-repeat: no-repeat;
 }
 
 .accordion-faq--active .accordion-faq__trigger:after {
-  content: url(./../images/plus.svg);
+  content: "";
   display: inline-block;
-  padding: 10px 0 0 12px;
   width: 41px;
   height: 41px;
-  background-color: rgba(254, 243, 241, 1);
-  box-sizing: border-box;
+  border-radius: 5px;
+  background: linear-gradient(#ef4824, #ef4824),
+    linear-gradient(#ef4824, #ef4824), rgba(254, 243, 241, 1);
+  background-position: center;
+  background-size: 50% 2px, 2px 50%;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
   .accordion-faq .accordion-faq__trigger:after {
-    padding: 4px 0 0 9px;
     width: 34px;
     height: 34px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
   }
+
   .accordion-faq--active .accordion-faq__trigger:after {
-    padding: 10px 0 0 9px;
     width: 34px;
     height: 34px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
   }
 }
 
@@ -159,6 +168,7 @@
   font-size: 18px;
   line-height: 25px;
   color: rgba(43, 41, 39, 1);
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
