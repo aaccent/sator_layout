@@ -24,6 +24,7 @@
 @import "./service-faq.css";
 @import "./portfolio.css";
 @import "./portfolio-objects.css";
+@import "./desision-card.css";
 @import "./desision-card2.css";
 @import "./about.css";
 @import "./command.css";
@@ -244,9 +245,6 @@ ul.breadcrumb li a {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-}
-
-ul.breadcrumb li a:hover {
 }
 
 .button100 {
