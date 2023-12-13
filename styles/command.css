@@ -1,6 +1,12 @@
 .command-wrap {
   position: relative;
-  margin-top: 40px;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .command-wrap {
+    margin-top: 20px;
+  }
 }
 
 .command-slide {
@@ -22,20 +28,9 @@
   margin-top: 30px;
 }
 
-.command__block > h4 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 25px;
-  color: rgba(43, 41, 39, 1);
-  text-transform: uppercase;
-  margin-top: 10px;
-}
-
 @media screen and (max-width: 768px) {
-  .command__block > h4 {
-    font-size: 20px;
-    line-height: 25px;
+  .command__block {
+    margin-top: 15px;
   }
 }
 
@@ -45,7 +40,6 @@
   font-weight: 400;
   line-height: 25px;
   color: rgba(43, 41, 39, 0.55);
-  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,6 +51,18 @@
 
 .line-red {
   width: 100px;
-  margin-top: 15px;
-  border: 2px solid rgba(239, 72, 36, 1);
+  margin: 15px 0 15px 0;
+  border: 1.5px solid #ef4824;
+}
+
+@media screen and (max-width: 768px) {
+  .line-red {
+    margin: 5px 0 5px 0;
+  }
+}
+
+.command-button {
+  position: absolute;
+  top: -85px;
+  right: 0;
 }

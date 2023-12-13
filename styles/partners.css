@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 768px) {
   .partners {
-    margin: 50px 0 50px 0;
+    margin: 80px 0 80px 0;
   }
 }
 
@@ -12,9 +12,15 @@
   margin-top: 30px;
   display: flex;
   overflow-x: auto;
-  padding: 10px 0 10px 0;
-  gap: 20px;
+  gap: 10px;
   width: 1520px;
+}
+
+@media screen and (max-width: 768px) {
+  .partners__block {
+    margin-top: 20px;
+    gap: 5px;
+  }
 }
 
 .partners__logo {

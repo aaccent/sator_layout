@@ -7,21 +7,17 @@
 
 @media screen and (max-width: 768px) {
   .about {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 }
 
 .about__left {
   max-width: 710px;
 }
-
-.about__left > h3 {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 40px;
-  color: rgba(43, 41, 39, 1);
-  text-transform: uppercase;
+@media screen and (max-width: 768px) {
+  .about__left > h3 {
+    max-width: 340px;
+  }
 }
 
 .about__left > p {
@@ -44,7 +40,7 @@
     line-height: 25px;
   }
   .about__left > p {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
 
@@ -55,6 +51,18 @@
 .about__right > img {
   width: 100%;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__right > img {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about__right > img {
+    height: 240px;
+  }
 }
 
 .result {

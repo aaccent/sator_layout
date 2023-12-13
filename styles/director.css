@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .director {
+    margin-top: 80px;
+  }
+}
+
 .director__left {
   width: 73.3%;
   background-color: rgba(244, 243, 245, 1);
@@ -21,14 +27,16 @@
 @media screen and (max-width: 1024px) {
   .director__left {
     width: 100%;
-    min-height: 620px;
+    /* min-height: 620px;*/
     border-radius: 20px 20px 0 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .director__left {
-    padding: 30px 30px 30px 30px;
+    padding: 40px 25px 25px 25px;
+    border-radius: 10px 10px 0 0;
+    /*  min-height: 460px;*/
   }
 }
 
@@ -51,21 +59,6 @@
 @media screen and (max-width: 768px) {
   .director__left > p {
     margin: 20px 0 20px 0;
-  }
-}
-
-.director__left > span {
-  font-family: "BebasNeue", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 30px;
-  color: rgba(43, 41, 39, 1);
-}
-
-@media screen and (max-width: 768px) {
-  .director__left > span {
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 
@@ -113,5 +106,34 @@
     margin-right: auto;
     left: 0;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .director__right > img {
+    width: 280px;
+  }
+}
+
+.h {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .h {
+    display: block;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .h {
+    height: 140px;
   }
 }
