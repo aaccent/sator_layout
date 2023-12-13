@@ -69,7 +69,7 @@
   color: rgba(255, 255, 255, 1);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1560px) {
   .textarea-form {
     height: 140px;
   }
@@ -145,7 +145,8 @@
 
 @media screen and (max-width: 690px) {
   .contacts__right {
-    width: 89vw !important;
+    width: 100%;
+    /* width: 89vw !important;*/
   }
 }
 
@@ -224,12 +225,10 @@
   height: 0;
 }
 
-/* Focus */
 .input-file input[type="file"]:focus + span {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/* Hover/active */
 .input-file:hover span {
   background-color: #59be6e;
 }
@@ -237,7 +236,6 @@
   background-color: #2e703a;
 }
 
-/* Disabled */
 .input-file input[type="file"]:disabled + span {
   background-color: #eee;
 }
