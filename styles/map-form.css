@@ -2,6 +2,16 @@
   margin: 70px 0 70px 0;
 }
 
+.headline-form {
+  max-width: 550px;
+}
+
+@media screen and (max-width: 700px) {
+  .contacts__left > h2 {
+    max-width: 280px;
+  }
+}
+
 .contacts__section {
   display: flex;
   justify-content: space-between;
@@ -16,7 +26,7 @@
   .contacts__section {
     flex-direction: column;
     justify-content: start;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
   }
 }
@@ -90,22 +100,18 @@
   align-items: center;
 }
 
-.b5 > div {
-  display: flex;
-  align-items: center;
-  width: 160px;
-  margin: 0 auto;
-}
-
-.b5 > div > svg {
-  margin-right: 5px;
-}
-
 .contacts__left {
   max-width: 630px;
 }
 
-.contacts__left > span {
+@media screen and (max-width: 1560px) {
+  .contacts__left {
+    max-width: 100%;
+    padding: 20px 20px 15px 20px;
+  }
+}
+
+.contacts__left > div {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -163,10 +169,10 @@
   .input3 {
     grid-area: 3 / 1 / 4 / 2;
   }
-  .b4 {
+  .b5 {
     grid-area: 4 / 1 / 5 / 2;
   }
-  .b5 {
+  .b4 {
     grid-area: 5 / 1 / 6 / 2;
   }
 }
@@ -176,4 +182,62 @@
     font-size: 28px !important;
     line-height: 25px !important;
   }
+}
+
+.input-file-wrap {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  margin: 17px auto;
+}
+
+@media screen and (max-width: 700px) {
+  .input-file-wrap {
+    margin: 15px auto;
+  }
+}
+
+.input-file-wrap > svg {
+  margin-right: 5px;
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+}
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 0.2s;
+}
+.input-file input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* Focus */
+.input-file input[type="file"]:focus + span {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+  background-color: #59be6e;
+}
+.input-file:active span {
+  background-color: #2e703a;
+}
+
+/* Disabled */
+.input-file input[type="file"]:disabled + span {
+  background-color: #eee;
 }

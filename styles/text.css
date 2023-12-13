@@ -13,14 +13,16 @@
 .second__block {
   margin-top: 80px;
 }
-
-.second__block > p {
-  margin-top: 20px;
+@media screen and (max-width: 768px) {
+  .second__block {
+    margin-top: 50px;
+  }
 }
 
 .second__block > p {
   margin-top: 20px;
 }
+
 .measure-list {
   margin-top: 20px;
 }
@@ -32,16 +34,27 @@
 .second__block > h4 {
   margin-top: 50px;
 }
+@media screen and (max-width: 768px) {
+  .second__block > h4 {
+    margin-top: 25px;
+  }
+}
 
 .citation {
   display: flex;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .citation-right {
   border-right: 2px solid rgba(239, 72, 36, 1);
   width: 42px;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .citation-right {
+    display: none;
+  }
 }
 
 .citation-right::before {
@@ -52,10 +65,43 @@
   top: 40%;
   right: 20px;
 }
+.line-citaion-min {
+  display: none;
+}
 
 .citation-left {
   padding-left: 20px;
   width: calc(100% - 50px);
+}
+
+@media screen and (max-width: 768px) {
+  .citation-left {
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .line-citaion-wrap {
+    display: flex;
+    position: relative;
+  }
+
+  .line-citaion-min {
+    margin-bottom: 15px;
+    display: block;
+    border-bottom: 1.5px solid rgba(239, 72, 36, 1);
+    width: calc(100% - 20px);
+    margin-left: 20px;
+  }
+  .line-citaion-wrap::before {
+    content: "";
+    background-image: url("../images/“.svg");
+    width: 12px;
+    position: absolute;
+    height: 10px;
+    background-size: cover;
+    top: -5px;
+    left: 0px;
+  }
 }
 
 .text > img {
@@ -64,12 +110,37 @@
   margin: 80px 0 15px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .text > img {
+    border-radius: 10px;
+    margin: 50px 0 0px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .text > img {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .text > img {
+    height: auto;
+  }
+}
+
 .text > span {
   color: rgba(43, 41, 39, 0.55);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .text > span {
+    font-size: 12px;
+  }
 }
 
 .measure-list {
@@ -96,8 +167,7 @@
 .material-list {
   list-style-type: none;
   counter-reset: num;
-  margin: 5px 0 0 35px;
-  padding: 5px 0 5px 0;
+  margin: 27px 0 0 35px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -107,7 +177,7 @@
 @media screen and (max-width: 768px) {
   .material-list {
     font-size: 14px;
-    line-height: 20px;
+    margin: 15px 0 0 35px;
   }
 }
 
@@ -121,6 +191,13 @@
 @media screen and (max-width: 1024px) {
   .material-list li {
     padding: 0px 0 22px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .material-list li {
+    padding: 0px 0 15px 0px;
+    line-height: 20px;
   }
 }
 
@@ -140,7 +217,18 @@
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid rgba(239, 72, 36, 1);
+  border: 1px solid #eee;
+}
+
+@media screen and (max-width: 768px) {
+  .material-list li:before {
+    top: 7px;
+    left: -38px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .text-mt {
