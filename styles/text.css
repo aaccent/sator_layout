@@ -88,7 +88,7 @@
   .line-citaion-min {
     margin-bottom: 15px;
     display: block;
-    border-bottom: 1.5px solid rgba(239, 72, 36, 1);
+    border-bottom: 2px solid rgba(239, 72, 36, 1);
     width: calc(100% - 20px);
     margin-left: 20px;
   }
@@ -222,7 +222,7 @@
 
 @media screen and (max-width: 768px) {
   .material-list li:before {
-    top: 7px;
+    top: 0px;
     left: -38px;
     width: 30px;
     height: 30px;

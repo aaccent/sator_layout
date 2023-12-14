@@ -104,6 +104,7 @@
 @media screen and (max-width: 768px) {
   .contacts-block > span {
     font-size: 14px;
+    margin-top: 0px;
   }
 }
 

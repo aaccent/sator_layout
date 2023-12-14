@@ -39,6 +39,11 @@
   grid-row-gap: 20px;
   margin-top: 30px;
 }
+@media screen and (max-width: 768px) {
+  .contacts__form {
+    margin-top: 15px;
+  }
+}
 
 .textarea-form {
   width: 100%;
@@ -113,7 +118,7 @@
 
 .contacts__left > div {
   font-family: "Manrope", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.55);
@@ -146,11 +151,8 @@
 @media screen and (max-width: 690px) {
   .contacts__right {
     width: 100%;
-    /* width: 89vw !important;*/
   }
 }
-
-/*.contacts__form {*/
 
 @media screen and (max-width: 700px) {
   .contacts__form {
@@ -227,13 +229,6 @@
 
 .input-file input[type="file"]:focus + span {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.input-file:hover span {
-  background-color: #59be6e;
-}
-.input-file:active span {
-  background-color: #2e703a;
 }
 
 .input-file input[type="file"]:disabled + span {

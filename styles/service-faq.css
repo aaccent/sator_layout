@@ -91,6 +91,7 @@
 .accordion-faq__content > div {
   background-color: rgba(249, 249, 250, 1);
   padding: 20px 25px 20px 25px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -128,17 +129,6 @@
 
 .accordion-faq .accordion-faq__trigger:after {
   content: "";
-  width: 41px;
-  height: 41px;
-  border-radius: 5px;
-  background: linear-gradient(#ef4824, #ef4824), rgba(254, 243, 241, 1);
-  background-position: center;
-  background-size: 50% 2px, 2px 0%;
-  background-repeat: no-repeat;
-}
-
-.accordion-faq--active .accordion-faq__trigger:after {
-  content: "";
   display: inline-block;
   width: 41px;
   height: 41px;
@@ -146,7 +136,18 @@
   background: linear-gradient(#ef4824, #ef4824),
     linear-gradient(#ef4824, #ef4824), rgba(254, 243, 241, 1);
   background-position: center;
-  background-size: 50% 2px, 2px 50%;
+  background-size: 15px 2px, 2px 15px;
+  background-repeat: no-repeat;
+}
+
+.accordion-faq--active .accordion-faq__trigger:after {
+  content: "";
+  width: 41px;
+  height: 41px;
+  border-radius: 5px;
+  background: linear-gradient(#ef4824, #ef4824), rgba(254, 243, 241, 1);
+  background-position: center;
+  background-size: 15px 2px, 2px 15px;
   background-repeat: no-repeat;
 }
 
@@ -179,14 +180,12 @@
 }
 
 .accordion-faq__trigger > p {
-  margin-top: 10px;
   padding-left: 15px;
   width: 90%;
 }
 
 @media screen and (max-width: 768px) {
   .accordion-faq__trigger > p {
-    margin-top: 10px;
     padding-left: 0;
   }
 }
