@@ -24,6 +24,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .calculation__block {
+    border-radius: 10px;
+  }
+}
+
 .consultation-bg {
   position: absolute;
   top: 0;
@@ -84,6 +90,12 @@
   .calculation__left > h3 {
     font-size: 38px !important;
     line-height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calculation__left > h3 > span {
+    display: none;
   }
 }
 
@@ -174,4 +186,14 @@
   line-height: 20px;
   color: rgba(255, 255, 255, 0.45);
   text-align: start;
+}
+
+.consultation__agreement > a {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: start;
+  text-decoration: underline !important;
 }

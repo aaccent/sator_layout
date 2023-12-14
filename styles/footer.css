@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 768px) {
   .wrapper-paddingFooter {
-    padding: 40px 0 40px 0px;
+    padding: 40px 0 15px 0px;
   }
 }
 
@@ -39,6 +39,7 @@
   display: flex;
   flex-direction: column;
   max-width: 350px;
+  z-index: 1;
 }
 
 .block__logo > a > img {
@@ -78,6 +79,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 110px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -208,13 +210,20 @@
   }
 }
 
-.block__contacts li:not(:last-child) {
-  margin-bottom: 25px;
+.block__contacts li:first-child {
+  margin-bottom: 20px;
+}
+
+.block__contacts li:nth-child(2) {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .block__contacts li:not(:last-child) {
+  .block__contacts li:first-child {
     margin-bottom: 10px;
+  }
+  .block__contacts li:nth-child(2) {
+    margin-bottom: 20px;
   }
 }
 
@@ -235,7 +244,7 @@
 
 @media screen and (max-width: 768px) {
   .block__contacts > span {
-    margin: 15px 0 35px 0;
+    margin: 15px 0 40px 0;
   }
 }
 
@@ -243,7 +252,7 @@
   text-decoration: none !important;
   border-bottom: 1px solid rgba(255, 255, 255, 1) !important;
   padding-bottom: 0px;
-  width: 65px;
+  width: 60px;
   stroke-width: 1.5px;
 }
 
@@ -254,6 +263,11 @@
 .block__contacts > button {
   width: 264px;
   height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .block__contacts > button {
+    height: 55px;
+  }
 }
 
 @media screen and (max-width: 380px) {

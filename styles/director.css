@@ -58,7 +58,7 @@
 }
 @media screen and (max-width: 768px) {
   .director__left > p {
-    margin: 20px 0 20px 0;
+    margin: 15px 0 20px 0;
   }
 }
 
@@ -132,8 +132,14 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .h {
     height: 140px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .h {
+    height: 120px;
   }
 }
