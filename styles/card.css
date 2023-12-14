@@ -312,17 +312,21 @@
   background-color: transparent;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-tab {
-    font-size: 14px;
-  }
-}
-
 .nav-tab.active {
   cursor: pointer;
   color: rgba(239, 72, 36, 1);
   border-bottom: 2px solid rgba(239, 72, 36, 1);
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tab {
+    font-size: 14px;
+    padding: 10px 30px 10px 27px;
+  }
+  .nav-tab.active {
+    padding: 10px 0px 10px 0px;
+  }
 }
 
 .tab-pane {
@@ -468,6 +472,16 @@
   margin-top: 8px;
 }
 
+@media screen and (max-width: 500px) {
+  .documents__logo-pdf {
+    margin-top: 0px;
+  }
+  .documents__logo-pdf > svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .documents__logo-pdf {
     width: 40px;
@@ -485,14 +499,6 @@
   padding-top: 12px;
 }
 
-@media screen and (max-width: 500px) {
-  .documents__text {
-    position: absolute;
-    bottom: 0;
-    margin-left: 0px;
-  }
-}
-
 .documents__text > p {
   font-weight: 700;
   font-size: 16px;
@@ -504,6 +510,23 @@
   .documents__text > p {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .documents__text {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 0px;
+  }
+  .documents__text > p {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .documents__text {
+    bottom: 0px;
   }
 }
 
@@ -529,6 +552,13 @@
 @media screen and (max-width: 500px) {
   .documents-card > a > button {
     top: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .documents-card > a > button {
+    top: 10px;
+    right: 10px;
   }
 }
 
