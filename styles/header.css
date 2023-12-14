@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 850px) {
   .header__container {
-    padding: 13px 10px 14px 10px;
+    padding: 15px;
   }
 }
 
@@ -55,6 +55,10 @@
   cursor: pointer;
 }
 
+.header-style li span {
+  padding-left: 5px;
+}
+
 .header-first {
   justify-content: space-between;
   padding: 15px 10px 15px 10px;
@@ -87,7 +91,7 @@
   content: url(./../images/pin.svg);
   width: 16px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .header-style li:first-child > span {
@@ -300,13 +304,7 @@
     margin-bottom: 25px;
   }
 }
-/*
-@media screen and (max-width: 1600px) {
-  .menu-nav {
-    margin-right: 10px;
-  }
-}
-*/
+
 .menu-header {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -324,7 +322,7 @@
   position: relative;
 }
 
-.icon > a:after {
+.menu-header:after {
   content: url(../images/arrow.svg);
   width: 16px;
   height: 16px;
@@ -332,6 +330,11 @@
   display: flex;
   align-items: center;
   margin-top: 5px;
+}
+
+.menu-header:hover:after {
+  margin-top: -5px;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 850px) {
@@ -345,20 +348,19 @@
   position: relative;
 }
 
-.icon-right > li > a:after {
-  content: url(../images/arwow-right.svg);
-  width: 16px;
-  height: 16px;
+.submenu-li:after {
+  content: url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4 4L1 7' stroke='%232B2927' stroke-width='1.5'/%3E%3C/svg%3E%0A");
   position: absolute;
   top: 0;
   right: 0;
 }
 
+.submenu-li:hover.submenu-li:after {
+  content: url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4 4L1 7' stroke='%23EF4824' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+}
+
 a {
   list-style-type: none;
-  /*color: white;
-  padding: 15px 30px;
-  display: inline-block;*/
 }
 
 .submenu > a {
@@ -372,19 +374,17 @@ a {
 
 .submenu {
   width: 482px;
-  padding: 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   position: absolute;
   z-index: 5;
   transform-origin: 0 0;
   transform: rotateX(-90deg);
-  transition: 0.3s linear;
   visibility: hidden;
   opacity: 0;
   visibility: visible;
   opacity: 1;
   list-style-type: none;
-  top: 50px;
+  top: 40px;
 }
 
 .submenu > li {
@@ -392,17 +392,60 @@ a {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  line-height: 50px;
+}
+
+.submenu > li > a:hover {
+  color: rgba(239, 72, 36, 1);
+}
+
+.submenu-container > li > a:hover {
+  color: rgba(239, 72, 36, 1);
+}
+
+.submenu > li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .submenu .submenu {
   position: absolute;
-  top: 0px;
-  left: 100%;
-  transition: transform 0.3s linear;
+  left: 103%;
   list-style-type: none;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(244, 243, 245, 1);
   width: 471px;
+  padding: 5px;
+}
+
+.submenu1 {
+  top: -30px;
+}
+.submenu2 {
+  top: -66px;
+}
+
+.submenu3 {
+  top: -102px;
+}
+
+.submenu4 {
+  top: -139px;
+}
+
+.submenu5 {
+  top: -175px;
+}
+.submenu6 {
+  top: -211px;
+}
+
+.submenu-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  padding: 25px 0px 25px 35px;
+}
+
+.submenu-container > li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .topmenu li:hover > .submenu {
@@ -420,23 +463,27 @@ a {
 
 .menu-first {
   background-color: rgba(244, 243, 245, 1);
+  padding: 30px 30px 30px 35px;
 }
 
 .header__modal {
   position: absolute;
   max-width: 380px;
   padding: 15px;
-  top: 1px;
+  overflow-y: auto;
+  top: 0px;
   right: 0;
   z-index: 5;
   background-color: rgba(255, 255, 255, 1);
 }
 
-/*vodal */
+/*modal */
 
 @media screen and (max-width: 850px) {
   .header__modal {
     width: 380px;
+    border-top: 1px solid rgba(238, 238, 238, 1);
+    max-height: 90vh;
   }
 }
 
@@ -449,7 +496,7 @@ a {
 @media screen and (max-width: 850px) {
   .modal-contacts {
     display: flex;
-    margin-top: 65px;
+    margin-top: 20px;
     flex-direction: column;
   }
 }
@@ -525,7 +572,7 @@ a {
 .accordion-item--active .accordion-item__content {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14.49px;
   line-height: 20px;
   color: rgba(43, 41, 39, 1);
   display: block;
@@ -578,7 +625,10 @@ a {
 
 .accordion-item--active2 .accordion-item__trigger2 > svg {
   transform: rotate(270deg);
-  stroke: red;
+}
+
+.accordion-item--active2 .accordion-item__trigger2 > svg path {
+  stroke: #ef4824;
 }
 
 .accordion-item__trigger2 {
@@ -595,4 +645,13 @@ a {
   font-weight: 600;
   font-size: 16px;
   color: rgba(43, 41, 39, 1);
+}
+
+.modal-line {
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+.citytop {
+  margin: 62px 0 20px 0;
 }
