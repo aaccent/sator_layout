@@ -168,6 +168,10 @@
   }
 }
 
+.about__developer > a {
+  height: 30px;
+}
+
 .about__developer > a > img {
   margin-left: 20px;
 }
@@ -249,14 +253,8 @@
 }
 
 .contacts__city {
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 1) !important;
-  padding-bottom: 0px;
-  width: 60px;
-  stroke-width: 1.5px;
-}
-
-.contacts__city > a {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
   font-size: 16px !important;
 }
 

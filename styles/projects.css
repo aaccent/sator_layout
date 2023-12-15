@@ -75,7 +75,7 @@
   }
 }
 
-.project__block {
+.project__block-wrap {
   position: absolute;
   top: 0;
   right: 0;
@@ -86,7 +86,7 @@
   justify-content: space-between;
 }
 
-.project__block > div > div {
+.project__block-wrap > div > div {
   font-family: "BebasNeue", sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -96,7 +96,7 @@
   text-align: start;
 }
 
-.project__block > div > p {
+.project__block-wrap > div > p {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -106,18 +106,24 @@
   padding-right: 150px;
 }
 
+.project__block-wrap > svg {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
 @media screen and (max-width: 768px) {
-  .project__block {
-    padding: 10px;
+  .project__block-wrap {
+    padding: 20px;
     height: 230px;
   }
 
-  .project__block > div > div {
+  .project__block-wrap > div > div {
     font-size: 20px;
     line-height: 20px;
     padding-right: 70px;
   }
-  .project__block > div > p {
+  .project__block-wrap > div > p {
     font-size: 14px;
     line-height: 20px;
     height: 40px;
@@ -125,16 +131,16 @@
     overflow: hidden;
     padding-right: 0;
   }
-  .project__block > a > svg {
+  .project__block-wrap > a > svg {
     width: 30px;
     height: 30px;
   }
 }
 
-.project__block > a {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+@media screen and (max-width: 375px) {
+  .project__block-wrap {
+    padding: 15px;
+  }
 }
 
 .projects-button {
