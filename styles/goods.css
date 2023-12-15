@@ -156,6 +156,7 @@
   font-weight: 700;
   line-height: 25px;
   color: rgba(43, 41, 39, 1);
+  margin-bottom: 15px;
 }
 
 .swow-all {
@@ -169,7 +170,6 @@
 .filter__hr {
   width: 100%;
   border-bottom: 1px solid rgba(238, 238, 238, 1);
-  margin: 20px 0 20px 0;
 }
 
 .filter__category {
@@ -178,10 +178,17 @@
   font-weight: 700;
   line-height: 25px;
   color: rgba(43, 41, 39, 1);
+  margin-top: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__category {
+    margin-bottom: 10px;
+  }
 }
 
 .filter__category > p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .filter__category > li {
@@ -220,6 +227,12 @@ h3.range-title {
   border-bottom-right-radius: 12px;
   margin: 25px 0 10px 0;
   background-color: rgba(238, 238, 238, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .range-slider {
+    margin: 25px 0 30px 0;
+  }
 }
 
 .slider-track {
@@ -263,6 +276,12 @@ input[type="range"]::-moz-range-thumb {
 .input-box {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .input-box {
+    width: 100%;
+  }
 }
 
 .input-wrap {
@@ -332,6 +351,18 @@ input[type="range"]::-moz-range-thumb {
   border: 1px solid rgba(238, 238, 238, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .input-field {
+    max-width: 147px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .input-field {
+    width: 125px;
+  }
+}
+
 .input-field:focus {
   outline: none;
 }
@@ -350,6 +381,13 @@ input::-webkit-inner-spin-button {
   user-select: none;
   position: relative;
 }
+
+@media screen and (max-width: 767px) {
+  .checkbox {
+    margin: 0 0 7px 0;
+  }
+}
+
 .checkbox input[type="checkbox"] {
   position: absolute;
   z-index: -1;
@@ -447,7 +485,56 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-.d {
-  height: 100vh;
-  overflow-y: scroll;
+.goods__filterModal {
+  max-width: calc(100% - 30px);
+  margin: 25px auto 0 auto;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+@media screen and (max-width: 375px) {
+  .goods__filterModal {
+    max-width: calc(100% - 10px);
+    margin: 10px auto 0 auto;
+  }
+}
+
+.goods__buttons-modal {
+  margin: 25px 0 0 0;
+}
+
+.goods__buttons-modal > button {
+  width: 100%;
+  height: 50px;
+}
+
+.goods__buttons-modal > button:first-child {
+  margin-bottom: 10px;
+}
+
+.close-filter {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.filter__list {
+  margin-bottom: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__list {
+    margin-bottom: 0px;
+  }
+}
+
+.fiter-wrap {
+  overflow-y: auto;
+  height: 80vh;
+}
+
+.fiter-wrap::-webkit-scrollbar {
+  width: 0;
 }
