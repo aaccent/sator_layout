@@ -24,6 +24,11 @@
   padding: 30px;
   position: relative;
   cursor: pointer;
+  background-image: url(../images/empty.webp);
+  transition: background-image 0.5s ease;
+  width: auto;
+  border-radius: 15px;
+  background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -35,10 +40,12 @@
 
 .servise-slide:hover .servise-slider-headline {
   color: rgba(255, 255, 255, 1);
+  transition: color 0.5s ease;
 }
 
 .servise-slide:hover a > span {
   color: rgba(255, 255, 255, 1);
+  transition: color 0.5s ease;
   opacity: 1;
 }
 
