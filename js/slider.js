@@ -8,5 +8,7 @@ var swiper = new Swiper(".bannerSwiper", {
     el: ".swiper-scrollbar",
     hide: false,
     draggable: true,
+    dragSize: 150,
+    snapOnRelease: true,
   },
 });
