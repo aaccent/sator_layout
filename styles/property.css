@@ -150,7 +150,7 @@ a.property-button {
   font-family: "BebasNeue", sans-serif;
   font-size: 42px;
   font-weight: 700;
-  margin-left: 10px;
+  margin-left: 6px;
   text-transform: uppercase;
 }
 
@@ -159,7 +159,7 @@ a.property-button {
   font-weight: 400 !important;
   font-size: 32px !important;
   color: rgba(43, 41, 39, 1) !important;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 @media screen and (max-width: 1400px) {

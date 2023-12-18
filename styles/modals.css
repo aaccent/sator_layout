@@ -252,18 +252,13 @@
 @media screen and (max-width: 600px) {
   .city__modal {
     padding: 25px;
+    max-width: calc(100% - 10px);
   }
 }
 
 @media screen and (max-width: 375px) {
   .city__modal {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .city__modal {
-    max-width: calc(100% - 10px);
+    padding: 15px;
   }
 }
 
@@ -277,18 +272,12 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
-  height: 40px;
 }
 
 @media screen and (max-width: 600px) {
-  .city__modal > button > img {
-    width: 30px;
-    height: 30px;
-  }
   .city__modal > button {
     top: 15px;
     right: 15px;
-    height: 30px;
   }
 }
 

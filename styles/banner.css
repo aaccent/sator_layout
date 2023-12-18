@@ -56,6 +56,12 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .slide__wrapper {
+    padding: 0 10px 0 15px;
+  }
+}
+
 .banner__navigation {
   position: absolute;
   bottom: 15px;
@@ -194,9 +200,10 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .slide__wrapper > p {
     margin-top: 14px;
+    max-width: 280px;
   }
 }
 

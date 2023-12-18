@@ -409,3 +409,27 @@ ul.breadcrumb li a {
     padding: 0 0px 0 10px;
   }
 }
+
+.btn-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.btn-close > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .btn-close {
+    width: 30px;
+    height: 30px;
+  }
+  .btn-close > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+}

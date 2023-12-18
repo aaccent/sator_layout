@@ -10,7 +10,13 @@
 }
 
 .serviceSlider {
-  margin-top: 30px;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 425px) {
+  .serviceSlider {
+    margin-top: 20px;
+  }
 }
 
 .serviceSlider-buttons {
@@ -154,7 +160,6 @@
 
 .slider-wrap {
   position: relative;
-  margin-top: 10px;
 }
 
 .service-button {
