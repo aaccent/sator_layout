@@ -16,11 +16,9 @@ var swiper = new Swiper(".bannerSwiper", {
     clickable: true,
     renderBullet: function (index, className) {
       let allSlides = document.querySelectorAll(".banner-card").length;
-      let slideInterval = 4 * (allSlides - 1);
-      let x = slideInterval * 0.045;
-      return `<span class="${className}" style="width: calc(100% / ${
-        allSlides + x
-      })">
+      const screenWidth = window.screen.width - 22;
+      let factorBullets = screenWidth / allSlides - 10;
+      return `<span class="${className}" style="width: ${factorBullets}px">
       </span>`;
     },
   },
