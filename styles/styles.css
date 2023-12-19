@@ -399,14 +399,26 @@ ul.breadcrumb li a {
 }
 
 .wrapper-solution3 {
-  max-width: 1540px;
-  padding: 0 10px 0 10px;
+  max-width: 1550px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1540px) {
   .wrapper-solution3 {
-    padding: 0 0px 0 10px;
+    padding: 0 0px 0 15px;
+  }
+}
+
+.wrapper-padding3 {
+  max-width: 1550px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper-padding3 {
+    padding: 0 0px 0 0px;
   }
 }
 

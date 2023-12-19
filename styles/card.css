@@ -22,6 +22,12 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .card__description {
+    padding: 0 15px 0 15px;
+  }
+}
+
 .card__description > span {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -282,6 +288,12 @@
 
 .card__tabs {
   max-width: 947px;
+}
+
+@media screen and (max-width: 425px) {
+  .card__tabs {
+    padding-left: 15px;
+  }
 }
 
 .nav-tabs {
