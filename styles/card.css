@@ -397,6 +397,7 @@
   font-weight: 400;
   font-size: 14px;
   color: rgba(43, 41, 39, 0.9);
+  border-radius: 10px;
 }
 
 .table-first {
