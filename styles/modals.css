@@ -44,6 +44,12 @@
   }
 }
 
+@media screen and (max-width: 380px) {
+  .consultation__modal {
+    max-width: calc(100% - 30px);
+  }
+}
+
 @media screen and (max-width: 350px) {
   .consultation__modal {
     max-width: calc(100% - 10px);
@@ -252,12 +258,13 @@
 @media screen and (max-width: 600px) {
   .city__modal {
     padding: 25px;
-    max-width: calc(100% - 10px);
+    max-width: calc(100% - 30px);
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 350px) {
   .city__modal {
+    max-width: calc(100% - 10px);
     padding: 15px;
   }
 }
