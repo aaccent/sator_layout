@@ -20,9 +20,16 @@ var swiperCardMax = new Swiper(".goodsSliderMax", {
     nextEl: ".swiper-goods-next",
     prevEl: ".swiper-goods-prev",
   },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      let allSlides = document.querySelectorAll(".card-slide").length;
+      const screenWidth = window.screen.width - 22;
+      let factorBullets = screenWidth / allSlides - 10;
+      return `<span class="${className}" style="width: ${factorBullets}px">
+      </span>`;
+    },
   },
   breakpoints: {
     320: {

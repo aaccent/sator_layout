@@ -305,7 +305,6 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom, -10px) !important;
     display: flex !important;
     justify-content: space-between !important;
   }
