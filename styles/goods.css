@@ -45,7 +45,7 @@
 }
 
 .goods-hr {
-  margin: 18px 0 15px 0;
+  margin: 21px 0 15px 0;
   width: 100px;
   border-bottom: 1px solid rgba(239, 72, 36, 1);
 }
@@ -147,7 +147,7 @@
 .goods__button-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .filter__list > p {
