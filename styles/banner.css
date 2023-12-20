@@ -10,8 +10,8 @@
 .banner-btn {
   position: absolute;
   display: flex;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0px;
+  right: 10px;
   z-index: 5;
 }
 
@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 600px) {
   .slide__wrapper {
-    top: 100px;
+    top: 80px;
   }
 }
 
@@ -64,19 +64,30 @@
 
 .banner__navigation {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   max-width: 1540px;
   padding: 0 10px 0 10px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .banner__navigation {
+    max-width: calc(100% - 30px);
+  }
 }
 
 @media screen and (max-width: 425px) {
   .banner__navigation {
-    max-width: calc(100% - 30px);
+    bottom: 7px;
   }
+}
+
+.banner-scrollbar-style {
+  margin-bottom: 20px;
 }
 
 .img-min {
@@ -84,6 +95,12 @@
 }
 .img-mid {
   display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-scrollbar-style {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -126,6 +143,12 @@
 @media screen and (max-width: 700px) {
   .slide__block {
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slide__block {
+    margin-top: 80px;
   }
 }
 
