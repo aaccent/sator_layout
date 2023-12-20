@@ -445,3 +445,13 @@ ul.breadcrumb li a {
     border-radius: 5px;
   }
 }
+
+.text__block3 {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .text__block3 {
+    margin-top: 30px;
+  }
+}

@@ -24,6 +24,7 @@
 @media screen and (max-width: 425px) {
   .card__description {
     padding: 0 15px 0 15px;
+    margin-top: 20px;
   }
 }
 
@@ -80,16 +81,29 @@
   font-size: 14px;
   line-height: 20px;
   color: rgba(43, 41, 39, 0.9);
-  padding: 10px 30px 10px 10px;
+  padding: 10px;
   border-radius: 5px;
+}
+
+.description__table > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__table > li > span {
+  display: flex;
+  align-items: center;
+  text-align: right;
 }
 
 .description__table > li:nth-child(odd) {
   background-color: rgba(244, 243, 245, 1);
 }
 
-.description__table > li > span {
-  width: 50%;
+@media screen and (max-width: 768px) {
+  .description__table > li > span:first-child {
+    width: 80%;
+  }
 }
 
 .card__claim {
@@ -307,6 +321,13 @@
 
 .card__tabs {
   max-width: 947px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .card__tabs {
+    margin-top: 45px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -316,7 +337,6 @@
 }
 
 .nav-tabs {
-  margin-top: 50px;
   display: flex;
   max-width: 947px;
   width: 100%;
