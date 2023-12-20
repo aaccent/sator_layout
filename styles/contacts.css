@@ -58,6 +58,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .address__contacts li:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
 .address__contacts > li > a {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -103,7 +109,7 @@
 
 @media screen and (max-width: 768px) {
   .contacts-block > span {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 0px;
   }
 }

@@ -124,6 +124,12 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
+@media screen and (max-width: 425px) {
+  .contacts__left > div {
+    font-size: 10px;
+  }
+}
+
 .contacts__right {
   width: 755px;
   border-radius: 15px;
