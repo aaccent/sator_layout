@@ -1,5 +1,5 @@
 .seo {
-  margin: 150px 0 100px 0;
+  margin: 155px 0 100px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -90,6 +90,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .seo__form {
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
 .seo__left {
   max-width: 690px;
 }
@@ -97,7 +104,7 @@
 @media screen and (max-width: 1440px) {
   .seo__left {
     width: 100%;
-    padding: 0 10px 10px 10px;
+    padding: 0 20px 10px 20px;
   }
 }
 
@@ -147,5 +154,11 @@
 @media screen and (max-width: 1440px) {
   .seo__right > img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seo__right > img {
+    border-radius: 5px;
   }
 }

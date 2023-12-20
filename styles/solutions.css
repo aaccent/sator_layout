@@ -14,15 +14,13 @@
 }
 
 .solutions__blocks {
-  margin-top: 35px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
   .solutions__blocks {
-    margin-top: 5px;
-    margin-bottom: 22px;
-    padding: 0 5px 0 5px;
+    margin-top: 20px;
   }
 }
 
@@ -151,7 +149,7 @@
 
 @media screen and (max-width: 600px) {
   .card__right > p {
-    margin-top: 15px;
+    margin-top: 25px;
     max-width: 100%;
   }
 }
@@ -164,27 +162,17 @@
 @media screen and (max-width: 600px) {
   .card__right > a {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
   }
   .card__right > a > svg {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
-}
-
-.solutions__blocks div:first-child {
-  margin-top: 15px;
 }
 
 .solutions__blocks div:not(:last-child) {
   margin-bottom: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  .solutions__blocks div:not(:last-child) {
-    margin-bottom: 22px;
-  }
 }
 
 .solution-button {
@@ -198,5 +186,11 @@
 @media screen and (max-width: 768px) {
   .solution-button {
     height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .qq {
+    height: 310px;
   }
 }

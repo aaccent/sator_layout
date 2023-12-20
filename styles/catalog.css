@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 768px) {
   .catalog {
-    margin-top: 65px;
+    margin-top: 80px;
     margin-bottom: 80px;
   }
 }
@@ -40,7 +40,7 @@
 .catalog__card {
   background-color: rgba(244, 243, 245, 1);
   border-radius: 20px;
-  padding: 30px 40px 30px 30px;
+  padding: 30px 40px 25px 30px;
   position: relative;
 }
 
@@ -68,7 +68,7 @@
   width: 200px;
   height: 200px;
   display: block;
-  margin: 30px auto 0 auto;
+  margin: 30px auto 30px auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 445px) {
   .catalog__card > .headline-h5 {
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
   }
 }
 
@@ -140,6 +140,7 @@
     font-size: 10px;
     top: 7px;
     right: 7px;
+    width: 84px;
   }
 }
 
