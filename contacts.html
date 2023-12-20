@@ -853,10 +853,12 @@
                   />
                 </svg>
               </button>
+
               <form method="post" enctype="multipart/form-data">
                 <label class="input-file button-standart b5">
                   <div class="input-file-wrap">
                     <svg
+                      class="symbol-plus"
                       width="16"
                       height="24"
                       viewBox="0 0 16 24"
@@ -874,10 +876,13 @@
                         clip-rule="evenodd"
                         d="M0.25 12C0.25 11.5858 0.585786 11.25 1 11.25H15C15.4142 11.25 15.75 11.5858 15.75 12C15.75 12.4142 15.4142 12.75 15 12.75H1C0.585786 12.75 0.25 12.4142 0.25 12Z"
                         fill="white"
-                      /></svg
-                    ><span>Прикрепить файл</span>
+                      />
+                    </svg>
+
+                    <span id="feedback">Прикрепить файл</span>
+                    <span class="ss"></span>
                   </div>
-                  <input type="file" name="file" />
+                  <input type="file" name="file" id="file-uploader" multiple />
                 </label>
               </form>
             </form>
@@ -2137,4 +2142,5 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=9ff17a4d-1bdf-4281-b949-648d1f8ec826&lang=ru_RU"></script>
   <script src="./js/main.js"></script>
   <script src="./js/map.js"></script>
+  <script src="./js/contacts.js"></script>
 </html>
