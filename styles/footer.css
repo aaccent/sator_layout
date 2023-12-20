@@ -291,8 +291,8 @@
 
 .decorative-background {
   position: absolute;
-  top: 0;
   left: 0;
+  bottom: 0;
 }
 
 .decorative-background2 {
@@ -301,7 +301,6 @@
 
 @media screen and (max-width: 1440px) {
   .decorative-background {
-    top: 0;
     left: -150px;
   }
 }

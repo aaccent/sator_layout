@@ -167,3 +167,11 @@
   top: -85px;
   right: 0;
 }
+
+.service-button > button:hover {
+  background-color: rgba(239, 72, 36, 1) !important;
+}
+
+.service-button > button:hover svg > path {
+  stroke: #fff;
+}
