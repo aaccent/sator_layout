@@ -46,6 +46,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card__description > p {
+    margin-bottom: 25px;
+  }
 }
 
 .pannel__navigation {
@@ -316,6 +323,12 @@
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tabs {
+  }
 }
 
 .nav-tabs::-webkit-scrollbar {
@@ -332,21 +345,27 @@
   color: rgba(43, 41, 39, 1);
   border-bottom: 0;
   text-decoration: none;
-  border-bottom: 2px solid rgba(238, 238, 238, 1);
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tab {
+    border-bottom: none;
+  }
 }
 
 .nav-tab.active {
   cursor: pointer;
   color: rgba(239, 72, 36, 1);
-  border-bottom: 2px solid rgba(239, 72, 36, 1);
+  border-bottom: 1.5px solid rgba(239, 72, 36, 1);
   background-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
   .nav-tab {
     font-size: 14px;
-    padding: 10px 30px 10px 27px;
+    padding: 10px 0px 10px 0px;
+    margin-right: 35px;
   }
   .nav-tab.active {
     padding: 10px 0px 10px 0px;

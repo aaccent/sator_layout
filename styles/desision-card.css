@@ -51,6 +51,12 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .claim-position > button {
+    width: 100%;
+  }
+}
+
 .headlineMt {
   color: rgba(43, 41, 39, 0.9);
   font-family: Manrope;
