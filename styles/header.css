@@ -27,12 +27,12 @@
   background-color: transparent;
 }
 
-.header__open-menu {
+.header__open-btn {
   display: none;
 }
 
 @media screen and (max-width: 850px) {
-  .header__open-menu {
+  .header__open-btn {
     display: block;
     cursor: pointer;
   }
@@ -148,8 +148,8 @@
 
 @media screen and (max-width: 850px) {
   .header__left > a > img {
-    width: 118px;
-    height: 30px;
+    width: 116px;
+    height: 27px;
   }
 }
 
