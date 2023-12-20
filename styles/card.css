@@ -326,18 +326,13 @@
   border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
-@media screen and (max-width: 768px) {
-  .nav-tabs {
-  }
-}
-
 .nav-tabs::-webkit-scrollbar {
   height: 0;
 }
 
 .nav-tab {
   white-space: nowrap;
-  padding: 10px 30px 10px 27px;
+  padding: 0px 30px 15px 30px;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -346,12 +341,6 @@
   border-bottom: 0;
   text-decoration: none;
   background-color: transparent;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-tab {
-    border-bottom: none;
-  }
 }
 
 .nav-tab.active {
@@ -364,11 +353,12 @@
 @media screen and (max-width: 768px) {
   .nav-tab {
     font-size: 14px;
-    padding: 10px 0px 10px 0px;
+    border-bottom: none;
+    padding: 0px 0px 15px 0px;
     margin-right: 35px;
   }
   .nav-tab.active {
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 15px 0px;
   }
 }
 
@@ -416,6 +406,7 @@
   font-weight: 400;
   font-size: 14px;
   color: rgba(43, 41, 39, 0.9);
+  background-color: rgba(244, 243, 245, 1);
   border-radius: 10px;
 }
 
@@ -448,13 +439,11 @@
 }
 
 .tab-table > div:nth-child(odd) {
-  background-color: rgba(244, 243, 245, 1);
 }
 
 .table-other {
   width: 205px;
   padding: 5px 0 5px 0;
-  background-color: rgba(244, 243, 245, 1);
 }
 
 @media screen and (max-width: 768px) {
