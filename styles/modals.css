@@ -266,6 +266,7 @@
   .city__modal {
     padding: 25px;
     max-width: calc(100% - 30px);
+    border-radius: 15px;
   }
 }
 
