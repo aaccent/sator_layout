@@ -206,9 +206,16 @@
   position: relative;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   .qq {
-    height: 280px;
     margin-top: 40px;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .qq {
+    margin-top: 40px;
+    height: 280px;
   }
 }
