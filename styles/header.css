@@ -602,13 +602,20 @@ a {
 
 .accordion-item--active .accordion-item__trigger:after {
   content: url(./../images/arrow.svg);
-  transform: rotate(0deg);
+  transform: rotate(90deg);
   display: inline-block;
   margin-left: 10px;
 }
 
 .accordion2 {
-  margin-top: 20px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 0 15px 15px 15px;
 }
 
 .accordion-item--active2 .accordion-item__content2 {
