@@ -25,6 +25,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .measuring__block {
+    padding: 5px 5px 25px 5px;
+    border-radius: 15px;
+  }
+}
+
 .block__left {
   max-width: 660px;
   display: flex;
@@ -41,6 +48,7 @@
 @media screen and (max-width: 768px) {
   .block__left {
     margin-top: 20px;
+    padding: 0 20px 0 20px;
   }
 }
 

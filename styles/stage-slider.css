@@ -47,12 +47,12 @@
 }
 
 .stage__block-slider {
-  padding: 15px 50px 15px 15px;
+  padding: 25px 50px 25px 20px;
 }
 
 @media screen and (max-width: 768px) {
   .stage__block-slider {
-    padding: 10px;
+    padding: 20px 15px 20px 15px;
   }
 }
 
