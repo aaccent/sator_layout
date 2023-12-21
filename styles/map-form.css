@@ -244,3 +244,25 @@
 .ss {
   left: 120px;
 }
+
+#feedback {
+  position: relative;
+}
+
+.delete-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.delete-symbol {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .delete-symbol {
+    top: 14px;
+  }
+}
