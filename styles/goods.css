@@ -203,19 +203,24 @@
   font-weight: 400;
   line-height: 20px;
   color: rgba(43, 41, 39, 1);
-  width: 100%;
+  /* width: 100%;*/
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .fiter__active {
   background-color: rgba(244, 243, 245, 1);
-  position: absolute;
-  top: 0;
   right: 12px;
   padding-left: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .fiter__active {
+    width: calc(100% + 10px);
+  }
 }
 
 /*range*/
@@ -457,7 +462,7 @@ input::-webkit-inner-spin-button {
 
 .colorGray {
   background-color: rgba(244, 243, 245, 1) !important;
-  color: rgba(43, 41, 39, 1) !important;
+  color: rgba(43, 41, 39, 0.4) !important;
 }
 
 .filter__button {
@@ -488,6 +493,8 @@ input::-webkit-inner-spin-button {
   width: 100%;
 }
 
+/* filter-modal*/
+
 .filter-modal {
   display: none;
 }
@@ -496,7 +503,7 @@ input::-webkit-inner-spin-button {
   max-width: calc(100% - 30px);
   margin: 25px auto 0 auto;
   border-radius: 15px;
-  padding: 25px;
+  padding: 25px 15px 25px 15px;
   background-color: rgba(255, 255, 255, 1);
   position: relative;
 }
@@ -514,7 +521,7 @@ input::-webkit-inner-spin-button {
 }
 
 .goods__buttons-modal > button {
-  width: 100%;
+  width: calc(100% - 10px);
   height: 50px;
 }
 
@@ -542,12 +549,14 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 767px) {
   .filter__list {
     margin-bottom: 0px;
+    padding-left: 10px;
   }
 }
 
 .fiter-wrap {
   overflow-y: auto;
   height: 80vh;
+  padding-left: 10px;
 }
 
 .fiter-wrap::-webkit-scrollbar {
