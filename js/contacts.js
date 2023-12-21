@@ -9,5 +9,5 @@ fileUploader.addEventListener("change", (event) => {
   const msg = `${files[0].name}`;
   feedback.innerHTML = msg;
   symbolPlus.innerHTML = "";
-  symbolDelete.innerHTML = `&nbsp x`;
+  symbolDelete.innerHTML = `<div>&nbsp x</div>`;
 });

@@ -20,42 +20,24 @@
 .stage__block {
   display: flex;
   overflow-x: auto;
+  min-width: 100%;
   margin-top: 35px;
   gap: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .stage > p {
-    text-align: center;
-  }
-
-  .stage__block {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 330px 330px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .stage__block {
-    margin-top: 15px;
-    grid-template-rows: 300px;
-    grid-template-columns: 330px 330px 330px 330px;
-  }
-}
-
 .stage__card {
-  max-width: 365px;
-  max-height: 360px;
-  width: 100%;
+  width: 365px;
+  height: 360px;
+  flex-shrink: 0;
   background-color: rgba(244, 243, 245, 1);
   border-radius: 20px;
   padding: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  .stage__block {
-    border-radius: 10px;
+  .stage__card {
+    width: 330px;
+    height: 300px;
   }
 }
 
