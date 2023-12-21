@@ -10,6 +10,10 @@ const popup = document.querySelector(".popup");
 const popup2 = document.querySelector(".popup2");
 const darkening = document.querySelectorAll(".darkening");
 
+const subMenuOpen = document.querySelectorAll(".trigger-new-window");
+const nenuOpen = document.querySelectorAll(".accordion-item__trigger");
+const submenu = document.querySelectorAll(".accordion2s");
+
 function toggleModal(event) {
   if (event.target.matches(".consultation__open")) {
     modalConsultation.style.display = "block";
@@ -48,3 +52,14 @@ openMenu.addEventListener("click", toggleModal);
 closeCity.forEach((btn) => btn.addEventListener("click", toggleModal));
 darkening.forEach((btn) => btn.addEventListener("click", toggleModal));
 openConsultation.forEach((btn) => btn.addEventListener("click", toggleModal));
+
+function closeSubMenu() {
+  submenu.forEach((btn) => (btn.style.display = "none"));
+}
+
+function openSubMenu() {
+  submenu.forEach((btn) => (btn.style.display = "block"));
+}
+
+subMenuOpen.forEach((btn) => btn.addEventListener("click", closeSubMenu));
+nenuOpen.forEach((btn) => btn.addEventListener("click", openSubMenu));
