@@ -27,8 +27,13 @@
 }
 
 .goods__filter {
-  max-width: 325px;
-  padding-right: 13px;
+  width: 325px;
+}
+
+@media screen and (max-width: 1500px) {
+  .goods__filter {
+    padding-right: 13px;
+  }
 }
 
 .goods__right {
@@ -223,6 +228,10 @@
   }
 }
 
+.filter-active-style {
+  margin-left: 1px;
+}
+
 /*range*/
 
 h3.range-title {
@@ -368,10 +377,9 @@ input[type="range"]::-moz-range-thumb {
     max-width: 147px;
   }
 }
-
 @media screen and (max-width: 375px) {
   .input-field {
-    width: 125px;
+    max-width: 135px;
   }
 }
 
@@ -503,7 +511,7 @@ input::-webkit-inner-spin-button {
   max-width: calc(100% - 30px);
   margin: 25px auto 0 auto;
   border-radius: 15px;
-  padding: 25px 15px 25px 15px;
+  padding: 25px 25px 25px 15px;
   background-color: rgba(255, 255, 255, 1);
   position: relative;
 }
@@ -512,7 +520,7 @@ input::-webkit-inner-spin-button {
   .goods__filterModal {
     max-width: calc(100% - 10px);
     margin: 10px auto 0 auto;
-    padding: 15px;
+    padding: 15px 15px 15px 5px;
   }
 }
 
@@ -521,7 +529,7 @@ input::-webkit-inner-spin-button {
 }
 
 .goods__buttons-modal > button {
-  width: calc(100% - 10px);
+  width: 100%;
   height: 50px;
 }
 
@@ -549,7 +557,7 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 767px) {
   .filter__list {
     margin-bottom: 0px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 }
 
