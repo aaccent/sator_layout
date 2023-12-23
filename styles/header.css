@@ -323,7 +323,7 @@
 }
 
 .icon-arrow:after {
-  content: url(../images/arrow.svg);
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='16' height='16' rx='3' fill='%23FEF3F1'/%3e%3cpath d='M5 6.5L8 9.5L11 6.5' stroke='%23EF4824' stroke-width='1.5'/%3e%3c/svg%3e");
   width: 16px;
   height: 16px;
   margin-left: 5px;
@@ -488,6 +488,10 @@ a {
   }
 }
 
+.header__modal::-webkit-scrollbar {
+  width: 0;
+}
+
 @media screen and (max-width: 400px) {
   .header__modal {
     width: 100%;
@@ -567,7 +571,7 @@ a {
 
 /*аккордион */
 .accordion-item {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .accordion-item--active .accordion-item__content {
@@ -583,25 +587,25 @@ a {
   display: none;
 }
 
-.accordion-item2 {
-  margin-bottom: 5px;
-}
-
 .accordion-item .accordion-item__trigger:after {
-  content: url(./../images/arrow.svg);
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='16' height='16' rx='3' fill='%23FEF3F1'/%3e%3cpath d='M5 6.5L8 9.5L11 6.5' stroke='%23EF4824' stroke-width='1.5'/%3e%3c/svg%3e");
   transform: rotate(-90deg);
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
 }
 
 .accordion-item--active .accordion-item__trigger:after {
-  content: url(./../images/arrow.svg);
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='16' height='16' rx='3' fill='%23FEF3F1'/%3e%3cpath d='M5 6.5L8 9.5L11 6.5' stroke='%23EF4824' stroke-width='1.5'/%3e%3c/svg%3e");
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
 }
 
 .accordion2s {
-  margin-top: 20px;
+  margin-top: 25px;
   position: absolute;
   top: 0;
   left: 0;
@@ -614,14 +618,16 @@ a {
 }
 
 .trigger-new-window {
-  margin: 5px 0 15px 0;
+  margin: 0px 0 15px 0;
 }
 
 .trigger-new-window::before {
-  content: url(./../images/arrow.svg);
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='16' height='16' rx='3' fill='%23FEF3F1'/%3e%3cpath d='M5 6.5L8 9.5L11 6.5' stroke='%23EF4824' stroke-width='1.5'/%3e%3c/svg%3e");
   transform: rotate(90deg);
   display: inline-block;
   margin-right: 8px;
+  width: 16px;
+  height: 16px;
 }
 
 .accordion-item--active2 .accordion-item__content2 {
@@ -631,6 +637,14 @@ a {
   line-height: 20px;
   color: rgba(43, 41, 39, 0.5);
   display: block;
+}
+
+.content2-block > .accordion-item__content2:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.content2-block > .accordion-item__content2:last-child {
+  margin-bottom: 15px;
 }
 
 .accordion-item__trigger2 {
@@ -655,12 +669,15 @@ a {
 }
 
 .accordion-item__trigger2 {
-  padding: 5px;
+  padding: 0px 0px 15px 0px;
 }
 
 .accordion-item__content2 {
-  padding: 5px;
   display: none;
+}
+
+.wrap-content2 > .accordion-item__content2:not(:last-child) {
+  padding-bottom: 10px;
 }
 
 .trigger-style {
