@@ -34,6 +34,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .stage__block {
+    margin-top: 15px;
+  }
+}
+
 .stage__card {
   width: 365px;
   height: 360px;

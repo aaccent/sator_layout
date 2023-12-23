@@ -2,6 +2,12 @@
   margin: 60px auto 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .measuring__wrap {
+    margin: 20px auto 0 auto;
+  }
+}
+
 .measuring__block {
   display: flex;
   justify-content: space-between;

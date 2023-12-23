@@ -30,6 +30,7 @@
 
   .faq__left {
     max-width: 100%;
+    margin-top: 25px;
   }
   .faq__right > a > img {
     display: none;
@@ -47,8 +48,8 @@
 }
 
 /*аккодион*/
+
 .accordion-faq {
-  margin-bottom: 10px;
   background-color: rgba(255, 255, 255, 1);
   width: 100%;
   position: relative;
@@ -56,10 +57,13 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1300px) {
-  .accordion-faq {
-    margin-top: 30px;
-    margin-bottom: 0px;
+.accordion > .accordion-faq:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion > .accordion-faq:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
