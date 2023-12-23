@@ -130,9 +130,6 @@
   line-height: 25px;
 }
 
-.block__nav > ul {
-}
-
 .block__nav > ul:not(:last-child) {
   margin-bottom: 35px;
 }

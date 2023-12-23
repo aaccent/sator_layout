@@ -35,9 +35,11 @@ var swiperCardMax = new Swiper(".goodsSliderMax", {
     320: {
       slidesPerView: 1.1,
       centeredSlides: true,
+      spaceBetween: 5,
     },
     426: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
   },
 
