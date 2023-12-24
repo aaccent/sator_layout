@@ -72,6 +72,7 @@
 
 .nav-wrapper {
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 1450px) {
@@ -84,6 +85,7 @@
   .nav-wrapper {
     flex-direction: row;
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -99,7 +101,7 @@
 }
 
 .header-style li:nth-child(2) {
-  color: #eeeeee;
+  color: rgba(43, 41, 39, 0.45);
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -160,17 +162,6 @@
 
 @media screen and (max-width: 850px) {
   .header__right {
-    display: none;
-  }
-}
-
-.hr-style {
-  height: 30px;
-  margin: 0 10px 0 10px;
-}
-
-@media screen and (max-width: 1450px) {
-  .hr-style {
     display: none;
   }
 }
@@ -262,7 +253,6 @@
   display: flex;
   list-style-type: none;
   margin-top: 5px;
-  margin-left: 60px;
 }
 
 @media screen and (max-width: 1600px) {

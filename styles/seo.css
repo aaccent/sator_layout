@@ -136,7 +136,8 @@
 }
 
 .seo__right {
-  width: 620px;
+  max-width: 612px;
+  max-height: 385px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -147,7 +148,7 @@
 }
 
 .seo__right > img {
-  max-width: 620px;
+  max-width: 612px;
   border-radius: 10px;
 }
 
@@ -160,5 +161,6 @@
 @media screen and (max-width: 768px) {
   .seo__right > img {
     border-radius: 5px;
+    height: 220px;
   }
 }

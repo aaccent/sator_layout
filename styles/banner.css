@@ -152,6 +152,11 @@
   }
 }
 
+.slide__block:hover a > svg {
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
 .line {
   margin: 0 40px 0 40px;
   height: 36px;

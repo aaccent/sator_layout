@@ -4,7 +4,7 @@
   border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice-hr {
     display: none;
   }
@@ -15,7 +15,7 @@
   margin-bottom: 165px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice {
     margin-top: 70px;
     margin-bottom: 60px;
@@ -26,7 +26,7 @@
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice-wrap {
     flex-direction: column;
   }
@@ -44,7 +44,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice__left {
     width: 100%;
   }
@@ -60,7 +60,7 @@
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .left__wrap {
     display: none;
   }
@@ -76,7 +76,7 @@
   max-width: 630px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice__left > p {
     margin-top: 15px;
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .left__wrap-min > span {
     font-family: "BebasNeue", sans-serif;
     font-weight: 700;
@@ -132,7 +132,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice__right {
     width: 100%;
     margin-top: 20px;
@@ -155,7 +155,7 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice__card {
     padding: 25px 15px 15px 25px;
     border-radius: 10px;
@@ -168,6 +168,13 @@
 
 .choice__card > p {
   margin-top: auto;
+  font-size: 15px !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .choice__card > p {
+    font-size: 14px !important;
+  }
 }
 
 .choice__card > svg {
@@ -176,7 +183,7 @@
   right: 25px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .choice__card > svg {
     top: 15px;
     right: 15px;

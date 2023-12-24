@@ -11,4 +11,9 @@ var swiper = new Swiper(".projectsSlider", {
     hide: false,
     draggable: true,
   },
+  breakpoints: {
+    320: { slidesPerView: 1.2, spaceBetween: 10 },
+
+    769: { spaceBetween: 20 },
+  },
 });
