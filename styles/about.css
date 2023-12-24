@@ -29,8 +29,8 @@
     flex-direction: column;
     justify-content: center;
   }
-  .about__right > img {
-    margin-top: 10px;
+  .about__right {
+    margin-top: 35px;
   }
 }
 

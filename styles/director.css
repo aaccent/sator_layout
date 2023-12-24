@@ -62,6 +62,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .director__left > span {
+    font-size: 20px !important;
+  }
+}
+
 .director__right {
   width: 26.7%;
   background-color: rgba(239, 72, 36, 1);
