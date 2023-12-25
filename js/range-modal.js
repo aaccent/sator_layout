@@ -11,11 +11,11 @@ const minValueModal = parseInt(minValModal.min);
 const maxModalvalue = parseInt(maxValModal.max);
 
 if (filterModal.style.display != "none") {
-  rangeModalMinModal();
-  rangeModalMaxModal();
+  rangeMinModal();
+  rangeMaxModal();
 }
 
-function rangeModalMinModal() {
+function rangeMinModal() {
   let gaps = parseInt(maxValModal.value) - parseInt(minValModal.value);
   if (gaps <= minGapModal) {
     minValModal.value = parseInt(maxValModal.value) - minGapModal;
@@ -25,7 +25,7 @@ function rangeModalMinModal() {
   sliderColorModal();
 }
 
-function rangeModalMaxModal() {
+function rangeMaxModal() {
   let gaps = parseInt(maxValModal.value) - parseInt(minValModal.value);
   if (gaps <= minGapModal) {
     maxValModal.value = parseInt(minValModal.value) + minGapModal;
@@ -50,7 +50,7 @@ function setMinInputModal() {
     inputMinModal.value = minValueModal;
   }
   minValModal.value = inputMinModal.value;
-  rangeModalMinModal();
+  rangeMinModal();
 }
 
 function setMaxInputModal() {
@@ -59,5 +59,5 @@ function setMaxInputModal() {
     inputMaxModal.value = maxModalvalue;
   }
   maxValModal.value = inputMaxModal.value;
-  rangeModalMaxModal();
+  rangeMaxModal();
 }

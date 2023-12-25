@@ -264,6 +264,12 @@ h3.range-title {
   background-color: rgba(239, 72, 36, 1);
 }
 
+.slider-track-modal {
+  height: 100%;
+  position: absolute;
+  background-color: rgba(239, 72, 36, 1);
+}
+
 .range-slider input {
   position: absolute;
   width: 100%;

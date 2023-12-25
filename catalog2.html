@@ -2618,8 +2618,8 @@
                     <input
                       type="number"
                       name="min-input"
-                      class="input-field min-input"
-                      onchange="setMinInput()"
+                      class="input-field min-input-modal"
+                      onchange="setMinInputModal()"
                     />
                   </div>
                 </div>
@@ -2629,35 +2629,41 @@
                     <input
                       type="number"
                       name="max-input"
-                      class="input-field max-input"
-                      onchange="setMaxInput()"
+                      class="input-field max-input-modal"
+                      onchange="setMaxInputModal()"
                     />
                   </div>
                 </div>
               </div>
 
               <div class="range-slider">
-                <span class="slider-track"></span>
+                <span class="slider-track-modal"></span>
                 <input
                   type="range"
                   name="min-val"
-                  class="min-val"
+                  class="min-val-modal"
                   min="0"
                   max="1500"
                   value="100"
-                  oninput="rangeMin()"
+                  oninput="rangeMinModal()"
                 />
                 <input
                   type="range"
                   name="max-val"
-                  class="max-val"
+                  class="max-val-modal"
                   min="0"
                   max="1500"
                   value="900"
-                  oninput="rangeMax()"
+                  oninput="rangeMaxModal()"
                 />
-                <div class="tooltip min-tooltip" style="display: none"></div>
-                <div class="tooltip max-tooltip" style="display: none"></div>
+                <div
+                  class="tooltip min-tooltip-modal"
+                  style="display: none"
+                ></div>
+                <div
+                  class="tooltip max-tooltip-modal"
+                  style="display: none"
+                ></div>
               </div>
             </div>
 
