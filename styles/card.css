@@ -36,6 +36,17 @@
   color: rgba(43, 41, 39, 0.45);
 }
 
+@media screen and (max-width: 768px) {
+  .card__description > span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.pannel__navigation {
+  display: none;
+}
+
 .card__description > h1 {
   margin: 10px 0 10px 0;
 }
