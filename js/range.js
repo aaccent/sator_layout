@@ -19,7 +19,7 @@ function rangeMin() {
   if (gap <= minGap) {
     minVal.value = parseInt(maxVal.value) - minGap;
   }
-  minTooltip.innerHTML = "$" + minVal.value;
+  minTooltip.innerHTML = "" + minVal.value;
   inputMin.value = minVal.value;
   sliderColor();
 }
