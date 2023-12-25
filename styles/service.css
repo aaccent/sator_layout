@@ -97,22 +97,29 @@
   position: absolute;
 }
 
-@media screen and (max-width: 768px) {
-  .hr-left {
-    top: 3px;
-    height: 190px;
-  }
-  .hr-right {
-    top: 3px;
-    height: 190px;
-  }
-}
 .hr-bottom {
   border-top: 1px solid rgba(238, 238, 238, 1);
   width: 496px;
   position: absolute;
   bottom: 0;
   left: 7px;
+}
+
+@media screen and (max-width: 1500px) {
+  .hr-left {
+    top: 10px;
+    height: 175px;
+  }
+  .hr-right {
+    top: 10px;
+    height: 175px;
+  }
+  .hr-top {
+    width: 95%;
+  }
+  .hr-bottom {
+    width: 95%;
+  }
 }
 
 .servise-slider-headline {

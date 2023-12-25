@@ -13,7 +13,6 @@ var swiper = new Swiper(".projectsSlider", {
   },
   breakpoints: {
     320: { slidesPerView: 1.2, spaceBetween: 10 },
-
     769: { spaceBetween: 20 },
   },
 });
