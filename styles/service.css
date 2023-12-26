@@ -139,7 +139,7 @@
   }
 }
 
-.servise-slide > a > span {
+.servise-slide > span {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -151,7 +151,7 @@
   opacity: 0.45;
 }
 
-.servise-slide > a > svg {
+.servise-slide > svg {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -159,7 +159,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .servise-slide > a > svg {
+  .servise-slide > svg {
     top: 20px;
     right: 20px;
   }

@@ -149,6 +149,7 @@
   font-size: 16px;
   line-height: 25px;
   color: rgba(239, 72, 36, 1);
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -177,7 +178,7 @@
 @media screen and (max-width: 768px) {
   .material-list {
     font-size: 14px;
-    margin: 15px 0 0 40px;
+    margin: 15px 0 0 38px;
   }
 }
 
@@ -196,7 +197,7 @@
 
 @media screen and (max-width: 768px) {
   .material-list li {
-    padding: 0px 0 15px 0px;
+    padding: 0px 0 15px 2px;
     line-height: 20px;
   }
 }
@@ -222,8 +223,6 @@
 
 @media screen and (max-width: 768px) {
   .material-list li:before {
-    top: 0px;
-    left: -38px;
     width: 30px;
     height: 30px;
     font-size: 16px;
