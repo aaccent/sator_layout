@@ -133,6 +133,7 @@
 
 .header__left {
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 1450px) {
@@ -174,6 +175,12 @@
 @media screen and (max-width: 1600px) {
   .hr-style2 {
     margin: 0 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hr-style2 {
+    display: none;
   }
 }
 
