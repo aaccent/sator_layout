@@ -35,10 +35,10 @@ function rangeMax() {
 }
 
 function sliderColor() {
-  range.style.left = (minVal.value / maxValue) * 100 + "%";
-  minTooltip.style.left = (minVal.value / maxValue) * 100 + "%";
-  range.style.right = 100 - (maxVal.value / maxValue) * 100 + "%";
-  maxTooltip.style.right = 100 - (maxVal.value / maxValue) * 100 + "%";
+  range.style.left = ((minVal.value - minValue) / (maxValue - minValue)) * 100 + "%";
+  minTooltip.style.left = ((minVal.value - minValue) / (maxValue - minValue)) * 100 + "%";
+  range.style.right = 100 - ((maxVal.value - minValue) / (maxValue - minValue)) * 100 + "%";
+  maxTooltip.style.right = 100 - ((maxVal.value - minValue) / (maxValue - minValue)) * 100 + "%";
 }
 
 function setMinInput() {
