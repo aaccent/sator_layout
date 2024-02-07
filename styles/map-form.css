@@ -242,7 +242,15 @@
   border: none;
   margin: 0;
   transition: background-color 0.2s;
+  overflow: hidden;
 }
+
+.input-file span > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .input-file input[type="file"] {
   position: absolute;
   z-index: -1;
