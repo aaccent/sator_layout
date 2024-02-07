@@ -75,10 +75,14 @@
 .stage__slider > img {
   width: calc(100% - 0px);
   border-radius: 15px;
+  height: 285px;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media screen and (max-width: 768px) {
   .stage__slider > img {
     border-radius: 10px;
+    height: 185px;
   }
 }

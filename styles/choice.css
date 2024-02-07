@@ -177,7 +177,7 @@
   }
 }
 
-.choice__card > svg {
+.choice__card > :is(svg, img) {
   position: absolute;
   top: 30px;
   right: 25px;
