@@ -2,7 +2,12 @@
   margin-top: 30px;
 }
 
+.stageSlider .swiper-slide {
+  height: auto !important;
+}
+
 .stage__slider {
+  height: 100%;
   background-color: rgba(244, 243, 245, 1);
   border-radius: 20px;
   padding: 5px;
