@@ -456,3 +456,7 @@ ul.breadcrumb li a {
     margin-top: 30px;
   }
 }
+
+.swiper-wrapper {
+  height: fit-content !important;
+}
