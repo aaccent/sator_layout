@@ -36,12 +36,10 @@ function rangeMaxModal() {
 }
 
 function sliderColorModal() {
-  rangeModal.style.left = (minValModal.value / maxModalvalue) * 100 + "%";
-  minTooltipModal.style.left = (minValModal.value / maxModalvalue) * 100 + "%";
-  rangeModal.style.right =
-    100 - (maxValModal.value / maxModalvalue) * 100 + "%";
-  maxTooltipModal.style.right =
-    100 - (maxValModal.value / maxModalvalue) * 100 + "%";
+  rangeModal.style.left = ((minValModal.value - minValueModal) / (maxModalvalue - minValueModal)) * 100 + "%";
+  minTooltipModal.style.left = ((minValModal.value - minValueModal) / (maxModalvalue - minValueModal)) * 100 + "%";
+  rangeModal.style.right = 100 - ((maxValModal.value - minValueModal) / (maxModalvalue - minValueModal)) * 100 + "%";
+  maxTooltipModal.style.right = 100 - ((maxValModal.value - minValueModal) / (maxModalvalue - minValueModal)) * 100 + "%";
 }
 
 function setMinInputModal() {
