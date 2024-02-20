@@ -14,6 +14,18 @@ const subMenuOpen = document.querySelectorAll(".trigger-new-window");
 const nenuOpen = document.querySelectorAll(".accordion-item__trigger");
 const submenu = document.querySelectorAll(".accordion2s");
 
+function openHeaderMenu() {
+  openMenu.style.display = "none";
+  closeMenu.style.display = "block";
+  modalHeader.style.display = "block";
+  document.body.style.overflow = "hidden";
+
+  const header = document.querySelector('.header')
+  const modal = document.querySelector('.darkening-header')
+
+  modal.style.height = `${document.body.offsetHeight - header.offsetHeight}px`
+}
+
 function toggleModal(event) {
   if (event.target.closest(".consultation__open")) {
     modalConsultation.style.display = "block";
@@ -26,10 +38,7 @@ function toggleModal(event) {
     popup2.style.display = "none";
     document.body.style.overflow = "auto";
   } else if (event.target.closest(".header__open-menu")) {
-    openMenu.style.display = "none";
-    closeMenu.style.display = "block";
-    modalHeader.style.display = "block";
-    document.body.style.overflow = "hidden";
+    openHeaderMenu()
   } else if (event.target.closest(".header__close-menu")) {
     openMenu.style.display = "block";
     closeMenu.style.display = "none";

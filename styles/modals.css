@@ -241,10 +241,10 @@
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
   position: fixed;
-  margin-top: 60px;
   width: 100%;
   z-index: 2;
-  top: 0;
+  top: initial;
+  bottom: 0;
   left: 0;
 }
 
