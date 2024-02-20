@@ -304,10 +304,12 @@
   right: 67%;
   bottom: 0;
   height: 100%;
+  pointer-events: none;
 }
 
 .decorative-background2 {
   display: none;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1440px) {
@@ -334,6 +336,7 @@
   top: 280px;
   max-width: 100%;
   height: auto;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1280px) {
