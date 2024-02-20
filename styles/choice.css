@@ -17,8 +17,14 @@
 
 @media screen and (max-width: 800px) {
   .choice {
-    margin-top: 70px;
+    margin-top: 150px;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .choice {
+    margin-top: 70px;
   }
 }
 
