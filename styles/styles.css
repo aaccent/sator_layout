@@ -206,6 +206,7 @@ button {
   height: 40px;
   display: flex;
   justify-content: space-between;
+  rotate: 180deg;
 }
 
 @media screen and (max-width: 768px) {
