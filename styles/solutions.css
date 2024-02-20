@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  gap: 10px;
 }
 
 .wrapper-solution > h2 {
@@ -42,7 +43,7 @@
   position: relative;
 }
 
-.solutions__card:hover > .card__right > a svg > path {
+.solutions__card:hover .solutions__card-icon path {
   stroke: #ef4824;
 }
 
@@ -154,18 +155,18 @@
   }
 }
 
-.card__right > a {
+.card__right > :is(a, .solutions__card-icon) {
   margin-left: 10px;
   padding: 0;
 }
 
 @media screen and (max-width: 680px) {
-  .card__right > a {
+  .card__right > :is(a, .solutions__card-icon) {
     position: absolute;
     top: 15px;
     right: 15px;
   }
-  .card__right > a > svg {
+  .card__right > :is(a, .solutions__card-icon) > svg {
     width: 12px;
     height: 12px;
   }
