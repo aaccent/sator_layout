@@ -15,22 +15,22 @@ const nenuOpen = document.querySelectorAll(".accordion-item__trigger");
 const submenu = document.querySelectorAll(".accordion2s");
 
 function toggleModal(event) {
-  if (event.target.matches(".consultation__open")) {
+  if (event.target.closest(".consultation__open")) {
     modalConsultation.style.display = "block";
     document.body.style.overflow = "hidden";
-  } else if (event.target.matches(".open-modal-city")) {
+  } else if (event.target.closest(".open-modal-city")) {
     modalOpen.style.display = "block";
     document.body.style.overflow = "hidden";
-  } else if (event.target.matches(".close-modal")) {
+  } else if (event.target.closest(".close-modal")) {
     popup.style.display = "none";
     popup2.style.display = "none";
     document.body.style.overflow = "auto";
-  } else if (event.target.matches(".header__open-menu")) {
+  } else if (event.target.closest(".header__open-menu")) {
     openMenu.style.display = "none";
     closeMenu.style.display = "block";
     modalHeader.style.display = "block";
     document.body.style.overflow = "hidden";
-  } else if (event.target.matches(".header__close-menu")) {
+  } else if (event.target.closest(".header__close-menu")) {
     openMenu.style.display = "block";
     closeMenu.style.display = "none";
     modalHeader.style.display = "none";
