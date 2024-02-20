@@ -19,12 +19,17 @@
   z-index: 2;
 }
 
+.modal-consultation .darkening {
+  display: flex;
+}
+
 .consultation__modal {
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 1);
   max-width: 1170px;
-  margin: 162px auto 0 auto;
+  margin: auto;
+  gap: 80px;
   padding: 10px;
   border-radius: 30px;
   max-height: 605px;
