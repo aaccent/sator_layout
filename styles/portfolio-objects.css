@@ -43,14 +43,14 @@
   border-radius: 20px;
 }
 
-.object__card > a > svg {
+.object__card > .object__card-icon > svg {
   position: absolute;
   right: 20px;
   top: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .object__card > a > svg {
+  .object__card > .object__card-icon > svg {
     top: 10px;
     right: 10px;
     width: 30px;
