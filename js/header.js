@@ -3,7 +3,7 @@ const closeMenu = document.querySelector(".header__close-menu");
 const modalHeader = document.querySelector(".modal");
 const openConsultation = document.querySelectorAll(".consultation__open");
 const modalConsultation = document.querySelector(".modal-consultation");
-const openCity = document.querySelector(".open-modal-city");
+const openCity = document.querySelectorAll(".open-modal-city");
 const modalOpen = document.querySelector(".modal-city");
 const closeCity = document.querySelectorAll(".close-modal");
 const popup = document.querySelector(".popup");
@@ -55,7 +55,7 @@ function toggleModal(event) {
 }
 
 closeMenu.addEventListener("click", toggleModal);
-openCity.addEventListener("click", toggleModal);
+openCity.forEach(i => i.addEventListener("click", toggleModal));
 
 openMenu.addEventListener("click", toggleModal);
 closeCity.forEach((btn) => btn.addEventListener("click", toggleModal));

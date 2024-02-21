@@ -256,6 +256,7 @@
   color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid rgba(255, 255, 255, 1);
   font-size: 16px !important;
+  background: transparent;
 }
 
 .block__contacts > button {
