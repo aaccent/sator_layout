@@ -13,7 +13,8 @@
   display: flex;
   overflow-x: auto;
   gap: 10px;
-  width: 1520px;
+  width: 100%;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -24,8 +25,8 @@
 }
 
 .partners__logo {
-  max-width: 296px;
-  width: 100%;
+  width: 296px;
+  flex-shrink: 0;
   height: 190px;
   border-radius: 15px;
   background-color: rgba(244, 243, 245, 1);
