@@ -181,11 +181,13 @@
 }
 
 .swow-all {
+  margin-top: 10px;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   color: rgba(239, 72, 36, 1);
+  background: transparent;
 }
 
 .filter__hr {
@@ -219,7 +221,7 @@
   }
 }
 
-.filter__category > li {
+.filter__category ul > li {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 400;

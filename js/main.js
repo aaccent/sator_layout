@@ -27,3 +27,37 @@ document.querySelectorAll(".accordion-item__trigger2").forEach((item) => {
     }
   });
 });
+
+// 'Show all' functional from catalog page
+void function () {
+  const LIMIT = 3
+
+  document.querySelectorAll('.filter__category:has(.swow-all)').forEach(wrapper => {
+    const btn = wrapper.querySelector('.swow-all')
+    const listItems = wrapper.querySelectorAll('.filter__category-list > *')
+
+    if (listItems.length <= LIMIT) return btn.remove()
+
+    function expand() {
+      listItems.forEach(item => item.style.display = '')
+
+      btn.innerText = 'Скрыть'
+      btn.addEventListener('click', hide, { once: true })
+    }
+
+    function hide() {
+      listItems.forEach((item, i) => {
+        if (i < LIMIT) return
+
+        item.style.display = 'none'
+      })
+
+      btn.innerText = 'Показать ещё'
+      btn.addEventListener('click', expand, { once: true })
+    }
+
+    hide()
+
+    btn.addEventListener('click', expand, { once: true })
+  })
+}()
