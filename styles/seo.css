@@ -83,10 +83,14 @@
 
 @media screen and (max-width: 1440px) {
   .seo__form {
-    flex-direction: column-reverse;
-    /* max-width: 850px;*/
     padding: 10px;
     margin: 20px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .seo__form {
+    flex-direction: column-reverse;
   }
 }
 

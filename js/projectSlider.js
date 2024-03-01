@@ -1,6 +1,6 @@
 var swiper = new Swiper(".projectsSlider", {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 2.02,
   spaceBetween: 20,
   navigation: {
     nextEl: ".projects-next",
