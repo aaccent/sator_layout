@@ -41,7 +41,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1200px) {
   .contacts__section {
     flex-direction: column;
     justify-content: start;
