@@ -80,12 +80,18 @@
 
 @media screen and (max-width: 1420px) {
   .left__buttonblock {
+    gap: 20px;
     margin-top: 50px;
-    justify-content: space-between;
     width: 100%;
   }
   .left__buttonblock > button {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .left__buttonblock {
+    justify-content: space-between;
   }
 }
 
