@@ -208,7 +208,7 @@ button {
   justify-content: space-between;
 }
 
-.slider-buttons-block:not(.service-button) {
+.slider-buttons-block:not(.service-button, .banner-buttons) {
   rotate: 180deg;
 }
 
