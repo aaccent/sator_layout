@@ -25,9 +25,16 @@
 
 @media screen and (max-width: 1420px) {
   .measuring__block {
+    padding: 10px 10px 10px 25px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .measuring__block {
+    padding: 10px 10px 10px 10px;
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 10px 10px 10px 10px;
   }
 }
 
