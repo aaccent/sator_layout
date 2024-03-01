@@ -7,6 +7,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 1420px) {
+  .goods {
+    gap: 40px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .goods {
     flex-direction: column;
