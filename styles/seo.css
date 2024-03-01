@@ -2,6 +2,10 @@
   margin: 155px 0 100px 0;
 }
 
+.wrapper-margin:has(.seo) ~ .wrapper-margin .seo {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 768px) {
   .seo {
     margin: 80px 0 60px 0;
@@ -118,7 +122,8 @@
 
 @media screen and (max-width: 1440px) {
   .seo__left > h2 {
-    margin-top: 20px;
+    font-size: 55px;
+    margin-bottom: 50px;
   }
 }
 
