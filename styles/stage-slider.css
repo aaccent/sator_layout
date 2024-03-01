@@ -13,6 +13,10 @@
   padding: 5px;
 }
 
+.stage__slider:hover :is(.headline-h5) {
+  color: #ef4824;
+}
+
 @media screen and (max-width: 768px) {
   .stage__slider {
     border-radius: 10px;
