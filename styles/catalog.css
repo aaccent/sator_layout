@@ -45,6 +45,10 @@
   position: relative;
 }
 
+.catalog__card:hover .headline-h5 {
+  color: #ef4824;
+}
+
 @media screen and (max-width: 900px) {
   .catalog__card {
     padding: 10px;
